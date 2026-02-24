@@ -348,6 +348,26 @@ func (dm *DeviceManager) HandleAttributeReport(evt ncp.AttributeReportEvent) {
 		}
 	}
 
+	// Save ManufacturerName / ModelIdentifier from proactive Basic cluster reports.
+	// Sleepy devices (e.g., Xiaomi) may send these before the interview reads them,
+	// so we capture them here to avoid losing data if the ZCL Read times out.
+	if evt.ClusterID == 0x0000 && dev != nil {
+		if s, ok := decoded.(string); ok && s != "" {
+			switch evt.AttrID {
+			case 0x0004: // ManufacturerName
+				if dev.Manufacturer == "" {
+					dev.Manufacturer = s
+					_ = dm.coord.Store().SaveDevice(dev)
+				}
+			case 0x0005: // ModelIdentifier
+				if dev.Model == "" {
+					dev.Model = s
+					_ = dm.coord.Store().SaveDevice(dev)
+				}
+			}
+		}
+	}
+
 	dm.logger.Info("attribute report",
 		"ieee", ieee,
 		"name", deviceName(dev),
@@ -566,25 +586,37 @@ func (dm *DeviceManager) readBasicAttributes(ctx context.Context, dev *store.Dev
 	})
 	if err != nil {
 		dm.logger.Warn("read basic attributes", "err", err)
-		return
+	} else {
+		for _, r := range results {
+			if r.Status != 0 || len(r.Value) == 0 {
+				continue
+			}
+			val, _, decErr := zcl.DecodeValue(r.DataType, r.Value)
+			if decErr != nil {
+				continue
+			}
+			switch r.AttrID {
+			case 0x0004:
+				if s, ok := val.(string); ok {
+					dev.Manufacturer = s
+				}
+			case 0x0005:
+				if s, ok := val.(string); ok {
+					dev.Model = s
+				}
+			}
+		}
 	}
 
-	for _, r := range results {
-		if r.Status != 0 || len(r.Value) == 0 {
-			continue
-		}
-		val, _, err := zcl.DecodeValue(r.DataType, r.Value)
-		if err != nil {
-			continue
-		}
-		switch r.AttrID {
-		case 0x0004:
-			if s, ok := val.(string); ok {
-				dev.Manufacturer = s
+	// If the ZCL read didn't return manufacturer/model (sleepy device went to sleep),
+	// check the store — HandleAttributeReport may have saved proactive reports.
+	if dev.Manufacturer == "" || dev.Model == "" {
+		if fresh, storeErr := dm.coord.Store().GetDevice(dev.IEEEAddress); storeErr == nil {
+			if dev.Manufacturer == "" && fresh.Manufacturer != "" {
+				dev.Manufacturer = fresh.Manufacturer
 			}
-		case 0x0005:
-			if s, ok := val.(string); ok {
-				dev.Model = s
+			if dev.Model == "" && fresh.Model != "" {
+				dev.Model = fresh.Model
 			}
 		}
 	}
