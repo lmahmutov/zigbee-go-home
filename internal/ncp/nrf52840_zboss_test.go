@@ -7,17 +7,23 @@ import (
 )
 
 func TestCRC8KnownValues(t *testing.T) {
-	// Verify CRC8 produces consistent results.
+	// Zero-length input: init=0xFF, no data, xorout=0xFF → 0xFF^0xFF=0x00
+	if zbossCRC8(nil) != 0x00 {
+		t.Errorf("CRC8(nil) = 0x%02X, want 0x00", zbossCRC8(nil))
+	}
+
+	// Known value from a captured ZBOSS NCP frame header [size_lo, size_hi, type, flags].
+	// These 4 bytes produce a specific CRC-8/KOOP checksum.
 	data := []byte{0x03, 0x00, 0x00, 0xC0}
 	crc := zbossCRC8(data)
-	// Recompute to verify determinism.
+	// Verify determinism.
 	if crc != zbossCRC8(data) {
 		t.Fatal("CRC8 not deterministic")
 	}
-	// Zero-length input.
-	if zbossCRC8(nil) != 0x00 {
-		// init=0xFF, no data, xorout=0xFF → 0xFF^0xFF=0x00
-		t.Errorf("CRC8(nil) = 0x%02X, want 0x00", zbossCRC8(nil))
+	// Verify known value (CRC-8/KOOP: poly=0xB2 reflected, init=0xFF, xorout=0xFF).
+	const wantCRC8 = 0x73
+	if crc != wantCRC8 {
+		t.Errorf("CRC8(%X) = 0x%02X, want 0x%02X", data, crc, wantCRC8)
 	}
 }
 

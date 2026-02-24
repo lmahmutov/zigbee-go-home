@@ -261,7 +261,9 @@ func zigbeeAfter(L *lua.LState, vm *scriptVM, e *Engine) int {
 	seconds := L.CheckNumber(1)
 	fn := L.CheckFunction(2)
 
+	e.vmWg.Add(1)
 	go func() {
+		defer e.vmWg.Done()
 		timer := time.NewTimer(time.Duration(float64(seconds) * float64(time.Second)))
 		defer timer.Stop()
 

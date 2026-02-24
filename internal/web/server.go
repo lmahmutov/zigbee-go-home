@@ -343,16 +343,18 @@ func (s *Server) enrichDevice(dev *store.Device) DeviceView {
 				v.PhotoURL = url
 			}
 		} else {
-			// Sanitize model name for filesystem: spaces → _, * → x.
+			// Sanitize model name for filesystem: spaces → _, * → x, reject path traversal.
 			sanitized := strings.ReplaceAll(dev.Model, " ", "_")
 			sanitized = strings.ReplaceAll(sanitized, "*", "x")
-			for _, ext := range []string{".jpg", ".png", ".webp"} {
-				imgPath := filepath.Join(s.devicesDir, "img", sanitized+ext)
-				if _, err := os.Stat(imgPath); err == nil {
-					url = "/devices/img/" + sanitized + ext
-					v.HasPhoto = true
-					v.PhotoURL = url
-					break
+			if !strings.Contains(sanitized, "..") && !strings.ContainsAny(sanitized, "/\\") {
+				for _, ext := range []string{".jpg", ".png", ".webp"} {
+					imgPath := filepath.Join(s.devicesDir, "img", sanitized+ext)
+					if _, err := os.Stat(imgPath); err == nil {
+						url = "/devices/img/" + sanitized + ext
+						v.HasPhoto = true
+						v.PhotoURL = url
+						break
+					}
 				}
 			}
 			s.photoMu.Lock()

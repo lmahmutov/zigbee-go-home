@@ -181,6 +181,13 @@ func readRawZBOSSFrame(r *bufio.Reader) ([]byte, error) {
 			return nil, err
 		}
 		if b2 != zbossSig1 {
+			// If b2 is another 0xDE, it could be the start of the real signature.
+			// Unread it so the next iteration picks it up as a potential sig start.
+			if b2 == zbossSig0 {
+				if err := r.UnreadByte(); err != nil {
+					return nil, err
+				}
+			}
 			continue
 		}
 

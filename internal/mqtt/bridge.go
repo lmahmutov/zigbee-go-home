@@ -55,6 +55,8 @@ type Bridge struct {
 
 	// WaitGroup for delayedDiscovery goroutines so Stop() can wait.
 	discWg sync.WaitGroup
+	// WaitGroup for publish token-wait goroutines.
+	pubWg sync.WaitGroup
 }
 
 // NewBridge creates and connects an MQTT bridge.
@@ -133,6 +135,7 @@ func (b *Bridge) Stop() {
 	// The eventLoop exits via ctx cancellation instead.
 	b.eventWg.Wait()
 	b.discWg.Wait()
+	b.pubWg.Wait()
 	b.publishBridgeStateSynchronous("offline")
 	b.client.Disconnect(1000)
 	b.logger.Info("MQTT bridge stopped")
@@ -463,7 +466,8 @@ func (b *Bridge) handleCommand(ieee string, payload []byte) {
 }
 
 // findEndpointWithCluster returns the endpoint ID that has the given cluster
-// as an input cluster. Falls back to the first endpoint if not found.
+// as an input cluster. Falls back to the first endpoint if not found,
+// or endpoint 1 if the device has no endpoints.
 func findEndpointWithCluster(dev *store.Device, clusterID uint16) uint8 {
 	for _, ep := range dev.Endpoints {
 		for _, cid := range ep.InClusters {
@@ -472,12 +476,17 @@ func findEndpointWithCluster(dev *store.Device, clusterID uint16) uint8 {
 			}
 		}
 	}
+	if len(dev.Endpoints) == 0 {
+		return 1
+	}
 	return dev.Endpoints[0].ID
 }
 
 func (b *Bridge) publish(topic string, payload []byte, retained bool) {
 	token := b.client.Publish(topic, 1, retained, payload)
+	b.pubWg.Add(1)
 	go func() {
+		defer b.pubWg.Done()
 		if !token.WaitTimeout(5 * time.Second) {
 			b.logger.Warn("MQTT publish timeout", "topic", topic)
 		} else if err := token.Error(); err != nil {

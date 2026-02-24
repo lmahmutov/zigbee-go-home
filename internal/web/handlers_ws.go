@@ -11,6 +11,8 @@ import (
 	"nhooyr.io/websocket"
 )
 
+const maxWSClients = 100
+
 // WSHub manages WebSocket connections and broadcasts events.
 type WSHub struct {
 	clients map[*wsClient]struct{}
@@ -58,6 +60,13 @@ func (h *WSHub) Run() {
 
 		case client := <-h.register:
 			h.mu.Lock()
+			if len(h.clients) >= maxWSClients {
+				h.mu.Unlock()
+				h.logger.Warn("ws client rejected: max connections reached", "max", maxWSClients)
+				close(client.send)
+				client.conn.Close(websocket.StatusTryAgainLater, "too many connections")
+				continue
+			}
 			h.clients[client] = struct{}{}
 			total := len(h.clients)
 			h.mu.Unlock()

@@ -155,6 +155,9 @@ func (n *NRF52840NCP) request(ctx context.Context, callID uint16, payload []byte
 	// Wait for HL response.
 	select {
 	case resp := <-ch:
+		if resp == nil {
+			return nil, fmt.Errorf("ncp reset: request cancelled")
+		}
 		status := zbossStatusName(resp.HL.StatusCat, resp.HL.StatusCode)
 		if resp.HL.StatusCat != 0 || resp.HL.StatusCode != 0 {
 			n.logger.Warn("zboss RX", "cmd", cmdName, "tsn", tsn, "status", status, "payload", fmt.Sprintf("%X", resp.Payload))
@@ -489,9 +492,11 @@ func (n *NRF52840NCP) handleAPSDEDataInd(payload []byte, onReport func(Attribute
 	if frameType == zclFrameTypeCluster {
 		if clusterID == 0x0019 && cmdID == 0x01 {
 			// OTA QueryNextImageRequest — respond with NO_IMAGE_AVAILABLE (0x98).
+			// Must run in a goroutine: request() waits for ACK/response that
+			// can only be delivered by this readLoop, so calling it inline deadlocks.
 			n.logger.Info("OTA query from device, responding NO_IMAGE_AVAILABLE",
 				"short", fmt.Sprintf("0x%04X", srcAddr), "ep", srcEP)
-			n.sendOTANoImageAvailable(srcAddr, srcEP, zclSeq)
+			go n.sendOTANoImageAvailable(srcAddr, srcEP, zclSeq)
 		} else if onClusterCmd != nil {
 			onClusterCmd(ClusterCommandEvent{
 				SrcAddr:   srcAddr,
@@ -873,23 +878,33 @@ func (n *NRF52840NCP) MgmtLeave(ctx context.Context, shortAddr uint16, ieeeAddr 
 
 func (n *NRF52840NCP) NetworkInfo(ctx context.Context) (*NetworkInfo, error) {
 	info := &NetworkInfo{}
+	var lastErr error
 
 	resp, err := n.request(ctx, zbossCmdGetChannel, nil)
 	if err == nil && len(resp.Payload) >= 2 {
 		// Response: channel_page(1) + channel(1)
 		info.Channel = resp.Payload[1]
+	} else if err != nil {
+		lastErr = err
 	}
 
 	resp, err = n.request(ctx, zbossCmdGetPanID, nil)
 	if err == nil && len(resp.Payload) >= 2 {
 		info.PanID = binary.LittleEndian.Uint16(resp.Payload)
+	} else if err != nil {
+		lastErr = err
 	}
 
 	resp, err = n.request(ctx, zbossCmdGetExtPanID, nil)
 	if err == nil && len(resp.Payload) >= 8 {
 		copy(info.ExtPanID[:], resp.Payload[:8])
+	} else if err != nil {
+		lastErr = err
 	}
 
+	if info.Channel == 0 && info.PanID == 0 && lastErr != nil {
+		return nil, fmt.Errorf("network info: all queries failed: %w", lastErr)
+	}
 	return info, nil
 }
 
@@ -1172,9 +1187,14 @@ func (n *NRF52840NCP) OnNCPReset(handler func()) {
 	n.onReset = handler
 }
 
-// GetNCPInfo returns cached firmware/stack/protocol version information.
+// GetNCPInfo returns a copy of cached firmware/stack/protocol version information.
 func (n *NRF52840NCP) GetNCPInfo() *NCPInfo {
-	return &n.ncpInfo
+	info := n.ncpInfo
+	if n.ncpInfo.NetworkKey != nil {
+		info.NetworkKey = make([]byte, len(n.ncpInfo.NetworkKey))
+		copy(info.NetworkKey, n.ncpInfo.NetworkKey)
+	}
+	return &info
 }
 
 // Close stops the NCP and waits for readLoop to exit.

@@ -88,15 +88,17 @@ func (m *Manager) Save(s *Script) (*Script, error) {
 		if s.ID == "" {
 			s.ID = "script"
 		}
-		// Ensure unique ID
+		// Ensure unique ID (with a cap to prevent infinite loop on fs errors).
 		base := s.ID
-		for i := 1; ; i++ {
+		for i := 1; i <= 1000; i++ {
 			path := filepath.Join(m.dir, s.ID+".lua")
 			if _, err := os.Stat(path); os.IsNotExist(err) {
 				break
 			}
 			s.ID = fmt.Sprintf("%s_%d", base, i)
 		}
+	} else if !validScriptID(s.ID) {
+		return nil, fmt.Errorf("invalid script id: %q", s.ID)
 	}
 
 	s.FilePath = filepath.Join(m.dir, s.ID+".lua")

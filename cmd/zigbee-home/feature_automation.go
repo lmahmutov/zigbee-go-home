@@ -32,6 +32,8 @@ func initAutomation(coord *coordinator.Coordinator, cfg *Config, logger *slog.Lo
 	if cfg.Exec.Timeout != "" {
 		if d, err := time.ParseDuration(cfg.Exec.Timeout); err == nil {
 			execTimeout = d
+		} else {
+			logger.Warn("invalid exec.timeout, using default", "value", cfg.Exec.Timeout, "default", execTimeout)
 		}
 	}
 

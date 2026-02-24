@@ -180,20 +180,25 @@ func TestEventBusOnAllUnsubscribe(t *testing.T) {
 
 func TestEventBusPanicRecovery(t *testing.T) {
 	eb := NewEventBus(newTestLogger())
-	var afterPanic atomic.Bool
+	var called atomic.Int32
 
+	// Register two handlers — one panics, one increments counter.
+	// Both should be attempted despite the panic.
 	eb.On(EventDeviceJoined, func(e Event) {
+		called.Add(1)
 		panic("test panic")
 	})
 	eb.On(EventDeviceJoined, func(e Event) {
-		afterPanic.Store(true)
+		called.Add(1)
 	})
 
 	// Should not panic
 	eb.Emit(Event{Type: EventDeviceJoined})
 
-	// The second handler should still be called despite the first panicking
-	// (handlers are in a map so order is non-deterministic, but both should be attempted)
+	// Both handlers should have been called despite one panicking.
+	if c := called.Load(); c != 2 {
+		t.Errorf("expected 2 handlers called, got %d", c)
+	}
 }
 
 func TestEventBusConcurrentEmit(t *testing.T) {

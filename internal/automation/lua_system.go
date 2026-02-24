@@ -4,6 +4,7 @@ package automation
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"os/exec"
@@ -211,7 +212,12 @@ func telegramSend(L *lua.LState, e *Engine) int {
 	for _, chatID := range e.telegramCfg.ChatIDs {
 		go func(cid string) {
 			url := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", e.telegramCfg.BotToken)
-			body := fmt.Sprintf(`{"chat_id":%q,"text":%q}`, cid, msg)
+			payload := struct {
+				ChatID string `json:"chat_id"`
+				Text   string `json:"text"`
+			}{ChatID: cid, Text: msg}
+			bodyBytes, _ := json.Marshal(payload)
+			body := string(bodyBytes)
 
 			req, err := http.NewRequest("POST", url, strings.NewReader(body))
 			if err != nil {

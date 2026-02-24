@@ -584,11 +584,35 @@ func (dm *DeviceManager) Interview(ieee string) {
 				"manufacturer", dev.Manufacturer, "model", dev.Model)
 		}
 
-		dev.Interviewed = true
-		if err := dm.coord.Store().SaveDevice(dev); err != nil {
+		// Check if context was cancelled (e.g., by HandleLeave) before saving,
+		// to prevent resurrecting a deleted device.
+		if ctx.Err() != nil {
+			dm.logger.Info("interview: cancelled before save", "ieee", ieee, "name", name)
+			return
+		}
+
+		// Use UpdateDevice (atomic merge) instead of SaveDevice to avoid
+		// overwriting concurrent updates from HandleAttributeReport.
+		finalEndpoints := dev.Endpoints
+		finalInterviewed := true
+		finalFriendlyName := dev.FriendlyName
+		finalManufacturer := dev.Manufacturer
+		finalModel := dev.Model
+		if err := dm.coord.Store().UpdateDevice(ieee, func(d *store.Device) error {
+			d.Endpoints = finalEndpoints
+			d.Interviewed = finalInterviewed
+			d.FriendlyName = finalFriendlyName
+			if finalManufacturer != "" {
+				d.Manufacturer = finalManufacturer
+			}
+			if finalModel != "" {
+				d.Model = finalModel
+			}
+			return nil
+		}); err != nil {
 			dm.logger.Error("interview: save", "err", err, "ieee", ieee, "name", name)
 		}
-		dm.logger.Info("interview complete", "ieee", ieee, "name", name, "endpoints", len(dev.Endpoints))
+		dm.logger.Info("interview complete", "ieee", ieee, "name", name, "endpoints", len(finalEndpoints))
 		return
 	}
 

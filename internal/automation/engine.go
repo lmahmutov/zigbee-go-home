@@ -157,28 +157,11 @@ func (e *Engine) RunLuaCode(code string) *RunResult {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 
-	L := lua.NewState(lua.Options{
-		SkipOpenLibs:    false,
-		CallStackSize:   120,
-		RegistrySize:    1024 * 20,
-		RegistryMaxSize: 1024 * 80,
-	})
+	L := newSandboxedLuaState()
 	// Cancel context BEFORE closing LState so zigbee.after() goroutines exit
 	// before the Lua state is freed. Defers execute LIFO.
 	defer L.Close()
 	defer cancel()
-
-	// Sandbox
-	L.SetGlobal("os", lua.LNil)
-	L.SetGlobal("io", lua.LNil)
-	L.SetGlobal("loadfile", lua.LNil)
-	L.SetGlobal("dofile", lua.LNil)
-	L.SetGlobal("require", lua.LNil)
-	L.SetGlobal("load", lua.LNil)
-	L.SetGlobal("debug", lua.LNil)
-	L.SetGlobal("package", lua.LNil)
-
-	sandboxStringRep(L)
 
 	L.SetContext(ctx)
 
@@ -255,24 +238,7 @@ func (e *Engine) stopScript(id string) {
 func (e *Engine) startScript(s *Script) error {
 	ctx, cancel := context.WithCancel(context.Background())
 
-	L := lua.NewState(lua.Options{
-		SkipOpenLibs:    false,
-		CallStackSize:   120,
-		RegistrySize:    1024 * 20,
-		RegistryMaxSize: 1024 * 80,
-	})
-
-	// Sandbox: remove dangerous libs and functions
-	L.SetGlobal("os", lua.LNil)
-	L.SetGlobal("io", lua.LNil)
-	L.SetGlobal("loadfile", lua.LNil)
-	L.SetGlobal("dofile", lua.LNil)
-	L.SetGlobal("require", lua.LNil)
-	L.SetGlobal("load", lua.LNil)
-	L.SetGlobal("debug", lua.LNil)
-	L.SetGlobal("package", lua.LNil)
-
-	sandboxStringRep(L)
+	L := newSandboxedLuaState()
 
 	vm := &scriptVM{
 		state:    L,
@@ -410,6 +376,39 @@ func (e *Engine) callHandler(L *lua.LState, fn *lua.LFunction, event coordinator
 	}, eventTable); err != nil {
 		e.logger.Error("lua handler error", "err", err)
 	}
+}
+
+// newSandboxedLuaState creates a Lua VM with only safe libraries loaded.
+// Uses whitelist approach: only base, table, string, math are available.
+// Dangerous functions (loadfile, dofile, load) are removed from base.
+func newSandboxedLuaState() *lua.LState {
+	L := lua.NewState(lua.Options{
+		SkipOpenLibs:    true,
+		CallStackSize:   120,
+		RegistrySize:    1024 * 20,
+		RegistryMaxSize: 1024 * 80,
+	})
+	// Load only safe standard libraries.
+	for _, lib := range []struct {
+		name string
+		fn   lua.LGFunction
+	}{
+		{lua.BaseLibName, lua.OpenBase},
+		{lua.TabLibName, lua.OpenTable},
+		{lua.StringLibName, lua.OpenString},
+		{lua.MathLibName, lua.OpenMath},
+	} {
+		L.Push(L.NewFunction(lib.fn))
+		L.Push(lua.LString(lib.name))
+		L.Call(1, 0)
+	}
+	// Remove remaining dangerous base functions.
+	L.SetGlobal("loadfile", lua.LNil)
+	L.SetGlobal("dofile", lua.LNil)
+	L.SetGlobal("load", lua.LNil)
+
+	sandboxStringRep(L)
+	return L
 }
 
 const maxStringRepLen = 1 << 20 // 1 MB limit for string.rep result

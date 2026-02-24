@@ -543,8 +543,14 @@ func toInt64(v interface{}) (int64, bool) {
 	case uint32:
 		return int64(val), true
 	case uint64:
+		if val > math.MaxInt64 {
+			return 0, false
+		}
 		return int64(val), true
 	case float64:
+		if val > math.MaxInt64 || val < math.MinInt64 {
+			return 0, false
+		}
 		return int64(val), true
 	}
 	return 0, false

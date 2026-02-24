@@ -76,6 +76,9 @@ func (c *Config) validate() error {
 	if c.Network.PanID == 0 || c.Network.PanID == 0xFFFF {
 		return fmt.Errorf("network.pan_id must not be 0x0000 or 0xFFFF")
 	}
+	if c.MQTT.Enabled && c.MQTT.Broker == "" {
+		return fmt.Errorf("mqtt.broker is required when mqtt.enabled is true")
+	}
 	return nil
 }
 
