@@ -1,0 +1,413 @@
+{
+  "manufacturers": [
+    {
+      "name": "Konke",
+      "models": [
+        {
+          "model": "3AFE07010402100D",
+          "friendly_name": "Occupancy sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE08010402100D",
+          "friendly_name": "Occupancy sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE12010402102A",
+          "friendly_name": "Water detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE130104020015",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE140103020000",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE14010402000D",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE170100510001",
+          "friendly_name": "Multi-function button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE21100402102A",
+          "friendly_name": "Water detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE220103020000",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE22010402102A",
+          "friendly_name": "Water detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE221004021015",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE241000040002",
+          "friendly_name": "Smart 4 key scene switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE2610010C0021",
+          "friendly_name": "Spotlight driver (cw mode)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3AFE27010402000D",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE270104020015",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE280100510001",
+          "friendly_name": "Multi-function button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE28010402000D",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE280104020015",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE292000068621",
+          "friendly_name": "Light years switch 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE292000068622",
+          "friendly_name": "Light years switch 2 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3AFE292000068623",
+          "friendly_name": "Light years switch 3 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LH07321",
+          "friendly_name": "Water detector",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

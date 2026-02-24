@@ -1,0 +1,51 @@
+{
+  "manufacturers": [
+    {
+      "name": "Zemismart",
+      "models": [
+        {
+          "model": "LXN56-SS27LX1.1",
+          "friendly_name": "Smart light switch - 2 gang with neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXT56-LS27LX1.6",
+          "friendly_name": "RGB LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NUET56-DL27LX1.1",
+          "friendly_name": "RGB LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TS0302",
+          "friendly_name": "Curtain/roller blind switch",
+          "bind": [
+            258
+          ]
+        }
+      ]
+    }
+  ]
+}

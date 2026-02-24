@@ -1,0 +1,45 @@
+{
+  "manufacturers": [
+    {
+      "name": "The Home Depot",
+      "models": [
+        {
+          "model": "Ecosmart-ZBT-A19-CCT-Bulb",
+          "friendly_name": "Tuneable white (A19)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Ecosmart-ZBT-BR30-CCT-Bulb",
+          "friendly_name": "Tuneable white (BR30)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "zhaRGBW",
+          "friendly_name": "A19 RGB bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "zhaTunW",
+          "friendly_name": "GU10 adjustable white bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

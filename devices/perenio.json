@@ -1,0 +1,68 @@
+{
+  "manufacturers": [
+    {
+      "name": "PERENIO",
+      "models": [
+        {
+          "model": "PECLS01",
+          "friendly_name": "Flood alarm device",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PEHPL0X",
+          "friendly_name": "Power link",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PEHWE20",
+          "friendly_name": "Two channel single wire mini-relay",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "PEHWE2X",
+          "friendly_name": "Two channel single wire mini-relay",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZHA-DoorLockSensor",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            257,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

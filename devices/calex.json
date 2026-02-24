@@ -1,0 +1,26 @@
+{
+  "manufacturers": [
+    {
+      "name": "Calex",
+      "models": [
+        {
+          "model": "EC-Z3.0-CCT",
+          "friendly_name": "LED A60 Zigbee GLS-lamp",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "EC-Z3.0-RGBW",
+          "friendly_name": "LED A60 Zigbee RGB lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

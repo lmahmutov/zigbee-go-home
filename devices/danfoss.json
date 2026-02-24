@@ -1,0 +1,135 @@
+{
+  "manufacturers": [
+    {
+      "name": "Danfoss",
+      "models": [
+        {
+          "model": "eT093WRG",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "eT093WRO",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "eTRV0100",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "eTRV0101",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "eTRV0103",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRV001",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRV003",
+          "friendly_name": "Ally thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

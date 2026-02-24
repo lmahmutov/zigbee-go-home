@@ -1,0 +1,109 @@
+{
+  "manufacturers": [
+    {
+      "name": "Stelpro",
+      "models": [
+        {
+          "model": "HT402",
+          "friendly_name": "Hilo thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "MaestroStat",
+          "friendly_name": "Maestro, line-voltage thermostat",
+          "bind": [
+            513,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SMT402AD",
+          "friendly_name": "Maestro, line-voltage thermostat",
+          "bind": [
+            513,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SonomaStyle",
+          "friendly_name": "Ki convector, line-voltage thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SORB",
+          "friendly_name": "ORLÉANS fan heater",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "ST218",
+          "friendly_name": "Ki convector, line-voltage thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "STZB402",
+          "friendly_name": "Ki, line-voltage thermostat",
+          "bind": [
+            513,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "STZB402+",
+          "friendly_name": "Ki, line-voltage thermostat",
+          "bind": [
+            513,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

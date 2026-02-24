@@ -1,0 +1,145 @@
+{
+  "manufacturers": [
+    {
+      "name": "Legrand",
+      "models": [
+        {
+          "model": " Centralized ventilation SW",
+          "friendly_name": "Centralized ventilation switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": " DIN 3Ph power consumption module",
+          "friendly_name": "DIN 3 Phases power consumption module",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": " DIN power consumption module",
+          "friendly_name": "DIN power consumption module",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": " Shutters central remote switch",
+          "friendly_name": "Wireless shutter switch",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3ph Smart shedder module",
+          "friendly_name": "DIN 3 Phases power consumption module",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Hospitality dimmer switch",
+          "friendly_name": "Smart dimmer switch with Netatmo",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "Hospitality on off switch",
+          "friendly_name": "Smart switch with Netatmo",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "NLIS - Triple light switch",
+          "friendly_name": "Triple light switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Remote dimmer switch",
+          "friendly_name": "Remote dimmer switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Remote switch Wake up / Sleep",
+          "friendly_name": "Night/day wireless switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Smart shedder module",
+          "friendly_name": "DIN power consumption module",
+          "bind": [
+            1794,
+            2820
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BTicino",
+      "models": [
+        {
+          "model": "Power socket Bticino Serie LL ",
+          "friendly_name": "Power socket with power consumption monitoring",
+          "bind": [
+            6,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

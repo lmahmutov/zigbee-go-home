@@ -1,0 +1,171 @@
+{
+  "manufacturers": [
+    {
+      "name": "IMMAX",
+      "models": [
+        {
+          "model": "4in1-Sensor-ZB3.0",
+          "friendly_name": "Intelligent motion sensor",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Bulb-RGB+CCT-ZB3.0",
+          "friendly_name": "Neo SMART LED E27 9W RGB + CCT, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "DoorWindow-Sensor-ZB3.0",
+          "friendly_name": "Magnetic contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "E27-filament-Dim-ZB3.0",
+          "friendly_name": "Neo SMART LED filament E27 6.3W warm white, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "IM-Z3.0-CCT",
+          "friendly_name": "Neo RECUADRO SMART, color temp, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "IM-Z3.0-DIM",
+          "friendly_name": "Neo SMART LED E14 5W warm white, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "IM-Z3.0-RGBCCT",
+          "friendly_name": "Neo SMART LED strip RGB + CCT, color, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "IM-Z3.0-RGBW",
+          "friendly_name": "Neo SMART LED E27/E14 color, dimmable, Zigbee 3.0",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Keyfob-ZB3.0",
+          "friendly_name": "4-Touch single click buttons",
+          "bind": []
+        },
+        {
+          "model": "Motion-Sensor-ZB3.0",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Plug-230V-ZB3.0",
+          "friendly_name": "NEO SMART plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TS0219",
+          "friendly_name": "Neo outdoor smart siren (IP65)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-CCTfilament-D0000",
+          "friendly_name": "NEO SMART LED E27 5W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "manufacturers": [
+    {
+      "name": "Shelly",
+      "models": [
+        {
+          "model": "1 Mini",
+          "friendly_name": "1 Mini Gen 4",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "1PM",
+          "friendly_name": "1PM Gen 4",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "1PM Mini",
+          "friendly_name": "1PM Mini Gen 4",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "BLU TRV",
+          "friendly_name": "Thermostatic radiator valve",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "BLU Wall Switch 4 ZB",
+          "friendly_name": "BLU Wall Switch 4 ZB",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "EM Mini",
+          "friendly_name": "EM Mini Gen4",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Mini1",
+          "friendly_name": "1 Mini Gen 4",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Mini1PM",
+          "friendly_name": "1PM Mini Gen 4",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

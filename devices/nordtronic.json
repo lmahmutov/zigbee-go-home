@@ -1,0 +1,144 @@
+{
+  "manufacturers": [
+    {
+      "name": "Nordtronic",
+      "models": [
+        {
+          "model": "98423051",
+          "friendly_name": "Zigbee switch 400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "98424072",
+          "friendly_name": "Zigbee rotary dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "98425031",
+          "friendly_name": "Box Dimmer 2.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BoxDIM2 98425031",
+          "friendly_name": "Box Dimmer 2.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BoxDIMZ 98425031",
+          "friendly_name": "Box Dimmer 2.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BoxDimZG2 98425271",
+          "friendly_name": "Box Dimmer G2",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "BoxRelay2 98423051",
+          "friendly_name": "Zigbee switch 400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "BoxRelayZ 98423051",
+          "friendly_name": "Zigbee switch 400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CoDIMZ 98425033",
+          "friendly_name": "Ceiling mounted zigbee micro smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "DINDimZ 98425034",
+          "friendly_name": "Zigbee din rail smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "RotDIM2 98424072",
+          "friendly_name": "Zigbee rotary dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "RotDIMZ 98424072",
+          "friendly_name": "Zigbee rotary dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

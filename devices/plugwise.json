@@ -1,0 +1,57 @@
+{
+  "manufacturers": [
+    {
+      "name": "Plugwise",
+      "models": [
+        {
+          "model": "106-03",
+          "friendly_name": "Tom thermostatic radiator valve",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "158-01",
+          "friendly_name": "Lisa zone thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "160-01",
+          "friendly_name": "Plug power socket on/off with power consumption monitoring",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "170-01",
+          "friendly_name": "Emma Pro thermostat",
+          "bind": [
+            513
+          ]
+        }
+      ]
+    }
+  ]
+}

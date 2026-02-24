@@ -1,0 +1,112 @@
+{
+  "manufacturers": [
+    {
+      "name": "Trust International B.V.",
+      "models": [
+        {
+          "model": "Built-in Dimmer",
+          "friendly_name": "Zigbee smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "CSW_ADUROLIGHT",
+          "friendly_name": "Wireless contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "VMS_ADUROLIGHT",
+          "friendly_name": "Motion Sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WATER_TPV14",
+          "friendly_name": "Water leakage detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZLL-ColorTempera",
+          "friendly_name": "Smart tunable LED bulb",
+          "bind": []
+        },
+        {
+          "model": "ZLL-ColorTemperature",
+          "friendly_name": "Smart tunable LED bulb",
+          "bind": []
+        },
+        {
+          "model": "ZLL-DimmableLigh",
+          "friendly_name": "Smart Dimmable LED Bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZLL-NonColorController",
+          "friendly_name": "Remote control",
+          "bind": []
+        },
+        {
+          "model": "ZSDR-850",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

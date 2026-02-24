@@ -1,0 +1,112 @@
+{
+  "manufacturers": [
+    {
+      "name": "RGB genie",
+      "models": [
+        {
+          "model": "RGBgenie ZB-1026",
+          "friendly_name": "Zigbee LED dimmer controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RGBgenie ZB-3008",
+          "friendly_name": "3 scene remote and dimmer ",
+          "bind": []
+        },
+        {
+          "model": "RGBgenie ZB-3009",
+          "friendly_name": "3 scene remote and dimmer ",
+          "bind": []
+        },
+        {
+          "model": "RGBgenie ZB-5001",
+          "friendly_name": "Zigbee 3.0 remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RGBgenie ZB-5004",
+          "friendly_name": "Zigbee 3.0 remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RGBgenie ZB-5028",
+          "friendly_name": "RGB remote with 4 endpoints and 3 scene recalls",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RGBgenie ZB-5121",
+          "friendly_name": "Micro remote and dimmer with single scene recall",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RGBgenie ZB-5122",
+          "friendly_name": "Micro remote and color dimmer with single scene recall",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

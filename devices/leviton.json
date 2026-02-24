@@ -1,0 +1,91 @@
+{
+  "manufacturers": [
+    {
+      "name": "Leviton",
+      "models": [
+        {
+          "model": "65A01-1",
+          "friendly_name": "Omnistat2 wireless thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "DG15A",
+          "friendly_name": "Indoor Decora smart Zigbee 3.0 certified plug-in outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DG15S",
+          "friendly_name": "Decora smart Zigbee 3.0 certified 15A switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DG3HL",
+          "friendly_name": "Indoor Decora smart Zigbee 3.0 certified plug-in dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "DG6HD",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "DL15S",
+          "friendly_name": "Lumina RF 15A switch, 120/277V",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZS057",
+          "friendly_name": "Wall switch, 0-10V dimmer, 120-277V, Lumina™ RF",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

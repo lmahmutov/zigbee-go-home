@@ -1,0 +1,739 @@
+{
+  "manufacturers": [
+    {
+      "name": "Tuya",
+      "models": [
+        {
+          "model": "005f0c3b",
+          "friendly_name": "Smart 6 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "6dfgetq",
+          "friendly_name": "HVAC controller",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "CK-BL702-AL-01(7009_Z102LG03-1)",
+          "friendly_name": "Zigbee LED bulb",
+          "bind": []
+        },
+        {
+          "model": "CK-BL702-AL-01(7009_Z102LG04-1)",
+          "friendly_name": "Zigbee LED bulb",
+          "bind": []
+        },
+        {
+          "model": "CK-BL702-AL-01(7009_Z102LG04-2)",
+          "friendly_name": "Zigbee LED bulb",
+          "bind": []
+        },
+        {
+          "model": "E220-KR4N0Z0-HA",
+          "friendly_name": "Multiprise with 4 AC outlets and 2 USB super charging ports (16A)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "FNB54-WTS08ML1.0",
+          "friendly_name": "Water leak detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "gq8b1uv",
+          "friendly_name": "Zigbee smart dimmer",
+          "bind": []
+        },
+        {
+          "model": "HY0017",
+          "friendly_name": "Smart 6 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "HY0080",
+          "friendly_name": "Environment controller",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "JZ-ZB-004",
+          "friendly_name": "Multiprise with 4 AC outlets and 2 USB super charging ports (16A)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "q9mpfhw",
+          "friendly_name": "Water leak sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "RH3040",
+          "friendly_name": "PIR sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RH3052",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SM0001",
+          "friendly_name": "Switch",
+          "bind": []
+        },
+        {
+          "model": "SM0202",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SM0212",
+          "friendly_name": "Gas sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "SNTZ003",
+          "friendly_name": "Temperature & humidity sensor with display",
+          "bind": [
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "TS0001",
+          "friendly_name": "1 gang switch",
+          "bind": []
+        },
+        {
+          "model": "TS0003",
+          "friendly_name": "3 gang switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0004",
+          "friendly_name": "Smart light switch - 4 gang with neutral wire",
+          "bind": []
+        },
+        {
+          "model": "TS0006",
+          "friendly_name": "6 gang switch module with neutral wire",
+          "bind": []
+        },
+        {
+          "model": "TS0011",
+          "friendly_name": "Smart light switch - 1 gang",
+          "bind": []
+        },
+        {
+          "model": "TS0012",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": []
+        },
+        {
+          "model": "TS0013",
+          "friendly_name": "Smart light switch - 3 gang without neutral wire",
+          "bind": []
+        },
+        {
+          "model": "TS0014",
+          "friendly_name": "Smart light switch - 4 gang without neutral wire",
+          "bind": []
+        },
+        {
+          "model": "TS0026",
+          "friendly_name": "6 button scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "TS0041",
+          "friendly_name": "Wireless switch with 1 button",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0041A",
+          "friendly_name": "Wireless switch with 1 button",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0042",
+          "friendly_name": "Wireless switch with 2 buttons",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0043",
+          "friendly_name": "Wireless switch with 3 buttons",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0044",
+          "friendly_name": "Wireless switch with 4 buttons",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0046",
+          "friendly_name": "Wireless switch with 6 buttons",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0049",
+          "friendly_name": "Water valve",
+          "bind": []
+        },
+        {
+          "model": "TS0052",
+          "friendly_name": "Zigbee dimmer module 1 channel",
+          "bind": []
+        },
+        {
+          "model": "TS0105",
+          "friendly_name": "3 gang switch",
+          "bind": []
+        },
+        {
+          "model": "TS0111",
+          "friendly_name": "Socket",
+          "bind": []
+        },
+        {
+          "model": "TS0115",
+          "friendly_name": "Multiprise with 4 AC outlets and 2 USB super charging ports (10A or 16A)",
+          "bind": []
+        },
+        {
+          "model": "TS0201",
+          "friendly_name": "Temperature & humidity sensor with display",
+          "bind": [
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "TS0202",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0203",
+          "friendly_name": "Door/window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0204",
+          "friendly_name": "Gas sensor",
+          "bind": []
+        },
+        {
+          "model": "TS0205",
+          "friendly_name": "Smoke sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0207",
+          "friendly_name": "Water leak detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS020C",
+          "friendly_name": "PIR sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0210",
+          "friendly_name": "Vibration sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0216",
+          "friendly_name": "Sound and flash siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0218",
+          "friendly_name": "Button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS0224",
+          "friendly_name": "Smart light & sound siren",
+          "bind": []
+        },
+        {
+          "model": "TS0301",
+          "friendly_name": "Cover",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS030F",
+          "friendly_name": "Smart blind controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "TS0502A",
+          "friendly_name": "Light controller",
+          "bind": []
+        },
+        {
+          "model": "TS0502B",
+          "friendly_name": "Light controller",
+          "bind": []
+        },
+        {
+          "model": "TS0503A",
+          "friendly_name": "Led strip controller HSB",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "TS0503B",
+          "friendly_name": "Zigbee RGB light",
+          "bind": []
+        },
+        {
+          "model": "TS0504A",
+          "friendly_name": "RGBW LED controller",
+          "bind": []
+        },
+        {
+          "model": "TS0504B",
+          "friendly_name": "Zigbee RGBW light",
+          "bind": []
+        },
+        {
+          "model": "TS0505",
+          "friendly_name": " GU10 zbeacon Zigbee LED bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TS0505A",
+          "friendly_name": "RGB+CCT light controller",
+          "bind": []
+        },
+        {
+          "model": "TS0505B",
+          "friendly_name": "Zigbee RGB+CCT light",
+          "bind": []
+        },
+        {
+          "model": "TS0901",
+          "friendly_name": "Battery powered light",
+          "bind": [
+            1,
+            6,
+            8
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TS130F",
+          "friendly_name": "Curtain/blind switch",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "TY0201",
+          "friendly_name": "Temperature & humidity sensor with display",
+          "bind": [
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "ZG-102Z",
+          "friendly_name": "Door/window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG-222Z",
+          "friendly_name": "Water leak detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG-227Z-z",
+          "friendly_name": "Temperature & humidity sensor (pvxx/ZigbeeTLc)",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

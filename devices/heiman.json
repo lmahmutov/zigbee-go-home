@@ -1,0 +1,1222 @@
+{
+  "manufacturers": [
+    {
+      "name": "HEIMAN",
+      "models": [
+        {
+          "model": "319fa36e7384414a9ea62cba8f6e7626",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "358e4e3e03c644709905034dae81433e",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "98293058552c49f38ad0748541ee96ba",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "b5db59bfd81e4f1f95dc57fdbba17931",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "c3442b4ac59b4ba1a83119d938f283ab",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ColorLight",
+          "friendly_name": "Bulb E26/E27, RGB+WW 2700K, globe, opal, 400lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "COSensor-EF-3.0",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "COSensor-EM",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "COSensor-N",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CurtainMo-EF",
+          "friendly_name": "Gear window shade motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "CurtainMo-EF-3.0",
+          "friendly_name": "Gear window shade motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "D1-EF2-3.0",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "d90d7c61c44d468a8e906ca0841e0a0c",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "DOOR_TPV12",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "DOOR_TPV13",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "DoorSensor-EF-3.0",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DoorSensor-EM",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DoorSensor-N",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DoorSensor-N-3.0",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E_Socket",
+          "friendly_name": "Smart in wall plug",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "E8331510SSZB_C1",
+          "friendly_name": "Smart in wall plug",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "FB56-SMF02HM1.4",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "GAS_V15",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-EF-3.0",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-EFR-3.0",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-EM",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-EN",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-N",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "GASSensor-N-3.0",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "HS15A-M",
+          "friendly_name": "Smoke detector relabeled for zipato",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "HS1SA-EF-3.0",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "HS2FD-EF1-3.0",
+          "friendly_name": "Fall Detection Sensor",
+          "bind": [
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS2SA-EF-3.0",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS3AQ-EFA-3.0",
+          "friendly_name": "Smart air quality monitor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS3HT-EFA-3.0",
+          "friendly_name": "Temperature & humidity sensor with display",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS8DS-EF2-3.0",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS8MIS-86-EF1-3.0",
+          "friendly_name": "PIR sensor with night light",
+          "bind": [
+            6,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS8MIS-EF1-3.0",
+          "friendly_name": "PIR sensor",
+          "bind": [
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HS8OS-EF1-3.0",
+          "friendly_name": "Human presence sensor",
+          "bind": [
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HT-EF-3.0",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HT-EM",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HT-N",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HY0022",
+          "friendly_name": "Smart combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "PIR_TPV12",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PIR_TPV13",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PIR_TPV16",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PIRILLSensor-EF-3.0",
+          "friendly_name": "Smart occupancy sensor",
+          "bind": [
+            1,
+            1024
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PIRSensor-EF-3.0",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PIRSensor-EM",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PIRSensor-N",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PIRSensor-N-3.0",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "RelayModule-EF-3.0",
+          "friendly_name": "Smart relay module - 2 gang with neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RH3070",
+          "friendly_name": "Smart combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "RouteLight-EF-3.0",
+          "friendly_name": "Smart repeater & night light",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMOK_HV14",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMOK_V15",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMOK_V16",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMOK_YDLV10",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMOK_YDLV10N",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SmokeSensor-EF-3.0",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SmokeSensor-EM",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SmokeSensor-N",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SmokeSensor-N-3.0",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TempDimmerSw-EM-3.0",
+          "friendly_name": "Remote dimmer and temperature control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TemperLight",
+          "friendly_name": "LED 9W CCT E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TH-EM",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TH-T_V14",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TY0202",
+          "friendly_name": "Smart motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "TY0207",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WarningDevice",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WarningDevice-EF-3.0",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WarningDevice-EFA1-3.0",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WATER_TPV13",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WaterSensor-EF-3.0",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WaterSensor-EM",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WaterSensor-N",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WaterSensor-N-3.0",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WaterSensor2-EF-3.0",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

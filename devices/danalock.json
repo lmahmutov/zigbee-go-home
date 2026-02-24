@@ -1,0 +1,45 @@
+{
+  "manufacturers": [
+    {
+      "name": "Danalock",
+      "models": [
+        {
+          "model": "V3-BTZB",
+          "friendly_name": "BT/ZB smartlock",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "V3-BTZBE",
+          "friendly_name": "BT/ZB smartlock",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

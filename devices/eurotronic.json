@@ -1,0 +1,45 @@
+{
+  "manufacturers": [
+    {
+      "name": "Eurotronic",
+      "models": [
+        {
+          "model": "CoZB_dha",
+          "friendly_name": "Comet Zero Zigbee Zigbee wireless heater thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPZB0001",
+          "friendly_name": "Spirit Zigbee wireless heater thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "manufacturers": [
+    {
+      "name": "Bitron Video",
+      "models": [
+        {
+          "model": "902010/14",
+          "friendly_name": "Curtain motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/16",
+          "friendly_name": "Wall-mount relay with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "902010/18",
+          "friendly_name": "Wall-mount relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "902010/21A",
+          "friendly_name": "Compact magnetic contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/21B",
+          "friendly_name": "Magnetic contact sensor with additional input for wired sensors",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/21C",
+          "friendly_name": "Ultra-flat magnetic contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/22",
+          "friendly_name": "Professional motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/22A",
+          "friendly_name": "Design motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/22B",
+          "friendly_name": "Outdoor motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/23",
+          "friendly_name": "4 button Zigbee remote control",
+          "bind": []
+        },
+        {
+          "model": "902010/24",
+          "friendly_name": "Optical smoke detector (hardware version v1)",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/24A",
+          "friendly_name": "Optical smoke detector (hardware version v2)",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/25",
+          "friendly_name": "Wireless socket with metering",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "902010/26",
+          "friendly_name": "Wireless socket with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "902010/28",
+          "friendly_name": "Wireless socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "902010/29",
+          "friendly_name": "Outdoor siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "902010/29A",
+          "friendly_name": "Outdoor siren",
+          "bind": []
+        },
+        {
+          "model": "902010/32",
+          "friendly_name": "Wireless wall thermostat with relay",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "902010/33",
+          "friendly_name": "Vibration sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "902010/34",
+          "friendly_name": "Wall switch with 4 buttons",
+          "bind": []
+        },
+        {
+          "model": "902010/37",
+          "friendly_name": "Water detector with siren",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/14",
+          "friendly_name": "Curtain motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/16",
+          "friendly_name": "Wall-mount relay with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AV2010/18",
+          "friendly_name": "Wall-mount relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "AV2010/21A",
+          "friendly_name": "Compact magnetic contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/21B",
+          "friendly_name": "Magnetic contact sensor with additional input for wired sensors",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/21C",
+          "friendly_name": "Ultra-flat magnetic contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/22",
+          "friendly_name": "Professional motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/22A",
+          "friendly_name": "Design motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/22B",
+          "friendly_name": "Outdoor motion detector",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/23",
+          "friendly_name": "4 button Zigbee remote control",
+          "bind": []
+        },
+        {
+          "model": "AV2010/24",
+          "friendly_name": "Optical smoke detector (hardware version v1)",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/24A",
+          "friendly_name": "Optical smoke detector (hardware version v2)",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/25",
+          "friendly_name": "Wireless socket with metering",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "AV2010/26",
+          "friendly_name": "Wireless socket with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AV2010/28",
+          "friendly_name": "Wireless socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "AV2010/29",
+          "friendly_name": "Outdoor siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "AV2010/29A",
+          "friendly_name": "Outdoor siren",
+          "bind": []
+        },
+        {
+          "model": "AV2010/32",
+          "friendly_name": "Wireless wall thermostat with relay",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "AV2010/33",
+          "friendly_name": "Vibration sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "AV2010/34",
+          "friendly_name": "Wall switch with 4 buttons",
+          "bind": []
+        },
+        {
+          "model": "AV2010/37",
+          "friendly_name": "Water detector with siren",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "IR_00.00.03.12TC",
+          "friendly_name": "Professional motion detector",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

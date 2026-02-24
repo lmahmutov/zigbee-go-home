@@ -1,0 +1,386 @@
+{
+  "manufacturers": [
+    {
+      "name": "Sinope Technologies",
+      "models": [
+        {
+          "model": "DM2500ZB",
+          "friendly_name": "Zigbee smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "DM2550ZB",
+          "friendly_name": "Zigbee Adaptive phase smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HP6000ZB-GE",
+          "friendly_name": "Mini-split air conditioner interface",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "HP6000ZB-HS",
+          "friendly_name": "Mini-split air conditioner interface",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "HP6000ZB-MA",
+          "friendly_name": "Mini-split air conditioner interface",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "LM4110-ZB",
+          "friendly_name": "Tank level monitor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RM3250ZB",
+          "friendly_name": "50A Smart electrical load controller",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RM3500ZB",
+          "friendly_name": "Calypso smart water heater controller",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SP2600ZB",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP2610ZB",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SW2500ZB",
+          "friendly_name": "Zigbee smart light switch",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TH1123ZB",
+          "friendly_name": "Zigbee line volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1123ZB-G2",
+          "friendly_name": "Zigbee line volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1124ZB",
+          "friendly_name": "Zigbee line volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1124ZB-G2",
+          "friendly_name": "Zigbee line volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1300ZB",
+          "friendly_name": "Zigbee smart floor heating thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1320ZB-04",
+          "friendly_name": "Zigbee smart floor heating thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1400ZB",
+          "friendly_name": "Zigbee low volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TH1500ZB",
+          "friendly_name": "Zigbee dual pole line volt thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "VA4200WZ",
+          "friendly_name": "Zigbee smart water valve (3/4",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "VA4201WZ",
+          "friendly_name": "Zigbee smart water valve (1",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "VA4220ZB",
+          "friendly_name": "Sedna smart water valve",
+          "bind": [
+            1,
+            258,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WL4200",
+          "friendly_name": "Zigbee smart water leak detector",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WL4200S",
+          "friendly_name": "Zigbee smart water leak detector with external sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WL4210",
+          "friendly_name": "Zigbee smart water leak detector with external sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

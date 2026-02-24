@@ -1,0 +1,880 @@
+{
+  "manufacturers": [
+    {
+      "name": "SmartThings",
+      "models": [
+        {
+          "model": "3200-Sgb",
+          "friendly_name": "Zigbee Outlet UK with power meter",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "3300-S",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3305",
+          "friendly_name": "Motion sensor (2014 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3305-S",
+          "friendly_name": "Motion sensor (2014 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3310-S",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3315-G",
+          "friendly_name": "Water sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3315-S",
+          "friendly_name": "Water sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3315-Seu",
+          "friendly_name": "Water leak sensor (2015 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3321-S",
+          "friendly_name": "Multi Sensor (2015 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3325-S",
+          "friendly_name": "Motion sensor (2015 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "button",
+          "friendly_name": "Button",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "F-ADT-WTR-1",
+          "friendly_name": "ADT water leak detector",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "moisturev4",
+          "friendly_name": "Water leak sensor (2016 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "motion",
+          "friendly_name": "Motion sensor (2018 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "motionv4",
+          "friendly_name": "Motion sensor (2016 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "motionv5",
+          "friendly_name": "Motion sensor (2017 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "multi",
+          "friendly_name": "Multipurpose sensor (2018 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "multiv4",
+          "friendly_name": "Multipurpose sensor (2016 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "outlet",
+          "friendly_name": "Outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "outletv4",
+          "friendly_name": "Zigbee smart plug with power meter",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "PGC313",
+          "friendly_name": "Multipurpose sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PGC314",
+          "friendly_name": "Motion sensor (2013 model)",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PGC410",
+          "friendly_name": "Presence sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PGC410EU",
+          "friendly_name": "Presence sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SZ-SRN12N",
+          "friendly_name": "Smart siren",
+          "bind": []
+        },
+        {
+          "model": "tagv4",
+          "friendly_name": "Arrival sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "water",
+          "friendly_name": "Water leak sensor (2018 model)",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Z-SRN12N",
+          "friendly_name": "Smart siren",
+          "bind": []
+        },
+        {
+          "model": "ZB-ONOFFPlug-D0005",
+          "friendly_name": "Outlet with power meter",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "zbt-dimlight-gls0006",
+          "friendly_name": "Smart bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZBT-DIMLight-GLS0044",
+          "friendly_name": "Smart bulb",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CentraLite",
+      "models": [
+        {
+          "model": "3156105",
+          "friendly_name": "HA thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3200-de",
+          "friendly_name": "Smart outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "3200-fr",
+          "friendly_name": "Smart outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "3200-gb",
+          "friendly_name": "Smart outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "3310-G",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3315-Geu",
+          "friendly_name": "Water sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3323-G",
+          "friendly_name": "Micro-door sensor",
+          "bind": [
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "3328-G",
+          "friendly_name": "3-Series micro motion sensor",
+          "bind": [
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "3400",
+          "friendly_name": "3-Series security keypad",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3400-D",
+          "friendly_name": "3-Series security keypad",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3420",
+          "friendly_name": "3-Series night light repeater",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4200-C",
+          "friendly_name": "Smart outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4256050-RZHAC",
+          "friendly_name": "3-Series smart outlet appliance module",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "4256050-ZHAC",
+          "friendly_name": "3-Series smart dimming outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "4256251-RZHAC",
+          "friendly_name": "White Swiss power outlet switch with power meter",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "4257050-RZHAC",
+          "friendly_name": "3-Series smart outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "4257050-ZHAC",
+          "friendly_name": "3-Series smart dimming outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

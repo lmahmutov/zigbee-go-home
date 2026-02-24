@@ -1,0 +1,8473 @@
+{
+  "manufacturers": [
+    {
+      "name": "Philips",
+      "models": [
+        {
+          "model": "046677577490",
+          "friendly_name": "Hue Lightguide E26/E27 Triangle 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "046677590130",
+          "friendly_name": "Hue Play wall washer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "046677590161",
+          "friendly_name": "Hue Play wall washer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1740193P0",
+          "friendly_name": "Hue White Lucca wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1740293P0",
+          "friendly_name": "Hue Lucca Pedestal",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1740393P0",
+          "friendly_name": "Hue White Lucca",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1740447P0",
+          "friendly_name": "Hue Tuar outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1740547P0",
+          "friendly_name": "Hue white A60 bulb E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1741430P7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1741530P7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1741730V7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1741830P7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1741930V7",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1742030P7",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1742330P7",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1742730P7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1742830P7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1742930P7",
+          "friendly_name": "Hue outdoor Impress wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743030P7",
+          "friendly_name": "Hue outdoor Impress wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743130P7",
+          "friendly_name": "Hue Impress outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743230P7",
+          "friendly_name": "Hue outdoor Impress lantern",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743430P7",
+          "friendly_name": "Hue Impress outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743530P7",
+          "friendly_name": "Hue Discover white and color ambiance flood light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743530V7",
+          "friendly_name": "Hue Discover white and color ambiance flood light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743630P7",
+          "friendly_name": "Hue Welcome white flood light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1743630V7",
+          "friendly_name": "Hue Welcome white flood light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1743730P7",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743830P7",
+          "friendly_name": "Hue Econic outdoor wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743830V7",
+          "friendly_name": "Hue Econic outdoor wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743930P7",
+          "friendly_name": "Hue Outdoor Econic wall lantern",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1743930V7",
+          "friendly_name": "Hue Outdoor Econic wall lantern",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1744030P7",
+          "friendly_name": "Hue Outdoor Econic wall lantern",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1744030V7",
+          "friendly_name": "Hue Outdoor Econic wall lantern",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1744130P7",
+          "friendly_name": "Hue Econic outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1744230P7",
+          "friendly_name": "Hue Econic outdoor post light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1744430P7",
+          "friendly_name": "Hue Fuzo outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1744530P7",
+          "friendly_name": "Hue Fuzo outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1744630P7",
+          "friendly_name": "Hue Fuzo outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1744730P7",
+          "friendly_name": "Hue Fuzo outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1744830P7",
+          "friendly_name": "Hue White Fuzo outdoor floor light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1745130P7",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745430A7",
+          "friendly_name": "Hue Impress outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745430P7",
+          "friendly_name": "Hue Impress outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745530P7",
+          "friendly_name": "Hue Nyro",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745630P7",
+          "friendly_name": "Hue Nyro",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745730V7",
+          "friendly_name": "Hue Econic outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745930P7",
+          "friendly_name": "Hue outdoor Impress wall lamp (low voltage)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1745930V7",
+          "friendly_name": "Hue outdoor Impress wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746130P7",
+          "friendly_name": "Hue Attract",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746230P7",
+          "friendly_name": "Hue Lily XL outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746230V7",
+          "friendly_name": "Hue Lily XL outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746330P7",
+          "friendly_name": "Hue Appear outdoor wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746330V7",
+          "friendly_name": "Hue Appear outdoor wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746347P7",
+          "friendly_name": "Hue Appear outdoor wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746430P7",
+          "friendly_name": "Hue outdoor Resonate wall lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746447P7",
+          "friendly_name": "Hue outdoor Resonate wall lamp (silver)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746530P7",
+          "friendly_name": "Hue White and color ambiance Daylo outdoor wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746547P7",
+          "friendly_name": "Hue White and color ambiance Daylo outdoor wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746630P7",
+          "friendly_name": "Hue White and Colour Ambiance Amarant linear outdoor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746630V7",
+          "friendly_name": "Amarant linear outdoor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1746730V7",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3216131P6",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3216231P6",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3216331P6",
+          "friendly_name": "Hue white ambiance Aurelle rectangle panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3216431P6",
+          "friendly_name": "Hue Aurelle",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261030P6",
+          "friendly_name": "Hue Being black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261031P6",
+          "friendly_name": "Hue Being white (EU)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261048P6",
+          "friendly_name": "Hue Being aluminium",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261330P6",
+          "friendly_name": "Hue white ambiance Still",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261331P6",
+          "friendly_name": "Hue white ambiance Still (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3261348P6",
+          "friendly_name": "Hue white ambiance Still",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3402831P7",
+          "friendly_name": "Hue white ambiance bathroom mirror light Adore",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3402931P7",
+          "friendly_name": "Philips Hue Adore Bathroom Mirror Light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3417511P9",
+          "friendly_name": "Hue white ambiance bathroom recessed downlight Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3417611P6",
+          "friendly_name": "Hue white ambiance bathroom recessed downlight Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3417711P6",
+          "friendly_name": "Hue white ambiance Adore wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3417831P6",
+          "friendly_name": "Hue white ambiance Adore spotlight with Bluetooth (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3417931P6",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418031P6",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418131P6",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418231P6",
+          "friendly_name": "Philips Hue Adore Bathroom Mirror Light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418331P6",
+          "friendly_name": "Hue white ambiance Adore bathroom mirror light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418411P6",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418631P6",
+          "friendly_name": "Hue Adore bathroom mirror",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3418931P6",
+          "friendly_name": "Hue white ambiance Struana bathroom ceiling with bluetooth 2400lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4023330P6",
+          "friendly_name": "Hue white ambiance suspension Amaze",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4023331P6",
+          "friendly_name": "Hue white ambiance Amaze",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4033930P6",
+          "friendly_name": "Hue black ambiance suspension Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4033931P6",
+          "friendly_name": "Hue white ambiance suspension Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4034030P6",
+          "friendly_name": "Hue Fair with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4034031P6",
+          "friendly_name": "Hue Fair with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4076130P6",
+          "friendly_name": "Hue white ambiance suspension Cher with bluetooth 3000lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4076131P6",
+          "friendly_name": "Hue white ambiance suspension Cher with bluetooth 3000lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080130P6",
+          "friendly_name": "Hue white ambiance E27 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080148P9",
+          "friendly_name": "Hue Signe table light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080148U9",
+          "friendly_name": "Hue White and color ambiance Signe table light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080248P7",
+          "friendly_name": "Hue Signe floor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080248P9",
+          "friendly_name": "Hue Signe floor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4080248U9",
+          "friendly_name": "Hue White and color ambiance Signe floor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090130P9",
+          "friendly_name": "Hue Sana",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090131P9",
+          "friendly_name": "Hue Sana wall lamp with Bluetooth white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090230P9",
+          "friendly_name": "Hue Liane (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090231P9",
+          "friendly_name": "Hue Liane",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090330P9_01",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090330P9_02",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090331P9_01",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090331P9_02",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090431P9",
+          "friendly_name": "Hue Flourish white and color ambiance table light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090531P9",
+          "friendly_name": "Hue Flourish white and color ambiance ceiling light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090631P9",
+          "friendly_name": "Hue Flourish white and color ambiance pendant light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4090631U9",
+          "friendly_name": "Hue Flourish white and color ambiance pendant light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4096730P6",
+          "friendly_name": "Hue Cher ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4096730U9",
+          "friendly_name": "Hue White ambiance Cher ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4100448U9",
+          "friendly_name": "Hue Being",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4300631P6",
+          "friendly_name": "Hue white ambiance E27 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "440400982841",
+          "friendly_name": "Hue White and color ambiance Play Lightbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "440400982842",
+          "friendly_name": "Hue White and color ambiance Play Lightbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "440400982843",
+          "friendly_name": "Hue White and color ambiance Play Lightbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "442296118491",
+          "friendly_name": "Hue Secure Camera Floodlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4503748C6",
+          "friendly_name": "Hue white ambiance Muscari ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5041131P9",
+          "friendly_name": "Hue White ambiance Milliskin",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5041148P9",
+          "friendly_name": "Hue White ambiance Milliskin",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5042131P9",
+          "friendly_name": "Hue White ambiance Milliskin (square)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5042148P9",
+          "friendly_name": "Hue White ambiance Milliskin (square)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5045131P7",
+          "friendly_name": "Hue Centura",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5045148P7",
+          "friendly_name": "Hue Centura",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047130P6",
+          "friendly_name": "Hue White ambiance Buckram single spotlight with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047130P9",
+          "friendly_name": "Hue White ambiance Buckram single spotlight with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047131P6",
+          "friendly_name": "Hue White ambiance Buckram single spotlight with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047131P8",
+          "friendly_name": "Hue White ambiance Buckram single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047131P9",
+          "friendly_name": "Hue White ambiance Buckram single spotlight with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047230P6",
+          "friendly_name": "Hue White ambiance Buckram double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047231P6",
+          "friendly_name": "Hue White ambiance Buckram double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047330P6",
+          "friendly_name": "Hue white and color ambience Argenta spot black (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047331P6",
+          "friendly_name": "Hue White ambiance Buckram triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5047430P6",
+          "friendly_name": "Hue White ambiance Buckram quadruple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5055131P7",
+          "friendly_name": "Hue Centura White (square)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5055148P7",
+          "friendly_name": "Hue Centura Aluminium (square)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060730P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060730P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060730P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060730P7_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060730P7_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060731P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060731P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060731P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060731P7_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060731P7_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060830P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060830P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060830P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060830P7_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060831P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060831P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060831P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060831P7_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060930P7_01",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060930P7_02",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060930P7_03",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060930P7_04",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060931P7_01",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060931P7_02",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060931P7_03",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5060931P7_04",
+          "friendly_name": "Hue White & Color Ambiance Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061030P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061030P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061030P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061031P7_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061031P7_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5061031P7_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062131P7",
+          "friendly_name": "Hue white and color ambience Argenta spot white (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062148P7",
+          "friendly_name": "Hue white and color ambience Argenta spot aluminium (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062231P7",
+          "friendly_name": "Hue white and color ambience Argenta spot white (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062248P7",
+          "friendly_name": "Hue white and color ambience Argenta spot aluminium (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062331P7",
+          "friendly_name": "Hue white and color ambience Argenta spot white (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062348P7",
+          "friendly_name": "Hue white and color ambience Argenta spot aluminium (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062431P7",
+          "friendly_name": "Hue white and color ambience Argenta spot white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5062448P7",
+          "friendly_name": "Hue white and color ambience Argenta spot aluminium (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063130P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (1 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063131P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato white (1 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063230P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063231P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato white (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063330P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063331P7",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato white (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063430P7",
+          "friendly_name": "Hue Bluetooth White & Color Ambiance spot Fugato black (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5063431P7",
+          "friendly_name": "Hue Bluetooth White & Color Ambiance spot Fugato white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309030P6",
+          "friendly_name": "Hue White ambiance Runner single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309030P9",
+          "friendly_name": "Hue White ambiance Runner single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309031P6",
+          "friendly_name": "Hue White ambiance Runner single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309031P9",
+          "friendly_name": "Hue White ambiance Runner single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309230P6",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309231P6",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309330P6",
+          "friendly_name": "Hue White ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5309331P6",
+          "friendly_name": "Hue White ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5633030P6",
+          "friendly_name": "Hue White ambiance Pillar spotlamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5633030P9",
+          "friendly_name": "Hue Pillar Single Spotlight (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5633031P9",
+          "friendly_name": "Hue Pillar Single Spotlight (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5633231P6",
+          "friendly_name": "Philips Hue white ambiance pillar double spot (2 spot) with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031J6",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031K6",
+          "friendly_name": "Hue Go portable light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031N6",
+          "friendly_name": "Hue Go portable light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031P7",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031PU",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "7602031U7",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "8719514288232",
+          "friendly_name": "Hue white E27 1100lm with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "915005821901",
+          "friendly_name": "Philips Hue Go White and Color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005822001",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005822501",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005914501",
+          "friendly_name": "Hue Being Pendant aluminum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005914601",
+          "friendly_name": "Hue Being Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005914701",
+          "friendly_name": "Hue Being Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005986901",
+          "friendly_name": "Hue White and color ambiance Gradient Signe table lamp (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987001",
+          "friendly_name": "Hue White and color ambiance Gradient Signe table lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987101",
+          "friendly_name": "Hue Gradient Signe floor lamp (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987201",
+          "friendly_name": "Hue White and color ambiance Signe floor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987301",
+          "friendly_name": "Hue Gradient Signe table lamp (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987401",
+          "friendly_name": "Hue White and color ambiance Gradient Signe table lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987501",
+          "friendly_name": "Hue Gradient Signe floor lamp (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987601",
+          "friendly_name": "Hue Gradient Signe floor lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987701",
+          "friendly_name": "Hue Gradient Signe floor lamp (wood)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987801",
+          "friendly_name": "Hue white and color ambiance gradient Signe floor lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005987901",
+          "friendly_name": "Hue Gradient light tube compact",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988001",
+          "friendly_name": "Hue Gradient light tube compact black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988101",
+          "friendly_name": "Hue Gradient light tube large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988201",
+          "friendly_name": "Hue Gradient light tube large black EU",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988401",
+          "friendly_name": "Hue Gradient light tube compact black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988501",
+          "friendly_name": "Play gradient light tube large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988502",
+          "friendly_name": "Hue Gradient light tube large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005988602",
+          "friendly_name": "Hue Play gradient light tube large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996401",
+          "friendly_name": "Hue white ambiance ceiling light Enrave S with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996501",
+          "friendly_name": "Hue white ambiance ceiling light Enrave S with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996601",
+          "friendly_name": "Hue white ambiance ceiling white Enrave M with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996701",
+          "friendly_name": "Hue white ambiance ceiling black Enrave M with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996801",
+          "friendly_name": "Hue white ambiance ceiling light Enrave L with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005996901",
+          "friendly_name": "Hue white ambiance ceiling light Enrave L with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997001",
+          "friendly_name": "Hue white ambiance ceiling light Enrave XL with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997101",
+          "friendly_name": "Hue white ambiance ceiling light Enrave XL with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997201",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse medium",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997301",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse medium",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997401",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997501",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997601",
+          "friendly_name": "Hue Devere M white ambiance white & dimmer",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997701",
+          "friendly_name": "Hue Devere L white ambiance white & dimmer",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997801",
+          "friendly_name": "Hue White & Color Ambiance Xamento M",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005997901",
+          "friendly_name": "Hue White & Color Ambiance Xamento L",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005998001",
+          "friendly_name": "Hue white ambiance pendant white Enrave",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005998101",
+          "friendly_name": "Hue white ambiance pendant black Enrave",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "915005998201",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002297503",
+          "friendly_name": "Hue White Ambiance E17 40W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002375901",
+          "friendly_name": "Hue Bloom with Bluetooth (White) - EU/UK",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376001",
+          "friendly_name": "Hue Bloom with Bluetooth (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376101",
+          "friendly_name": "Hue Iris (generation 2, white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376201",
+          "friendly_name": "Hue Iris (generation 2, black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376301",
+          "friendly_name": "Hue Iris rose limited edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376401",
+          "friendly_name": "Hue Iris gold limited edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376402",
+          "friendly_name": "Hue Iris gold limited edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376501",
+          "friendly_name": "Hue Bloom Gen4 with Bluetooth (White) - US",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376701",
+          "friendly_name": "Hue Iris silver limited edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376703",
+          "friendly_name": "Hue Iris silver special edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376801",
+          "friendly_name": "Hue Iris kobber limited edition (generation 4)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376803",
+          "friendly_name": "Hue Iris copper special edition (generation 4)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002376901",
+          "friendly_name": "Hue Iris white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002401001",
+          "friendly_name": "Hue Iris gold special edition (generation 4)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002401101",
+          "friendly_name": "Hue Iris silver limited edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002401201",
+          "friendly_name": "Hue Iris copper special edition (generation 4) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002966401",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002966402",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002966501",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002966502",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929002980901",
+          "friendly_name": "Hue white ambiance G40 E26 filament globe with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "9290030171",
+          "friendly_name": "Hue wall switch module",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "929003045001_01",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045001_02",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045001_03",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045101_01",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045101_02",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045101_03",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045201_01",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045201_02",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045201_03",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045301_01",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045301_02",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045301_03",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045401",
+          "friendly_name": "Hue Centura recessed spotlight white and color ambiance GU10 (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045501_01",
+          "friendly_name": "Hue Centura recessed spotlight white and color ambiance GU10 (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045501_02",
+          "friendly_name": "Hue Centura recessed spotlight white and color ambiance GU10 (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045501_03",
+          "friendly_name": "Hue Centura recessed spotlight white and color ambiance GU10 (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045601_01",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045601_02",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045701_01",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045701_02",
+          "friendly_name": "Hue White ambiance Runner double spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045801",
+          "friendly_name": "Hue White ambiance Runner spot white (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003045901",
+          "friendly_name": "Hue White ambiance Runner spot white (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046001",
+          "friendly_name": "Hue White ambiance Runner spot white (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046101",
+          "friendly_name": "Hue White ambiance Runner single spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046201_01",
+          "friendly_name": "Hue White Ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046201_02",
+          "friendly_name": "Hue White Ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046201_03",
+          "friendly_name": "Hue White Ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046301_01",
+          "friendly_name": "Hue White ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046301_02",
+          "friendly_name": "Hue White ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046301_03",
+          "friendly_name": "Hue White ambiance Runner triple spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046501",
+          "friendly_name": "Hue White ambiance Pillar spotlamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046601_01",
+          "friendly_name": "Philips Hue white ambiance pillar double spot (2 spot) with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046601_02",
+          "friendly_name": "Philips Hue white ambiance pillar double spot (2 spot) with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046701",
+          "friendly_name": "Hue white ambiance Pillar spotlight with Bluetooth (white) + dimmer switch",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046801",
+          "friendly_name": "Philips Hue white ambiance pillar spot (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003046901",
+          "friendly_name": "Hue white ambiance Pillar spotlight with Bluetooth (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047001",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047101",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047301",
+          "friendly_name": "Hue White ambiance Milliskin",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047401",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047501",
+          "friendly_name": "Centura recessed spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047601",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047701",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047801_01",
+          "friendly_name": "Hue white ambiance Buckram double spotlight with Bluetooth (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047801_02",
+          "friendly_name": "Hue white ambiance Buckram double spotlight with Bluetooth (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047901_01",
+          "friendly_name": "Hue white ambiance Buckram double spotlight with Bluetooth (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003047901_02",
+          "friendly_name": "Hue white ambiance Buckram double spotlight with Bluetooth (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048101_01",
+          "friendly_name": "Hue white ambiance Buckram triple spotlight with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048101_02",
+          "friendly_name": "Hue white ambiance Buckram triple spotlight with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048101_03",
+          "friendly_name": "Hue white ambiance Buckram triple spotlight with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048201_01",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048201_02",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048201_03",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048201_04",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048301_01",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048301_02",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048301_03",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003048301_04",
+          "friendly_name": "Hue white ambiance Buckram quadruple spotlight with Bluetooth (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003052501_01",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003052501_02",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003052601",
+          "friendly_name": "Hue Flourish white and color ambiance table light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003052901",
+          "friendly_name": "Hue Sana wall light (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053001",
+          "friendly_name": "Hue Sana wall light (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053101",
+          "friendly_name": "Hue Liane (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053201",
+          "friendly_name": "Hue Liane (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053301_01",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053301_02",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053401",
+          "friendly_name": "Hue Flourish white and color ambiance table light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053501",
+          "friendly_name": "Hue Flourish white and color ambiance ceiling light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053601",
+          "friendly_name": "Hue Flourish white and color ambiance ceiling light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003053901",
+          "friendly_name": "Hue Being aluminium",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054001",
+          "friendly_name": "Hue Wellness table lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054101",
+          "friendly_name": "Hue Wellner white ambiance E27 806lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054201",
+          "friendly_name": "Hue White Ambiance Cher Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054301",
+          "friendly_name": "Hue White Ambiance Cher Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054401",
+          "friendly_name": "Hue white ambiance suspension Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054501",
+          "friendly_name": "Hue white ambiance Fair ceiling with Bluetooth (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054601",
+          "friendly_name": "Hue white ambiance Fair ceiling with Bluetooth white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054701",
+          "friendly_name": "Hue white ambiance Fair ceiling with Bluetooth (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054801",
+          "friendly_name": "Hue white ambiance suspension Amaze with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003054901",
+          "friendly_name": "Hue white ambiance suspension Amaze",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055001",
+          "friendly_name": "Hue Being white (EU)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055101",
+          "friendly_name": "Hue Being white (EU)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055201",
+          "friendly_name": "Hue Being",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055301",
+          "friendly_name": "Hue white ambiance Still (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055401",
+          "friendly_name": "Hue white ambiance Still (aluminium)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055501",
+          "friendly_name": "Hue white ambiance Still (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055601",
+          "friendly_name": "Hue Cher ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055701",
+          "friendly_name": "Hue Devote Ceiling Hanging Light White Ambiance",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055801",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055901",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055901_01",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055901_02",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003055901_03",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056001",
+          "friendly_name": "Hue white ambiance Adore bathroom mirror light with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056101",
+          "friendly_name": "Hue white ambiance Adore spotlight with Bluetooth (1 spot)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056201",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056201_01",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056201_02",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056301",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056301_01",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056301_02",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056301_03",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056401",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056401_01",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056401_02",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056401_03",
+          "friendly_name": "Hue white ambiance Adore GU10 with Bluetooth (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056701",
+          "friendly_name": "Hue white ambiance Adore ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056801",
+          "friendly_name": "Hue Adore white ambiance bathroom mirror",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003056901",
+          "friendly_name": "Hue Struana 27W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003074701",
+          "friendly_name": "Hue Xamento White and Color Ambiance GU10 (chrome)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003074801_01",
+          "friendly_name": "Hue Xamento White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003074801_02",
+          "friendly_name": "Hue Xamento White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003074801_03",
+          "friendly_name": "Hue Xamento White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003089301",
+          "friendly_name": "Hue White and Color Ambiance Lucca wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003098601",
+          "friendly_name": "Hue Calla outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003098701",
+          "friendly_name": "Hue outdoor Resonate wall lamp (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003098901",
+          "friendly_name": "Hue White Inara outdoor light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929003099001",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099002",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099101",
+          "friendly_name": "Hue white ambiance Aurelle rectangle panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099102",
+          "friendly_name": "Hue white ambiance Aurelle square panel light 120x30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099201",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099301",
+          "friendly_name": "Hue Aurelle W 39,5 cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003099302",
+          "friendly_name": "Hue Aurelle W 39,5 cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003103601",
+          "friendly_name": "Hue Signe floor lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003115701",
+          "friendly_name": "Hue Perifo cylinder spotlight (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003115801",
+          "friendly_name": "Hue Perifo cylinder spotlight (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003115901",
+          "friendly_name": "Hue Perifo cylinder pendant (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116001",
+          "friendly_name": "Hue Perifo cylinder pendant (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116101",
+          "friendly_name": "Hue Perifo linear light bar (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116201",
+          "friendly_name": "Hue Perifo linear light bar (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116301",
+          "friendly_name": "Hue Perifo gradient light tube small (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116401",
+          "friendly_name": "Hue Perifo gradient light tube small (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116501",
+          "friendly_name": "Hue Perifo gradient light tube large (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003116601",
+          "friendly_name": "Hue Perifo gradient light tube large (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117101",
+          "friendly_name": "Hue Perifo ceiling light, 3 pendant (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117201",
+          "friendly_name": "Hue Perifo ceiling light, 3 pendant (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117301",
+          "friendly_name": "Hue Perifo ceiling light, 4 spotlights (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117401",
+          "friendly_name": "Hue Perifo ceiling light, 4 spotlights (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117701",
+          "friendly_name": "Hue Perifo Wall Light, 3 spotlights (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003117801",
+          "friendly_name": "Hue Perifo Wall Light, 3 spotlights (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128401",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128501",
+          "friendly_name": "Hue Go portable table lamp black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128601",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128701",
+          "friendly_name": "Hue Go portable table lamp black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128801",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003128901",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003129001",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003479601",
+          "friendly_name": "Hue Gradient Signe floor lamp (wood)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003479701",
+          "friendly_name": "Hue Gradient Signe floor lamp (wood)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003479901",
+          "friendly_name": "Hue Gradient Signe floor lamp (oak)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003516101",
+          "friendly_name": "Hue Gradient Signe floor lamp (wood)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003521401",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003521501",
+          "friendly_name": "Hue Go portable table lamp black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003521601",
+          "friendly_name": "Hue Go portable table lamp white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003521701",
+          "friendly_name": "Hue Go portable table lamp black",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003526101",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003526202_01",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003526202_02",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003526202_03",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003526301",
+          "friendly_name": "Hue White & Color Ambiance Xamento M",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003531502",
+          "friendly_name": "Hue white ambiance ceiling white Enrave M with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003531602",
+          "friendly_name": "Hue white ambiance ceiling light Enrave L with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003531702",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse medium",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003536001",
+          "friendly_name": "Hue Iris copper special edition (generation 4)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003542401",
+          "friendly_name": "Hue Bluetooth white & color ambiance ceiling lamp Infuse large",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003553001",
+          "friendly_name": "Hue outdoor Resonate downward wall lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003555701",
+          "friendly_name": "Hue White and Color Ambiance Play Gradient Light Tube Compact",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003574301",
+          "friendly_name": "Hue white ambiance ceiling black Enrave M with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003574401",
+          "friendly_name": "Hue white ambiance ceiling light Enrave L with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597601",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597602",
+          "friendly_name": "Hue black ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597701",
+          "friendly_name": "Hue white ambiance Aurelle square panel light 120x30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597702",
+          "friendly_name": "Hue Aurelle Panel White Ambiance",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597801",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597802",
+          "friendly_name": "Hue black ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003597901",
+          "friendly_name": "Hue white ambiance Aurelle round panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003598001",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003598002",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003598101",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003598102",
+          "friendly_name": "Hue White and Color Ambiance Surimu rectangle panel 30x120 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003617901",
+          "friendly_name": "Hue Perifo cylinder spotlight (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003618201",
+          "friendly_name": "Hue Perifo linear light bar (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621001_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621001_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621001_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots) (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621101_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621101_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621101_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621101_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621101_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621301_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621301_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621301_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621301_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003621301_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots) (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736101_01",
+          "friendly_name": "Hue Datura - Round big",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736101_02",
+          "friendly_name": "Hue Datura - Round big",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736201_01",
+          "friendly_name": "Hue Datura - Round small Rev1",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736201_02",
+          "friendly_name": "Hue Datura - Round small Rev1",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736301_01",
+          "friendly_name": "Hue Datura - Square",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736301_02",
+          "friendly_name": "Hue Datura - Square",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736401_01",
+          "friendly_name": "Hue Datura - Rectangular",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736401_02",
+          "friendly_name": "Hue Datura - Rectangular",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736501_01",
+          "friendly_name": "Hue Datura LED ceiling panel large round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736501_02",
+          "friendly_name": "Hue Datura LED ceiling panel large round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736601_01",
+          "friendly_name": "Hue Datura - Round small Rev2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003736601_02",
+          "friendly_name": "Hue Datura - Round small Rev2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003777201",
+          "friendly_name": "Hue Being white (EU)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003777301",
+          "friendly_name": "Hue Being ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003785001_01",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003785001_02",
+          "friendly_name": "Hue Ensis (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003785101_01",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003785101_02",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003802101",
+          "friendly_name": "Hue Impress outdoor Pedestal",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003807801",
+          "friendly_name": "Hue White ambiance GU10 - smart spotlight ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003807901_01",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003807901_02",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003807901_03",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808001_01",
+          "friendly_name": "Hue white and color ambience Argenta spot white (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808001_02",
+          "friendly_name": "Hue white and color ambience Argenta spot white (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808201_01",
+          "friendly_name": "Hue white and color ambience Argenta spot white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808201_02",
+          "friendly_name": "Hue white and color ambience Argenta spot white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808201_03",
+          "friendly_name": "Hue white and color ambience Argenta spot white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808201_04",
+          "friendly_name": "Hue white and color ambience Argenta spot white (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808401_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808401_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808401_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808501_01",
+          "friendly_name": "Centris Hue 2-spot white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808501_02",
+          "friendly_name": "Centris Hue 2-spot white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808501_03",
+          "friendly_name": "Centris Hue 2-spot white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808601_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808601_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808601_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808601_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808701_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808701_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808701_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808701_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808801_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808801_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808801_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808801_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808801_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808901_01",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808901_02",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808901_03",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808901_04",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003808901_05",
+          "friendly_name": "Hue White & Color ambience Centris ceiling light (4 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809101_01",
+          "friendly_name": "Hue White & Color ambience Centris V2 ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809101_02",
+          "friendly_name": "Hue White & Color ambience Centris V2 ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809101_03",
+          "friendly_name": "Hue White & Color ambience Centris V2 ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809101_04",
+          "friendly_name": "Hue White & Color ambience Centris V2 ceiling light (3 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809201",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809301_01",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Silver)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809301_02",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Silver)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809301_03",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Silver)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809401",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809501_01",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809501_02",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809501_03",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809601",
+          "friendly_name": "Hue Centura White and Color (with Bluetooth)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809701_01",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809701_02",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003809701_03",
+          "friendly_name": "Hue White and Color Ambiance GU10 (Centura - White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810001_01",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810001_02",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (2 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810601",
+          "friendly_name": "Hue Bluetooth white & color ambiance spot Fugato black (1 spots)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810901_01",
+          "friendly_name": "Hue White Ambiance Milliskin GU10 spot",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810901_02",
+          "friendly_name": "Hue White Ambiance Milliskin GU10 spot",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003810901_03",
+          "friendly_name": "Hue White Ambiance Milliskin GU10 spot",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003811001",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003811101_01",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003811101_02",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003811101_03",
+          "friendly_name": "Hue White ambiance Milliskin (round)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003811201",
+          "friendly_name": "Hue White ambiance Pillar spotlamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003812801",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003812901_01",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003812901_02",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003812901_03",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003822701",
+          "friendly_name": "Hue Tento W 29.1 cm (White)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929003822801",
+          "friendly_name": "Hue Tento W 29.1 cm (White)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929003822901",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823001",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823101",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823201",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823301",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823401",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823501",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823601",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823701",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823801",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003823901",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003824001",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003845801",
+          "friendly_name": "Hue Tento W 29.1 cm (White)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929003845901",
+          "friendly_name": "Hue Tento W 29.1 cm (White)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929003846001",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846101",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846201",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846301",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846401",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846501",
+          "friendly_name": "Hue Tento WA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846601",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929003846701",
+          "friendly_name": "Hue Tento WCA 29,1cm (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004276602",
+          "friendly_name": "Hue White and Color Lightstrip Ultra Bright (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004276702",
+          "friendly_name": "Hue White and Color Lightstrip Ultra Bright (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004276802",
+          "friendly_name": "Hue White and Color Lightstrip Ultra Bright (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004276902",
+          "friendly_name": "Hue Neon Outdoor Lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004277002",
+          "friendly_name": "Hue Neon Outdoor Lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004277102",
+          "friendly_name": "Hue Neon Outdoor Lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004297401",
+          "friendly_name": "Hue Devote S Ceiling Light Panel White & Color Ambiance (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004297402",
+          "friendly_name": "Hue Devote S Ceiling Light Panel White & Color Ambiance (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004297501",
+          "friendly_name": "Hue Devote S Ceiling Light Panel White & Color Ambiance (White)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004608001",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004608003",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004608004",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004608101",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004608103",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004608201",
+          "friendly_name": "Hue OmniGlow lightstrip (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004610402",
+          "friendly_name": "Hue White and Color Lightstrip Flux (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004610502",
+          "friendly_name": "Hue White and Color Lightstrip Flux (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004610602",
+          "friendly_name": "Hue White and Color Lightstrip Flux (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004610702",
+          "friendly_name": "Hue White and Color Lightstrip Flux (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004610802",
+          "friendly_name": "Hue White and Color Lightstrip Flux (3m)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "929004611401",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004611501_01",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004611501_02",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "929004611501_03",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "COM001",
+          "friendly_name": "Hue Secure siren and chime",
+          "bind": []
+        },
+        {
+          "model": "HML004",
+          "friendly_name": "Phoenix light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HML005",
+          "friendly_name": "Hue phoenix table lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HML006",
+          "friendly_name": "Hue Phoenix downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA001",
+          "friendly_name": "Hue white and color ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA002",
+          "friendly_name": "Hue white and color ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA003",
+          "friendly_name": "Hue white and color ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA004",
+          "friendly_name": "Hue white and color ambiance E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA005",
+          "friendly_name": "Hue White and color ambiance A19 800 lumen",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA006",
+          "friendly_name": "Hue white and color ambiance E27 1100lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA007",
+          "friendly_name": "Hue White and Color Ambiance A19 1100 lumen",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA008",
+          "friendly_name": "Hue white and color ambiance E26/E27 1600lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA009",
+          "friendly_name": "Hue white and color ambiance E26/A19 1600lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA010",
+          "friendly_name": "Hue white ambiance and color 810lm A60 E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA011",
+          "friendly_name": "Hue White and Color Ambiance A60 - E27 smart bulb- 1100",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA012",
+          "friendly_name": "Hue white ambiance and color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA013",
+          "friendly_name": "Hue white ambiance and color 810lm A60 E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA014",
+          "friendly_name": "Hue white ambiance and color 810lm A60 E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA015",
+          "friendly_name": "Hue White and color ambiance A21 - E26 smart bulb - 1600",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA016",
+          "friendly_name": "Hue Essential White and Color Ambiance A60",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCA017",
+          "friendly_name": "Hue Essential White and Color Ambiance A19",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCB001",
+          "friendly_name": "Hue White and Color Ambiance BR30 with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCB002",
+          "friendly_name": "Hue White and Color Ambiance BR30 with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCB003",
+          "friendly_name": "Hue Essential White and Color Ambiance BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCC001",
+          "friendly_name": "Hue Flourish white and color ambiance ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD001",
+          "friendly_name": "Hue white and color ambiance 4",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD002",
+          "friendly_name": "Hue white and color ambiance 5/6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD003",
+          "friendly_name": "Akari downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD004",
+          "friendly_name": "Akari downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD005",
+          "friendly_name": "Hue white and color ambiance 4",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD006",
+          "friendly_name": "Hue white and color ambiance 5/6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD007",
+          "friendly_name": "Hue White and Color Ambiance slim downlight 6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD008",
+          "friendly_name": "Hue White and Color Ambiance slim downlight 90mm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD009",
+          "friendly_name": "Hue Slim recessed light 90mm (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD010",
+          "friendly_name": "Hue Slim recessed light 90mm (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCD011",
+          "friendly_name": "Hue Slim recessed light 90mm (Black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCE001",
+          "friendly_name": "Hue White and Color Ambiance E12 with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCE002",
+          "friendly_name": "Hue White and Color Ambiance E14 with bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCF001",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCF002",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCF003",
+          "friendly_name": "Hue Signe floor light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCF005",
+          "friendly_name": "Hue Calla outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG001",
+          "friendly_name": "Hue White and color ambiance GU10 spot LED with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG002",
+          "friendly_name": "Hue White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG003",
+          "friendly_name": "Hue White and Color Ambiance GU5.3",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG004",
+          "friendly_name": "Hue White and Color Ambiance GU5.3",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG005",
+          "friendly_name": "Hue White and Color Ambiance GU5.3",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG006",
+          "friendly_name": "Hue White and color ambiance GU10 spot LED with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG007",
+          "friendly_name": "Hue White and color ambiance GU10 spot LED with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCG008",
+          "friendly_name": "Hue Essential White and Color Ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL001",
+          "friendly_name": "Hue white and color ambiance LightStrip plus",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL002",
+          "friendly_name": "Hue white and color ambiance LightStrip outdoor 2m",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL003",
+          "friendly_name": "Hue Lily outdoor led strip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL006",
+          "friendly_name": "Hue white and color ambiance LightStrip plus",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL007",
+          "friendly_name": "Hue white and color ambiance LightStrip plus",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL008",
+          "friendly_name": "Philips Hue indoor 10 Ft smart LED solo lightstrip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL009",
+          "friendly_name": "Philips Hue solo lightstrip (5 meters / 16 feet)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCL010",
+          "friendly_name": "Philips Hue solo lightstrip (5 meters / 16 feet)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCO001",
+          "friendly_name": "Hue G95 smart lamp E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCO003",
+          "friendly_name": "Hue Lightguide E26 Globe G30 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCO005",
+          "friendly_name": "Hue White & Color Ambiance bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCO006",
+          "friendly_name": "Hue Lightguide E26 Globe Large G40 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCP001",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCP002",
+          "friendly_name": "Hue Ensis (white)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCP003",
+          "friendly_name": "Hue Flourish white and color ambiance pendant light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCS001",
+          "friendly_name": "Hue Lily outdoor spot light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCS002",
+          "friendly_name": "Hue White and Color Ambiance PAR38 outdoor spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT001",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT002",
+          "friendly_name": "Hue white and color ambiance BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT003",
+          "friendly_name": "Hue white and color ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT007",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT010",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT011",
+          "friendly_name": "Hue white and color ambiance BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT012",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT014",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT015",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT016",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT020",
+          "friendly_name": "Hue Signe table light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT021",
+          "friendly_name": "Hue white and color ambiance E26/E27/E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT024",
+          "friendly_name": "Hue White and color ambiance Play Lightbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCT026",
+          "friendly_name": "Hue Go with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCU001",
+          "friendly_name": "Hue White and Color Ambiance E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCV001",
+          "friendly_name": "Hue Lightguide E27 Edison ST72 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCV002",
+          "friendly_name": "Hue Lightguide E26 Edison ST23 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCW001",
+          "friendly_name": "Hue Sana",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCW002",
+          "friendly_name": "Hue Liane (black)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCW004",
+          "friendly_name": "Hue Dymera indoor and outdoor wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCW005",
+          "friendly_name": "Hue Dymera indoor and outdoor wall light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX001",
+          "friendly_name": "Hue Play gradient lightstrip 55",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX002",
+          "friendly_name": "Hue Play gradient lightstrip 65",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX003",
+          "friendly_name": "Hue Play gradient lightstrip 75",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX004",
+          "friendly_name": "Hue gradient lightstrip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX005",
+          "friendly_name": "Hue Play gradient lightstrip for PC",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX006",
+          "friendly_name": "Hue Play gradient lightstrip for PC",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX007",
+          "friendly_name": "Hue Play gradient lightstrip for PC 3x 24/27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX012",
+          "friendly_name": "Hue Festavia gradient light string 250 (1st-gen)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX015",
+          "friendly_name": "Hue Festavia gradient light string 250",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX016",
+          "friendly_name": "Hue Festavia gradient light string 100",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX017",
+          "friendly_name": "Hue Festavia gradient light string 500",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX028",
+          "friendly_name": "Hue Festavia globe outdoor string lights (14 meter with 20 bulbs)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX029",
+          "friendly_name": "Hue Festavia globe outdoor string lights (7 meter with 10 bulbs)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCX030",
+          "friendly_name": "Hue Festavia permanent outdoor string lights",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCY001",
+          "friendly_name": "Hue Lightguide E26/E27 Triangle 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCY002",
+          "friendly_name": "Hue Lightguide E26/E27 Triangle 500lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCZ001",
+          "friendly_name": "Hue Ellipse E27 smart bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LCZ002",
+          "friendly_name": "Hue Ellipse E27 smart bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LDD001",
+          "friendly_name": "Hue white table light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LDD002",
+          "friendly_name": "Hue Muscari floor light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LDT001",
+          "friendly_name": "Hue Aphelion downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LEDtube T8 5FT V2.0",
+          "friendly_name": "MasterConnect LEDtube EM/mains T8",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LGT001",
+          "friendly_name": "Hue Twilight sleep and wake-up light white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LGT002",
+          "friendly_name": "Hue Twilight sleep and wake-up light white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LGT003",
+          "friendly_name": "Hue Twilight sleep and wake-up light white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LGT009",
+          "friendly_name": "Hue Play wall washer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LGT010",
+          "friendly_name": "Hue Play wall washer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LGT012",
+          "friendly_name": "Hue Play wall washer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LLC006",
+          "friendly_name": "Hue Iris (Generation 2)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC010",
+          "friendly_name": "Hue Iris",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC011",
+          "friendly_name": "Hue Bloom",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC012",
+          "friendly_name": "Hue Bloom",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC013",
+          "friendly_name": "Hue Bloom",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC014",
+          "friendly_name": "LivingColors Aura",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLC020",
+          "friendly_name": "Hue Go",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLM001",
+          "friendly_name": "Hue Beyond white and color ambiance suspension/ceiling/table lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLM010",
+          "friendly_name": "Hue Phoenix ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLM011",
+          "friendly_name": "Hue Phoenix dimmable LED smart pendant light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LLM012",
+          "friendly_name": "Hue Phoenix ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LOM001",
+          "friendly_name": "Hue smart plug - EU",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM002",
+          "friendly_name": "Hue smart plug bluetooth",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM003",
+          "friendly_name": "Hue smart plug - UK",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM004",
+          "friendly_name": "Hue smart plug bluetooth",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM005",
+          "friendly_name": "Hue smart plug - AU",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM006",
+          "friendly_name": "Hue smart plug - CH",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM007",
+          "friendly_name": "Hue smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM008",
+          "friendly_name": "Hue smart plug - EU",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM009",
+          "friendly_name": "Hue smart plug - UK",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM010",
+          "friendly_name": "Hue smart plug bluetooth",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LOM011",
+          "friendly_name": "Hue smart plug - AU",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LST001",
+          "friendly_name": "Hue white and color ambiance LightStrip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LST002",
+          "friendly_name": "Hue white and color ambiance LightStrip plus",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LST003",
+          "friendly_name": "Hue white and color ambiance LightStrip outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LST004",
+          "friendly_name": "Hue white and color ambiance LightStrip outdoor",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA001",
+          "friendly_name": "Hue white ambiance E27 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA002",
+          "friendly_name": "Hue white ambiance E26 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA003",
+          "friendly_name": "Hue white ambiance E26 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA004",
+          "friendly_name": "Hue white ambiance E27 800lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA005",
+          "friendly_name": "Hue White Ambiance E27 filament screw globe",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA006",
+          "friendly_name": "Hue White Ambiance B22 filament screw globe",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA007",
+          "friendly_name": "Hue Filament White Ambiance A60/E27 Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA008",
+          "friendly_name": "Hue white ambiance E27 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA009",
+          "friendly_name": "Hue white ambiance E27 1100lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA010",
+          "friendly_name": "Hue white ambiance A19 1100lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA011",
+          "friendly_name": "Hue white ambiance E27 1600lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA012",
+          "friendly_name": "Hue white ambiance E26 1600lm with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA013",
+          "friendly_name": "Hue filament A60 550lm E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA014",
+          "friendly_name": "Hue white ambiance A60 810lm with Bluetooth E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA015",
+          "friendly_name": "Hue white ambiance",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA016",
+          "friendly_name": "Hue white ambiance A67 1600lm with Bluetooth E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA017",
+          "friendly_name": "Hue white ambiance A19 810lm with Bluetooth E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA018",
+          "friendly_name": "Hue White Ambiance 1100 lm A19 E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTA019",
+          "friendly_name": "Hue white ambiance and color E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTB002",
+          "friendly_name": "Hue white ambiance BR30 flood light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTB003",
+          "friendly_name": "Hue White ambiance BR30 E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC001",
+          "friendly_name": "Hue Being",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC002",
+          "friendly_name": "Hue Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC003",
+          "friendly_name": "Hue white ambiance Still",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC005",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC009",
+          "friendly_name": "Hue white ambiance Apogee square",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC010",
+          "friendly_name": "Hue white ambiance Apogee round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC011",
+          "friendly_name": "Hue Cher ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC012",
+          "friendly_name": "Hue Struana",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC013",
+          "friendly_name": "Hue white ambiance Aurelle square panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC014",
+          "friendly_name": "Hue white ambiance Aurelle rectangle panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC015",
+          "friendly_name": "Hue white ambiance Aurelle rectangle panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC016",
+          "friendly_name": "Hue white ambiance Aurelle round panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTC021",
+          "friendly_name": "Hue white ambiance bathroom ceiling light Adore",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD003",
+          "friendly_name": "Hue white ambiance Muscari pendant light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD004",
+          "friendly_name": "Hue white ambiance 4",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD005",
+          "friendly_name": "Hue white ambiance 5/6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD007",
+          "friendly_name": "Hue white ambiance Garnea downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD008",
+          "friendly_name": "Hue white ambiance 6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD009",
+          "friendly_name": "Hue white ambiance 4",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD010",
+          "friendly_name": "Hue white ambiance 5/6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD011",
+          "friendly_name": "Garnea downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD012",
+          "friendly_name": "Garnea downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD016",
+          "friendly_name": "Hue white ambiance extra bright high lumen dimmable LED smart retrofit recessed 4",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD017",
+          "friendly_name": "Hue white ambiance extra bright high lumen dimmable LED smart retrofit recessed 6",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD021",
+          "friendly_name": "Garnea downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTD022",
+          "friendly_name": "Garnea downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTE001",
+          "friendly_name": "Hue white E12",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTE002",
+          "friendly_name": "Hue white ambiance E14 (with Bluetooth)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTE003",
+          "friendly_name": "Hue White Ambiance E17 40W 470 lumen",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTE004",
+          "friendly_name": "Hue white ambiance filament E12 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTE005",
+          "friendly_name": "Hue white ambiance filament E14 (with Bluetooth)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTF001",
+          "friendly_name": "Hue white ambiance Apogee square",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTF002",
+          "friendly_name": "Hue white ambiance Apogee round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTG001",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTG002",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTG003",
+          "friendly_name": "Hue white ambiance MR16 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTG005",
+          "friendly_name": "Hue white ambiance GU10 with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTG006",
+          "friendly_name": "Hue White ambiance GU10 - smart spotlight ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTO001",
+          "friendly_name": "Hue Filament Globe Ambiance E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTO002",
+          "friendly_name": "Hue Filament Globe XL Ambiance E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTO003",
+          "friendly_name": "Hue G125 B22 White Ambiance filament bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LTO004",
+          "friendly_name": "Hue White Ambinance G25 E26 Edison Filament Globe",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTO005",
+          "friendly_name": "Hue white ambiance G40 E26 filament globe with Bluetooth",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP001",
+          "friendly_name": "Hue white ambiance suspension Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP002",
+          "friendly_name": "Hue white ambiance suspension Amaze",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP003",
+          "friendly_name": "Hue white ambiance suspension Fair",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP007",
+          "friendly_name": "Hue Ambiance Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP008",
+          "friendly_name": "Hue Being Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTP011",
+          "friendly_name": "Hue Semeru Ambiance Pendant",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTU001",
+          "friendly_name": "Hue white ambiance E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV001",
+          "friendly_name": "Hue White Ambiance E27 ST64 filament bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV002",
+          "friendly_name": "Hue white filament Edison ST72 E27 LED warm-to-cool",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV003",
+          "friendly_name": "Hue Filament White Ambiance ST72 B22 LED warm-to-cool",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV004",
+          "friendly_name": "Hue white filament Edison ST19 E26 LED warm-to-cool",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV005",
+          "friendly_name": "Hue white filament Edison ST23 E26 LED warm-to-cool",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTV006",
+          "friendly_name": "Hue Filament Edison bulb ST64 550lm E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW001",
+          "friendly_name": "Hue white ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW004",
+          "friendly_name": "Hue white ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW010",
+          "friendly_name": "Hue white ambiance E26/E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW011",
+          "friendly_name": "Hue white ambiance BR30 flood light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW012",
+          "friendly_name": "Hue white ambiance E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW013",
+          "friendly_name": "Hue white ambiance GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW015",
+          "friendly_name": "Hue white ambiance E26",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW017",
+          "friendly_name": "Hue white ambiance Adore light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LTW018",
+          "friendly_name": "Hue Adore white ambiance bathroom mirror",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LWA001",
+          "friendly_name": "Hue white A60 bulb E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA002",
+          "friendly_name": "Hue white A19 bulb E26 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA003",
+          "friendly_name": "Hue White A19 bulb with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA004",
+          "friendly_name": "Hue Filament Standard A60/E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA005",
+          "friendly_name": "Hue white single filament bulb A19 E26 with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA007",
+          "friendly_name": "Hue white A19 bulb E26 with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA008",
+          "friendly_name": "Hue white A21 bulb E26 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA009",
+          "friendly_name": "Hue white A67 bulb E26 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA010",
+          "friendly_name": "Hue white A21 bulb B22 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA011",
+          "friendly_name": "Hue white A60 bulb E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA012",
+          "friendly_name": "Hue white A60 bulb B22 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA017",
+          "friendly_name": "Hue white A60 bulb E27 1050lm with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA018",
+          "friendly_name": "Hue white A60 bulb B22 1055lm with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA019",
+          "friendly_name": "Hue white single filament bulb A19 E26 with Bluetooth (1100 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA021",
+          "friendly_name": "Hue Filament Standard A60/E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA023",
+          "friendly_name": "Hue filament standard A60/E27 Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA024",
+          "friendly_name": "Hue white A60 bulb E27 806lm bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA025",
+          "friendly_name": "Hue White A19 bulb with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA028",
+          "friendly_name": "Hue white A60 bulb B22 1055lm with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA029",
+          "friendly_name": "Hue white single filament bulb A19 E26 with Bluetooth (1100 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA030",
+          "friendly_name": "Hue white A21 bulb E26 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA031",
+          "friendly_name": "Hue white A67 bulb E26 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA032",
+          "friendly_name": "Hue White A60 E27 810lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA033",
+          "friendly_name": "Hue White A60 E27 1100 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA034",
+          "friendly_name": "Hue White Ambiance — dimmable white light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LWA035",
+          "friendly_name": "Hue White A19 bulb E26 810lm with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA036",
+          "friendly_name": "Hue White 75W A19- E26 smart bulb (1100lm)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWA037",
+          "friendly_name": "Hue white A21 bulb E26 with Bluetooth (1600 Lumen)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB004",
+          "friendly_name": "Hue Lux A19 bulb E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB006",
+          "friendly_name": "Hue white A60 bulb E27/B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB010",
+          "friendly_name": "Hue White A60 Single bulb E27/B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB014",
+          "friendly_name": "Hue white A60 bulb E27/B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB015",
+          "friendly_name": "Hue white PAR38 outdoor",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB016",
+          "friendly_name": "Hue White E26 806 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB019",
+          "friendly_name": "Hue white A60 bulb E27/B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWB022",
+          "friendly_name": "Hue white BR30",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE001",
+          "friendly_name": "Hue white E12 with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE002",
+          "friendly_name": "Hue white E14",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE003",
+          "friendly_name": "Hue White E17 470 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE004",
+          "friendly_name": "Hue White Filament Bulb E14",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE005",
+          "friendly_name": "Hue Filament White E12",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE006",
+          "friendly_name": "Hue white candle bulb E14 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE007",
+          "friendly_name": "Hue white Candle bulb E14 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWE008",
+          "friendly_name": "Hue White E17 470 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWF001",
+          "friendly_name": "Hue white A60 bulb E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWF002",
+          "friendly_name": "Hue white A60 bulb E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWF003",
+          "friendly_name": "Hue white A60 bulb E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWF004",
+          "friendly_name": "Hue A60 - E27 smart bulb - 800 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWF005",
+          "friendly_name": "Philips Hue A60 bulb with on/off control",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWG001",
+          "friendly_name": "Hue white GU10",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWG003",
+          "friendly_name": "Hue white GU10",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWG004",
+          "friendly_name": "Hue white GU10 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWG005",
+          "friendly_name": "Hue white GU10 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWG006",
+          "friendly_name": "Hue white GU10 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO001",
+          "friendly_name": "Hue white Filament bulb G93 E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO002",
+          "friendly_name": "Hue White G25 E26 Edison Filament Globe Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO003",
+          "friendly_name": "Hue white E27 LED bulb filament giant globe",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO004",
+          "friendly_name": "Hue white G125 B22 LED bulb filament giant globe",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO005",
+          "friendly_name": "Hue white G93 E27 filament globe",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO006",
+          "friendly_name": "Hue white filament globe G25",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWO007",
+          "friendly_name": "Hue white G125 B22 LED bulb filament giant globe",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWS001",
+          "friendly_name": "Hue white PAR38 outdoor",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWS002",
+          "friendly_name": "Hue White PAR20 with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWS003",
+          "friendly_name": "Hue white PAR38 outdoor",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWU001",
+          "friendly_name": "Hue P45 light bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWU002",
+          "friendly_name": "Hue P45 light bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV001",
+          "friendly_name": "Hue white filament Edison E27 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV002",
+          "friendly_name": "Hue white filament Edison ST19 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV003",
+          "friendly_name": "Hue white filament Edison ST72 E27 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV004",
+          "friendly_name": "Hue white filament Edison ST72 B22 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV005",
+          "friendly_name": "Hue white filament Edison ST64 E27 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV006",
+          "friendly_name": "Philips filament E26 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWV007",
+          "friendly_name": "Hue white filament Edison ST72 LED",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWW001",
+          "friendly_name": "Hue white A60 bulb E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWW002",
+          "friendly_name": "Hue White A19 bulb with Bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LWW003",
+          "friendly_name": "Hue white A60 bulb E27 bluetooth",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LXC006",
+          "friendly_name": "Play gradient lightstrip for PC (32-34)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "MWM001",
+          "friendly_name": "Hue white dimmer 1-10V",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "PCM002",
+          "friendly_name": "Hue White and color ambiance Play Lightbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "PWM003",
+          "friendly_name": "Hue Fuzo outdoor wall light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RDM001",
+          "friendly_name": "Hue wall switch module",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RDM002",
+          "friendly_name": "Hue Tap dial switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RDM003",
+          "friendly_name": "Hue smart button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RDM004",
+          "friendly_name": "Hue wall switch module",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RDM005",
+          "friendly_name": "Hue smart button",
+          "bind": [
+            1,
+            6,
+            8
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROM001",
+          "friendly_name": "Hue smart button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RWL020",
+          "friendly_name": "Hue dimmer switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RWL021",
+          "friendly_name": "Hue dimmer switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RWL022",
+          "friendly_name": "Hue dimmer switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SML001",
+          "friendly_name": "Hue motion sensor",
+          "bind": [
+            1,
+            1024,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SML002",
+          "friendly_name": "Hue motion outdoor sensor",
+          "bind": [
+            1,
+            1024,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SML003",
+          "friendly_name": "Hue motion sensor",
+          "bind": [
+            1,
+            1024,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SML004",
+          "friendly_name": "Hue motion outdoor sensor",
+          "bind": [
+            1,
+            1024,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SOC001",
+          "friendly_name": "Hue Secure contact sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Xi InterAct",
+          "friendly_name": "Signify rectangle panel light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

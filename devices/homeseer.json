@@ -1,0 +1,27 @@
+{
+  "manufacturers": [
+    {
+      "name": "HomeSeer",
+      "models": [
+        {
+          "model": "DS150ZB",
+          "friendly_name": "Door sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

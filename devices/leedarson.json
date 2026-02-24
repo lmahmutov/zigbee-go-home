@@ -1,0 +1,202 @@
+{
+  "manufacturers": [
+    {
+      "name": "Leedarson",
+      "models": [
+        {
+          "model": "A470S-A7R-04",
+          "friendly_name": "LED PAR16 50 GU10",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LDHD2AZW",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LED_E27_ORD",
+          "friendly_name": "LED E27 color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LED_E27_OWDT",
+          "friendly_name": "LED E27 tunable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LED_GU10_OWDT",
+          "friendly_name": "LED PAR16 50 GU10 tunable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "M350ST-W1R-01",
+          "friendly_name": "LED PAR16 50 GU10",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TWGU10Bulb02UK",
+          "friendly_name": "PAR16 tunable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZB-MotionSensor-S0000",
+          "friendly_name": "Motion Sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SMART-PIRTH-V1",
+          "friendly_name": "4-in-1-Sensor",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-Candle0904",
+          "friendly_name": "LED E14 tunable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-GLS0904",
+          "friendly_name": "LED E27 tunable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTSwitch-D0001",
+          "friendly_name": "4-Key Remote Controller",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-DIMLight-GLS0800",
+          "friendly_name": "LED E27 warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZHA-DimmableLight",
+          "friendly_name": "LED E27 tunable white",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

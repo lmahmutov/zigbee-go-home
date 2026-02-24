@@ -1,0 +1,1034 @@
+{
+  "manufacturers": [
+    {
+      "name": "Sunricher",
+      "models": [
+        {
+          "model": "3986",
+          "friendly_name": "Constant voltage Zigbee LED driver",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "CCT Lighting",
+          "friendly_name": "Zigbee LED-controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HK-DIM",
+          "friendly_name": "LED dimmable driver",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HK-DIM-MW2",
+          "friendly_name": "Zigbee compatible fixture with integrated occupancy sensor",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HK-LN-HEATER-A",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SENSOR-4IN1-A",
+          "friendly_name": "4IN1 Sensor",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-CO",
+          "friendly_name": "Smart carbon monoxide alarm",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-CT-MINI",
+          "friendly_name": "Door/window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-GAS",
+          "friendly_name": "Smart combustible gas sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "HK-SENSOR-PRE",
+          "friendly_name": "Smart human presence sensor",
+          "bind": [
+            6,
+            1024,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-SMO",
+          "friendly_name": "Smart photoelectric smoke alarm",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-WT1",
+          "friendly_name": "Smart water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-SENSOR-WT2",
+          "friendly_name": "Water leakage alarm",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-AU-K-A",
+          "friendly_name": "Zigbee push button smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-AU-R-A",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-CLN",
+          "friendly_name": "Zigbee micro smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-EU-A",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-UK",
+          "friendly_name": "Push compatible zigBee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-DIM-US-A",
+          "friendly_name": "Keypad smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-RDIM-A",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-SL-RELAY-A",
+          "friendly_name": "Zigbee AC in wall switch single-line",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZCC-A",
+          "friendly_name": "Curtain motor controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "HK-ZD-CCT-A",
+          "friendly_name": "50W Zigbee CCT LED driver (constant current)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HK-ZD-DIM-A",
+          "friendly_name": "Constant Current Zigbee LED dimmable driver",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HK-ZRC-K10N-E",
+          "friendly_name": "Zigbee smart remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZRC-K12&RS-E",
+          "friendly_name": "Zigbee smart wall panel remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZRC-K16N-E",
+          "friendly_name": "Zigbee smart wall panel remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZRC-K5&RS-E",
+          "friendly_name": "Zigbee smart remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZRC-K5&RS-TL",
+          "friendly_name": "Zigbee smart remote",
+          "bind": [
+            1,
+            6,
+            8,
+            258,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HK-ZRC-K5&RS-TL-G",
+          "friendly_name": "Zigbee smart remote",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HT-THERMZ3W-1",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Micro Smart Dimmer",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Micro Smart OnOff",
+          "friendly_name": "Zigbee AC in wall switch single-line",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ON/OFF",
+          "friendly_name": "Zigbee AC in wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ON/OFF -M",
+          "friendly_name": "Zigbee AC in wall switch with metering",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-040-0",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "SM311",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "SR-ZG9023A-EU",
+          "friendly_name": "4 ports switch with 2 usb ports (no metering)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SR-ZG9040A-S",
+          "friendly_name": "Zigbee AC phase-cut dimmer single-line",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZG2803-RGB-CCT",
+          "friendly_name": "4 groups remote",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG2819S-CCT",
+          "friendly_name": "Zigbee handheld remote CCT 4 channels",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG2819S-DIM",
+          "friendly_name": "Zigbee dim remote",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG2833K8_EU05",
+          "friendly_name": "Zigbee 8 button wall switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZG2835",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": []
+        },
+        {
+          "model": "ZG2837RAC-K4",
+          "friendly_name": "4-Key zigbee rotary & push button smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ZG2855-RGB",
+          "friendly_name": "DIM RGB 3 in 1 Zigbee remote",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG2858A",
+          "friendly_name": "Zigbee handheld remote RGBCCT 3 channels",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG9030A-MW",
+          "friendly_name": "Zigbee compatible ceiling mount occupancy sensor",
+          "bind": [
+            6,
+            8,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG9032B",
+          "friendly_name": "Zigbee temperature and humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "ZG9041A-2R",
+          "friendly_name": "Zigbee 2ch smart relay",
+          "bind": []
+        },
+        {
+          "model": "ZG9092",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ZG9095B",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ZG9098A-Light",
+          "friendly_name": "Zigbee 2ch smart relay",
+          "bind": []
+        },
+        {
+          "model": "ZG9098A-LightWin",
+          "friendly_name": "Zigbee curtain control module",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ZG9098A-Win",
+          "friendly_name": "Zigbee curtain control module",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ZG9098A-WinLight",
+          "friendly_name": "Zigbee 2ch smart relay",
+          "bind": []
+        },
+        {
+          "model": "ZG9098A-WinOnly",
+          "friendly_name": "Zigbee curtain control module",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ZG9100B-5A",
+          "friendly_name": "Zigbee smart relay module",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG9101SAC-HP",
+          "friendly_name": "Zigbee AC phase-cut dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZG9340",
+          "friendly_name": "Zigbee thermostatic radiator valve",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG9380A",
+          "friendly_name": "Zigbee three phase power meter",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-004",
+          "friendly_name": "Zigbee wall remote control for single color, 1 zone",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-007",
+          "friendly_name": "Zigbee 2 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-009",
+          "friendly_name": "Zigbee wall remote control for RGBW, 1 zone with 2 scenes",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-012",
+          "friendly_name": "5 zone remote and dimmer",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-013",
+          "friendly_name": "4 zone remote and dimmer",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-017",
+          "friendly_name": "6-zone RGB+CCT remote",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-043",
+          "friendly_name": "Zigbee lighting remote control",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-044",
+          "friendly_name": " ZigBee handheld diming remote, 4 scenes",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-047",
+          "friendly_name": "ZigBee single color remote",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-TEUR-005",
+          "friendly_name": "Zigbee wireless touch dimmer switch",
+          "bind": []
+        },
+        {
+          "model": "ZIGBEE-SWITCH",
+          "friendly_name": "Zigbee AC in wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZV9380A",
+          "friendly_name": "Zigbee three phase power meter",
+          "bind": [
+            1794,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

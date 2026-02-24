@@ -1,0 +1,175 @@
+{
+  "manufacturers": [
+    {
+      "name": "Computime",
+      "models": [
+        {
+          "model": "FC600",
+          "friendly_name": "Fan coil thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "FC600NH",
+          "friendly_name": "Fan coil thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "OS600",
+          "friendly_name": "Door or window contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "PS600",
+          "friendly_name": "Pipe temperature sensor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RE600",
+          "friendly_name": "Router Zigbee",
+          "bind": []
+        },
+        {
+          "model": "SP600",
+          "friendly_name": "Smart plug (UK socket)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPE600",
+          "friendly_name": "Smart plug (EU socket)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SR600",
+          "friendly_name": "Relay switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SS909ZB",
+          "friendly_name": "Pipe temperature sensor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SW600",
+          "friendly_name": "Door or window contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "SX885ZB",
+          "friendly_name": "miniSmartPlug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WLS600",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

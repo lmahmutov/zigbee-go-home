@@ -1,0 +1,86 @@
+{
+  "manufacturers": [
+    {
+      "name": "dresden elektronik",
+      "models": [
+        {
+          "model": "FLS-A lp (1-10V)",
+          "friendly_name": "Zigbee controller for 1-10V/PWM",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FLS-CT",
+          "friendly_name": "Zigbee Light Link wireless electronic ballast color temperature",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FLS-H3",
+          "friendly_name": "Zigbee Light Link wireless electronic ballast",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FLS-M",
+          "friendly_name": "Universal LED controller (dynamic endpoints)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "FLS-PP3",
+          "friendly_name": "Zigbee Light Link wireless electronic ballast",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Kobold",
+          "friendly_name": "Zigbee 3.0 dimm actuator",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "Lighting Switch",
+          "friendly_name": "2 part zigbee powered light switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "Scene Switch",
+          "friendly_name": "3 part zigbee powered scene switch",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

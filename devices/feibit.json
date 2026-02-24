@@ -1,0 +1,704 @@
+{
+  "manufacturers": [
+    {
+      "name": "Feibit Inc co.",
+      "models": [
+        {
+          "model": "FB56-BOT02HM1.2",
+          "friendly_name": "Human body movement sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56-DOS02HM1.2",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56-DOS06HM1.1",
+          "friendly_name": "3A / Nue Zigbee door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "FB56-THM12HM1.2",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+CUR18SB2.0",
+          "friendly_name": "Dual Track Curtain Panel",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "FB56+SKT06HM1.1",
+          "friendly_name": "Portable Smart Socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+SKT14AL2.1",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+TMT01ZY1.6",
+          "friendly_name": "Temperature control panel",
+          "bind": [
+            6,
+            513
+          ]
+        },
+        {
+          "model": "FB56+ZSC02KJ1.0",
+          "friendly_name": "Dimmer Switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FB56+ZSN08KJ2.2",
+          "friendly_name": "Smart 4 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "FB56+ZSN08KJ2.6",
+          "friendly_name": "Four-Gang Scene Switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "FB56+ZSW1GKJ2.3",
+          "friendly_name": "Smart light switch - 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1HKJ1.1",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1HKJ2.2",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1IKJ1.1",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1IKJ2.2",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FEB56-STK2AYS1.1",
+          "friendly_name": "In-wall Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FEB56-ZSN25YS1.3",
+          "friendly_name": "Three-Gang Scene Switch",
+          "bind": []
+        },
+        {
+          "model": "FEB56-ZT21AAK1.6",
+          "friendly_name": "Curtain Motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "FEB61-SKT1IFB1.2",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB54-THM17ML1.1",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-BOT06FB2.3",
+          "friendly_name": "Human body movement sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-BOT06FB2.8",
+          "friendly_name": "Human body movement sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-COS06FB1.7",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-COS06FB2.1",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-DOS07FB2.4",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-GAS05FB1.4",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "FNB56-GAS05FB1.8",
+          "friendly_name": "Combustible gas sensor",
+          "bind": []
+        },
+        {
+          "model": "FNB56-SMF06FB1.6",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-SMF06FB2.0",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-SOS03FB1.5",
+          "friendly_name": "SOS button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-THM14FB2.4",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-THM14FB2.5",
+          "friendly_name": "Smart temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-WTS05FB2.0",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-WTS05FB2.4",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-ZRC06FB2.0",
+          "friendly_name": "Security Remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-ZSN21YM1.0",
+          "friendly_name": "Four-Gang Battery-Powered Scene Switch",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FTB56+SKT1BCW1.0",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FTB56+SKT22HY1.1",
+          "friendly_name": "Power Socket with Metering",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FZB56+ZSW2FYM1.1",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FZT56-ZCW2HYH1.3",
+          "friendly_name": "Smart LED Recessed Light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FZT56-ZCW2LBW1.2",
+          "friendly_name": "Smart LED Retrofit Light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FZT56-ZRC09FB1.7",
+          "friendly_name": "2-Button Dimmer Switch",
+          "bind": [
+            1,
+            6,
+            8
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,1796 @@
 {
-  "devices": [
+  "manufacturers": [
     {
-      "manufacturer": "IKEA of Sweden",
-      "model": "TRADFRI on/off switch",
-      "friendly_name": "IKEA On/Off Switch",
-      "bind": [6, 8],
-      "reporting": [
-        {"cluster": 1, "attribute": 33, "type": 32, "min": 3600, "max": 65534, "change": 10}
+      "name": "IKEA of Sweden",
+      "models": [
+        {
+          "model": "09B9",
+          "friendly_name": "BILRESA remote control with buttons",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "09BA",
+          "friendly_name": "BILRESA remote control with scroll wheel",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ASKVADER on/off switch",
+          "friendly_name": "ASKVADER on/off switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "BADRING Water Leakage Sensor",
+          "friendly_name": "BADRING water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "FLOALT panel WS 30x30",
+          "friendly_name": "FLOALT light panel, white spectrum, 30x30 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FLOALT panel WS 30x90",
+          "friendly_name": "FLOALT light panel, white spectrum, 30x90 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FLOALT panel WS 60x60",
+          "friendly_name": "FLOALT light panel, white spectrum, 60x60 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Floor lamp WW",
+          "friendly_name": "PILSKOTT floor lamp, warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FYRTUR block-out roller blind",
+          "friendly_name": "FYRTUR roller blind, block-out",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "GUNNARP panel 40*40",
+          "friendly_name": "GUNNARP light panel, 40x40 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "GUNNARP panel round",
+          "friendly_name": "GUNNARP light panel, round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "INSPELNING Smart plug",
+          "friendly_name": "INSPELNING smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "JETSTROM 3030 ceiling",
+          "friendly_name": "JETSTROM ceiling light panel, color/white spectrum, 30x30 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 3030 NA wall",
+          "friendly_name": "JETSTROM wall light panel, color/white spectrum, 30x30 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 3030 wall",
+          "friendly_name": "JETSTROM wall light panel, color/white spectrum, 30x30 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 40100",
+          "friendly_name": "JETSTROM ceiling light panel, white spectrum, 100x40 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 40100 NA",
+          "friendly_name": "JETSTROM ceiling light panel, white spectrum, 100x40 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 6060",
+          "friendly_name": "JETSTROM ceiling light panel, white spectrum, 60x60 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 6060 JP",
+          "friendly_name": "JETSTROM ceiling light panel, white spectrum, 60x60 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JETSTROM 6060 NA",
+          "friendly_name": "JETSTROM ceiling light panel, white spectrum, 60x60 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JORMLIEN door WS 40x80",
+          "friendly_name": "JORMLIEN door light panel, white spectrum, 40x80 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KADRILJ roller blind",
+          "friendly_name": "KADRILJ roller blind",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "KAJPLATS E12 CWS globe 800lm",
+          "friendly_name": "KAJPLATS E12 bulb, color/white spectrum, globe, opal, 800 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E12 WS B38 CL 450lm",
+          "friendly_name": "KAJPLATS E12 bulb, white spectrum, candle, clear, 450 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E12 WS globe 800lm",
+          "friendly_name": "KAJPLATS E12 bulb, white spectrum, globe, opal, 800 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E14 CWS globe 806lm",
+          "friendly_name": "KAJPLATS E14 bulb, color/white spectrum, globe, opal, 806 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E14 WS B38 CL 470lm",
+          "friendly_name": "KAJPLATS E14 bulb, white spectrum, candle, clear, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E14 WS globe 806lm",
+          "friendly_name": "KAJPLATS E14 bulb, white spectrum, globe, opal, 806 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E26 CWS globe 1100lm",
+          "friendly_name": "KAJPLATS E26 bulb, color/white spectrum, globe, opal, 1100 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E26 WS globe 1100lm",
+          "friendly_name": "KAJPLATS E26 bulb, white spectrum, globe, opal, 1100 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E26 WS globe 1600lm",
+          "friendly_name": "KAJPLATS E26 bulb, white spectrum, globe, opal, 1600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E26 WS globe 450lm",
+          "friendly_name": "KAJPLATS E26 bulb, white spectrum, globe, opal, 450 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 470lm smart WS",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, clear, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 CWS globe 1055lm",
+          "friendly_name": "KAJPLATS E27 bulb, color/white spectrum, globe, opal, 1055 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 WS G60 clear 470lm",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, clear, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 WS G95 clear 806lm",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, clear, 806 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 WS globe 1055lm",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, opal, 1055 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 WS globe 1521lm",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, opal, 1521 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS E27 WS globe 470lm",
+          "friendly_name": "KAJPLATS E27 bulb, white spectrum, globe, opal, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS GU10 CWS 575lm",
+          "friendly_name": "KAJPLATS GU10 bulb, color/white spectrum, 470/575 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KAJPLATS GU10 WS 575lm",
+          "friendly_name": "KAJPLATS GU10 bulb, white spectrum, 575 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "KNYCKLAN Open/Close remote",
+          "friendly_name": "KNYCKLAN open/close water valve remote",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "KNYCKLAN receiver",
+          "friendly_name": "KNYCKLAN electronic dishwasher shut-off unit",
+          "bind": [
+            6,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LEPTITER Recessed spot light",
+          "friendly_name": "LEPTITER recessed spot light, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NYMANE PENDANT",
+          "friendly_name": "NYMANE pendant lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ORMANAS LED Strip",
+          "friendly_name": "ORMANAS LED strip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "PARASOLL Door/Window Sensor",
+          "friendly_name": "PARASOLL door/window sensor",
+          "bind": []
+        },
+        {
+          "model": "Pendant lamp WW",
+          "friendly_name": "PILSKOTT pendant lamp, warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "PRAKTLYSING cellular blind",
+          "friendly_name": "PRAKTLYSING cellular blind",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Remote Control N2",
+          "friendly_name": "STYRBAR remote control",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "RODRET Dimmer",
+          "friendly_name": "RODRET wireless dimmer/power switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "RODRET wireless dimmer",
+          "friendly_name": "RODRET wireless dimmer/power switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "SILVERGLANS IP44 LED driver",
+          "friendly_name": "SILVERGLANS LED driver, 30 w, IP44",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SOMRIG shortcut button",
+          "friendly_name": "SOMRIG shortcut button",
+          "bind": []
+        },
+        {
+          "model": "STARKVIND Air purifier",
+          "friendly_name": "STARKVIND air purifier",
+          "bind": []
+        },
+        {
+          "model": "STARKVIND Air purifier table",
+          "friendly_name": "STARKVIND air purifier",
+          "bind": []
+        },
+        {
+          "model": "STOFTMOLN ceiling/wall lamp WW10",
+          "friendly_name": "STOFTMOLN ceiling/wall lamp, warm white, 10 cm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "STOFTMOLN ceiling/wall lamp WW15",
+          "friendly_name": "STOFTMOLN ceiling/wall lamp, warm white, 15 cm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "STOFTMOLN ceiling/wall lamp WW24",
+          "friendly_name": "STOFTMOLN ceiling/wall lamp, warm white, 24 cm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "STOFTMOLN ceiling/wall lamp WW37",
+          "friendly_name": "STOFTMOLN ceiling/wall lamp, warm white, 37 cm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SURTE door WS 38x64",
+          "friendly_name": "SURTE door light panel, white spectrum, 38x64 cm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "SYMFONISK Sound Controller",
+          "friendly_name": "SYMFONISK sound remote, gen 1",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "SYMFONISK sound remote gen2",
+          "friendly_name": "SYMFONISK sound remote, gen 2",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 CWS 450lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 CWS globe 800lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 CWS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E26/E27, color/white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 W op/ch 400lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white, candle, opal, 400 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 WS 450lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 WS candle 450lm",
+          "friendly_name": "TRADFRI bulb E14, white spectrum, candle, opal, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 WS globe 450lm",
+          "friendly_name": "TRADFRI bulb E12/E14, white spectrum, globe, opal, 450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 WS opal 400lm",
+          "friendly_name": "TRADFRI bulb E12/E14, white spectrum, globe, opal, 400 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E12 WS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E17, white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 CWS 470lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 CWS globe 806lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 CWS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E26/E27, color/white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 W op/ch 400lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white, candle, opal, 400 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 WS 470lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 WS candle 470lm",
+          "friendly_name": "TRADFRI bulb E14, white spectrum, candle, opal, 470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 WS globe 470lm",
+          "friendly_name": "TRADFRI bulb E12/E14, white spectrum, globe, opal, 450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 WS opal 400lm",
+          "friendly_name": "TRADFRI bulb E12/E14, white spectrum, globe, opal, 400 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E14 WS opal 600lm",
+          "friendly_name": "TRADFRI bulb E14, white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 CWS 440lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 CWS globe 810lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 W op/ch 400lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white, candle, opal, 400 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 WS 440lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 WS candle 440lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 WS globe 440lm",
+          "friendly_name": "TRADFRI bulb E14/E12/E17, white spectrum, globe, clear, 440/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E17 WS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E17, white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS 800lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS 810lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS globe 800lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS globe 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS globe 810lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 CWS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E26/E27, color/white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 opal 1000lm",
+          "friendly_name": "TRADFRI bulb E26, white, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 W opal 1000lm",
+          "friendly_name": "TRADFRI bulb E26, white, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS clear 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 806 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS clear 950lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 950 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS globe 1055lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS globe 1100lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS globe 1160lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS opal 1000lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS opal 440lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WS opal 980lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 980 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, opal, 806 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW clear 250lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW G95 CL 440lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 440/450/470 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW G95 CL 450lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 440/450/470 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW G95 CL 470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 440/450/470 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW globe 800lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, 806/810 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW globe 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, 806/810 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E26 WW globe 810lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, 806/810 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 C/WS opal 600",
+          "friendly_name": "TRADFRI bulb E12/E14/E26/E27, color/white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 CWS 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 CWS globe 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 CWS opal 600lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E26/E27, color/white spectrum, globe, opal, 600 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 opal 1000lm",
+          "friendly_name": "TRADFRI bulb E27, white, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 opal 470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 W opal 1000lm",
+          "friendly_name": "TRADFRI bulb E27, white, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 W opal 470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS clear 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 806 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS clear 950lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 950 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS globe 1055lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS opal 1000lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 1000 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS opal 980lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 980 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS\\uFFFDclear 950lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 950 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WS\\uFFFDopal 980lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 980 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WW 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, opal, 806 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WW clear 250lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WW G95 CL 470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 440/450/470 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb E27 WW globe 806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, 806/810 lumen",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 CWS 345lm",
+          "friendly_name": "TRADFRI bulb GU10, color/white spectrum, 345 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 CWS 380lm",
+          "friendly_name": "TRADFRI bulb GU10, color/white spectrum, 380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 W 400lm",
+          "friendly_name": "TRADFRI bulb GU10, white, 400 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WS 345lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 345/380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WS 380lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 345/380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WS 400lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 400 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WW 345lm",
+          "friendly_name": "TRADFRI bulb GU10, warm white, 345/380 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WW 380lm",
+          "friendly_name": "TRADFRI bulb GU10, warm white, 345/380 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI bulb GU10 WW 400lm",
+          "friendly_name": "TRADFRI bulb GU10, warm white, 400 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI control outlet",
+          "friendly_name": "TRADFRI control outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRADFRI Driver 10W",
+          "friendly_name": "TRADFRI LED driver, 10 w",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI Driver 30W",
+          "friendly_name": "TRADFRI LED driver, 30 w",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI Light Engine",
+          "friendly_name": "OSVALLA panel round",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRI motion sensor",
+          "friendly_name": "TRADFRI motion sensor",
+          "bind": [
+            1,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRADFRI on/off switch",
+          "friendly_name": "TRADFRI on/off switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "TRADFRI open/close remote",
+          "friendly_name": "TRADFRI open/close remote",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRADFRI remote control",
+          "friendly_name": "TRADFRI remote control",
+          "bind": [
+            1,
+            6,
+            8
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRADFRI SHORTCUT Button",
+          "friendly_name": "TRADFRI shortcut button",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "TRADFRI signal repeater",
+          "friendly_name": "TRADFRI signal repeater",
+          "bind": []
+        },
+        {
+          "model": "TRADFRI transformer 10W",
+          "friendly_name": "TRADFRI LED driver, 10 w",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI transformer 30W",
+          "friendly_name": "TRADFRI LED driver, 30 w",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI wireless dimmer",
+          "friendly_name": "TRADFRI wireless dimmer",
+          "bind": [
+            8
+          ]
+        },
+        {
+          "model": "TRADFRI_bulb_GU10_WS_345lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 345/380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbB22WSglobeopal1055lm",
+          "friendly_name": "TRADFRI bulb B22, white spectrum, globe, opal, 1055 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE12WScandleopal450lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE12WSglobeopal470lm",
+          "friendly_name": "TRADFRI bulb E14/E12/E17, white spectrum, globe, clear, 440/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE12WWcandleclear250lm",
+          "friendly_name": "TRADFRI bulb E12, warm white, candle, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE12WWclear250lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, warm white, candle, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE14WScandleopal470lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE14WSglobeopal470lm",
+          "friendly_name": "TRADFRI bulb E14/E12/E17, white spectrum, globe, clear, 440/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE14WWclear250lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, warm white, candle, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE17WScandleopal440lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, white spectrum, candle, opal, 450/470/440 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE17WSglobeopal470lm",
+          "friendly_name": "TRADFRI bulb E14/E12/E17, white spectrum, globe, clear, 440/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE17WWclear250lm",
+          "friendly_name": "TRADFRI bulb E12/E14/E17, warm white, candle, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeclear800lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeclear806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeclear810lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeopal1055lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeopal1100lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WSglobeopal1160lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WWclear250lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE26WWglobeclear250lm",
+          "friendly_name": "TRADFRI bulb E26, warm white, globe, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE27WSglobeclear806lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, clear, 800/806/810 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE27WSglobeopal1055lm",
+          "friendly_name": "TRADFRI bulb E26/27, white spectrum, globe, opal, 1055/1100/1160 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbE27WWclear250lm",
+          "friendly_name": "TRADFRI bulb E26/E27, warm white, globe, clear, 250 lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "TRADFRIbulbG125E26WSopal440lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbG125E26WSopal450lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbG125E26WSopal470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbG125E27WSopal470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, globe, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbGU10WS345lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 345/380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbGU10WS380lm",
+          "friendly_name": "TRADFRI bulb GU10, white spectrum, 345/380 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbPAR38WS900lm",
+          "friendly_name": "TRADFRI bulb E26, white spectrum, PAR38 downlight, clear, 900 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbT120E26WSopal440lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbT120E26WSopal450lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbT120E26WSopal470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TRADFRIbulbT120E27WSopal470lm",
+          "friendly_name": "TRADFRI bulb E26/E27, white spectrum, T120 cylinder, opal, 440/450/470 lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TREDANSEN block-out cellul blind",
+          "friendly_name": "TREDANSEN cellular blind, block-out",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "TRETAKT Smart plug",
+          "friendly_name": "TRETAKT smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "VALLHORN Wireless Motion Sensor",
+          "friendly_name": "VALLHORN wireless motion sensor",
+          "bind": [
+            1,
+            1024,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "VINDSTYRKA",
+          "friendly_name": "VINDSTYRKA air quality and humidity sensor",
+          "bind": [
+            1026,
+            1029,
+            1066
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1066,
+              "attribute": 0,
+              "type": 57,
+              "min": 10,
+              "max": 3600,
+              "change": 1
+            }
+          ]
+        }
       ]
     }
   ]

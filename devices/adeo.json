@@ -1,0 +1,565 @@
+{
+  "manufacturers": [
+    {
+      "name": "ADEO",
+      "models": [
+        {
+          "model": "LDSENK01F",
+          "friendly_name": "10A EU smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LDSENK01S",
+          "friendly_name": "10A EU smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LDSENK02S",
+          "friendly_name": "ENKI LEXMAN 16A EU smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LDSENK06",
+          "friendly_name": "ENKI LEXMAN indoor siren 85db",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "LDSENK07",
+          "friendly_name": "ENKI LEXMAN wireless smart outdoor siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LDSENK08",
+          "friendly_name": "ENKI LEXMAN wireless smart door window sensor with vibration",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LDSENK09",
+          "friendly_name": "Security system key fob",
+          "bind": []
+        },
+        {
+          "model": "LDSENK10",
+          "friendly_name": "ENKI LEXMAN motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "LXEK-1",
+          "friendly_name": "ENKI LEXMAN E27 LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXEK-2",
+          "friendly_name": "ENKI LEXMAN E27 14W to 100W LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXEK-3",
+          "friendly_name": "ENKI LEXMAN E14 LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXEK-4",
+          "friendly_name": "ENKI LEXMAN GU-10 LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXEK-5",
+          "friendly_name": "RGB CTT LEXMAN ENKI remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXEK-7",
+          "friendly_name": "ENKI LEXMAN E27 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "SIN-4-1-20_LEX",
+          "friendly_name": "ENKI LEXMAN 3680W single output relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SIN-4-1-21_EQU",
+          "friendly_name": "Multifunction relay switch with metering",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SIN-4-1-22_LEX",
+          "friendly_name": "ENKI LEXMAN Access Control",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SIN-4-FP-21_EQU",
+          "friendly_name": "Equation pilot wire heating module",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SIN-4-RS-20_LEX",
+          "friendly_name": "Roller shutter controller (Leroy Merlin version)",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "WSD005",
+          "friendly_name": "ENKI LEXMAN motor for roller shutler",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ZB-DoorSensor-D0007",
+          "friendly_name": "ENKI LEXMAN wireless smart door window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-Remote-D0001",
+          "friendly_name": "1-key remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SMART-PIRTH-V3",
+          "friendly_name": "Smart 4 in 1 sensor",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "ZB-WaterSensor-D0001",
+          "friendly_name": "ENKI LEXMAN water leak sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBEK-1",
+          "friendly_name": "ENKI LEXMAN E27 7.2 to 60W LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-10",
+          "friendly_name": "ENKI LEXMAN E14 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-11",
+          "friendly_name": "ENKI LEXMAN GU-10 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-12",
+          "friendly_name": "ENKI LEXMAN E27 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-13",
+          "friendly_name": "ENKI LEXMAN E27 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-14",
+          "friendly_name": "ENKI LEXMAN E14 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-2",
+          "friendly_name": "ENKI LEXMAN E27 14W to 100W LED RGBW v2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-22",
+          "friendly_name": "ENKI LEXMAN RGBCCT lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-26",
+          "friendly_name": "RGB CTT LEXMAN ENKI remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBEK-27",
+          "friendly_name": "ENKI LEXMAN Gdansk",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-28",
+          "friendly_name": "ENKI LEXMAN Gdansk",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-29",
+          "friendly_name": "ENKI LEXMAN Gdansk LED panel",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-3",
+          "friendly_name": "ENKI LEXMAN E14 LED RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-31",
+          "friendly_name": "ENKI LEXMAN Extraflat 85",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-32",
+          "friendly_name": "ENKI Inspire Extraflat D12",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-33",
+          "friendly_name": "ENKI Inspire Extraflat 2400Lumens",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-34",
+          "friendly_name": "ENKI LEXMAN Extraflat 225 ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-4",
+          "friendly_name": "ENKI LEXMAN RGBTW GU10 Bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-5",
+          "friendly_name": "ENKI LEXMAN E27 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-6",
+          "friendly_name": "ENKI LEXMAN E27 Led white bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-7",
+          "friendly_name": "ENKI LEXMAN E27 LED Edison white filament 806 lumen",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-8",
+          "friendly_name": "ENKI LEXMAN E27 LED white filament 1055 lumen",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBEK-9",
+          "friendly_name": "ENKI LEXMAN E27 LED white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

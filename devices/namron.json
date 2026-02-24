@@ -1,0 +1,1000 @@
+{
+  "manufacturers": [
+    {
+      "name": "Namron AS",
+      "models": [
+        {
+          "model": "1402755",
+          "friendly_name": "Zigbee LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1402767",
+          "friendly_name": "Zigbee LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1402768",
+          "friendly_name": "Zigbee LED dimmer TW 250W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "1402769",
+          "friendly_name": "Zigbee LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "1402790",
+          "friendly_name": "Stove guard for safe cooking",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3308431",
+          "friendly_name": "Luna ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802960",
+          "friendly_name": "LED 9W DIM E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "3802961",
+          "friendly_name": "LED 9W CCT E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802962",
+          "friendly_name": "LED 9W RGBW E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802963",
+          "friendly_name": "LED 5,3W DIM E14",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "3802964",
+          "friendly_name": "LED 5,3W CCT E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802965",
+          "friendly_name": "LED 4,8W DIM GU10",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "3802966",
+          "friendly_name": "LED 4.8W CCT GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802967",
+          "friendly_name": "Led bulb 6w RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "3802968",
+          "friendly_name": "LED Filament Flex 5W CCT E27 Clear",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4512700",
+          "friendly_name": "Zigbee dimmer 400W",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4512701",
+          "friendly_name": "Zigbee 1 channel switch K2 (White)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512702",
+          "friendly_name": "Zigbee 1 channel switch K4",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512703",
+          "friendly_name": "Zigbee 4 channel switch K8 (white)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512704",
+          "friendly_name": "Zigbee switch 400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512705",
+          "friendly_name": "Zigbee 4 channel remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512706",
+          "friendly_name": "Remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512708",
+          "friendly_name": "Zigbee LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4512719",
+          "friendly_name": "Zigbee 2 channel switch K4 (white)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512721",
+          "friendly_name": "Zigbee 4 channel switch K8 (black)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512726",
+          "friendly_name": "Zigbee 4 in 1 dimmer",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512728",
+          "friendly_name": "Zigbee 1 channel switch K2 (Black)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512729",
+          "friendly_name": "Zigbee 2 channel switch K4 (black)",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512733",
+          "friendly_name": "Zigbee dimmer 2-pol 400W",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4512735",
+          "friendly_name": "Multiprise with 4 AC outlets and 2 USB super charging ports (16A)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "4512737",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512738",
+          "friendly_name": "Touch thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512739",
+          "friendly_name": "Zigbee dimmer TW 400W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "4512747",
+          "friendly_name": "Curtain motor controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "4512749",
+          "friendly_name": "Thermostat outlet socket",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "4512749-N",
+          "friendly_name": "Thermostat outlet socket",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "4512750",
+          "friendly_name": "Zigbee dimmer 2.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4512751",
+          "friendly_name": "Zigbee dimmer 2.0",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "4512758",
+          "friendly_name": "Zigbee thermostat 16A",
+          "bind": [
+            6,
+            513,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512759",
+          "friendly_name": "Zigbee thermostat 16A",
+          "bind": [
+            6,
+            513,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512760",
+          "friendly_name": "Zigbee dimmer 400W",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512761",
+          "friendly_name": "Zigbee relais 16A",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512762",
+          "friendly_name": "Zigbee Door Sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512763",
+          "friendly_name": "Zigbee movement sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "4512764",
+          "friendly_name": "Zigbee water leak sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512765",
+          "friendly_name": "Zigbee humidity and temperature Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512766",
+          "friendly_name": "Zigbee smart plug 16A",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512767",
+          "friendly_name": "Zigbee smart plug 16A",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512768",
+          "friendly_name": "Zigbee 2 channel switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512770",
+          "friendly_name": "Zigbee multisensor (white)",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512771",
+          "friendly_name": "Zigbee multisensor (white)",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512772",
+          "friendly_name": "Zigbee 8 channel switch black",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512773",
+          "friendly_name": "Zigbee 8 channel switch black",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512781",
+          "friendly_name": "Rotary dimmer with screen",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512782",
+          "friendly_name": "Rotary dimmer with screen",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512783",
+          "friendly_name": "Namron edge thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512784",
+          "friendly_name": "Namron edge thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512788",
+          "friendly_name": "Zigbee smart plug dimmer 150W",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512789",
+          "friendly_name": "Zigbee smart plug 16A IP44",
+          "bind": [
+            2,
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512791",
+          "friendly_name": "Namron Simplify Zigbee dimmer (1/2-polet / Zigbee / BT)",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "4512792",
+          "friendly_name": "Simplify 1-2p relay (Zigbee / BT)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512793",
+          "friendly_name": "Simplify 6-button remote with battery",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4512794",
+          "friendly_name": "Simplify 6-button remote with battery",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "4566702",
+          "friendly_name": "Namron edge thermostat",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401392",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401393",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401394",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401395",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401396",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401397",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401398",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5401399",
+          "friendly_name": "Panel heater 400/600/800/1000 W",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "89665",
+          "friendly_name": "LED Strip RGB+W (5m) IP20",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Panel Heater",
+          "friendly_name": "Zigbee thermostat for panel heater PRO (white 4512776 / black 4512777)",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

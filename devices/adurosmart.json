@@ -1,0 +1,206 @@
+{
+  "manufacturers": [
+    {
+      "name": "AduroSmart Eria",
+      "models": [
+        {
+          "model": "AD-81812",
+          "friendly_name": "Eria tunable white A19/BR30 smart bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-BR3RGBW3001",
+          "friendly_name": "BR30 light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-ColorTemperature3001",
+          "friendly_name": "Eria tunable white A19/BR30 smart bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-CTW123001",
+          "friendly_name": "ERIA smart light bubl A19",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-DimmableLight3001",
+          "friendly_name": "Zigbee Aduro Eria B22 bulb - warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AD-Dimmer",
+          "friendly_name": "ERIA built-in multi dimmer module 300W",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AD-E14RGBW3001",
+          "friendly_name": "ERIA E14 Candle Color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-E1XCTW3001",
+          "friendly_name": "ERIA tunable-white candle bulb (E12)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-RGBW3001",
+          "friendly_name": "ERIA colors and white shades smart light bulb A19/BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-RGBWH3001",
+          "friendly_name": "ERIA Colors and White A19 Dimmable LED bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AD-SmartPlug3001",
+          "friendly_name": "ERIA smart plug (with power measurements)",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "ADUROLIGHT_CSC",
+          "friendly_name": "Remote scene controller",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Adurolight_NCC",
+          "friendly_name": "ERIA smart wireless dimming switch",
+          "bind": []
+        },
+        {
+          "model": "BDP3001",
+          "friendly_name": "ERIA smart plug (dimmer)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BPU3",
+          "friendly_name": "ERIA smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "DimmerM3002",
+          "friendly_name": "ERIA built-in dimmer module (with power measurements)",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Extended Color LED Strip V1.0",
+          "friendly_name": "Eria color LED strip",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ONOFFRELAY",
+          "friendly_name": "AduroSmart on/off relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZLL-ExtendedColo",
+          "friendly_name": "ERIA colors and white shades smart light bulb A19/BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZLL-ExtendedColor",
+          "friendly_name": "ERIA colors and white shades smart light bulb A19/BR30",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

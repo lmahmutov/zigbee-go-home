@@ -1,0 +1,268 @@
+{
+  "manufacturers": [
+    {
+      "name": "DAWON_DNS",
+      "models": [
+        {
+          "model": "KB-B540R-ZB",
+          "friendly_name": "IOT smart plug 16A",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "KB-HD100-ZB",
+          "friendly_name": "IOT Card holder",
+          "bind": []
+        },
+        {
+          "model": "PM-B430-ZB",
+          "friendly_name": "IOT smart plug 10A",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PM-B530-ZB",
+          "friendly_name": "IOT smart plug 16A",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PM-B540-ZB",
+          "friendly_name": "IOT smart plug 16A",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PM-C140-ZB",
+          "friendly_name": "IOT remote control smart buried-type outlet",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PM-C150-ZB",
+          "friendly_name": "IOT remote control smart buried-type 16A outlet",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PM-S140-ZB",
+          "friendly_name": "IOT smart switch 1 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S140R-ZB",
+          "friendly_name": "IOT smart switch 1 gang router without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S150-ZB",
+          "friendly_name": "IOT smart switch 1 gang router without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S240-ZB",
+          "friendly_name": "IOT smart switch 2 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S240R-ZB",
+          "friendly_name": "IOT smart switch 2 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S250-ZB",
+          "friendly_name": "IOT smart switch 2 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S340-ZB",
+          "friendly_name": "IOT smart switch 3 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S340R-ZB",
+          "friendly_name": "IOT smart switch 3 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PM-S350-ZB",
+          "friendly_name": "IOT smart switch 3 gang without neutral wire",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SG-V100-ZB",
+          "friendly_name": "IOT remote control smart gas lock",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB30C2",
+          "friendly_name": "IoT SMART temperature and humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

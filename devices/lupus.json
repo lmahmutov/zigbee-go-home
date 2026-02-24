@@ -1,0 +1,153 @@
+{
+  "manufacturers": [
+    {
+      "name": "LUPUS",
+      "models": [
+        {
+          "model": "PRS3CH1_00.00.05.10TC",
+          "friendly_name": "1 channel relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PRS3CH1_00.00.05.11TC",
+          "friendly_name": "1 channel relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PRS3CH2_00.00.05.10TC",
+          "friendly_name": "2 channel relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PRS3CH2_00.00.05.11TC",
+          "friendly_name": "2 channel relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PRS3CH2_00.00.05.12TC",
+          "friendly_name": "2 channel relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.05TC",
+          "friendly_name": "LUPUSEC mains socket with power meter",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.11TC",
+          "friendly_name": "LUPUSEC mains socket with power meter",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.05.12TC",
+          "friendly_name": "LUPUSEC mains socket with power meter",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SCM_00.00.03.11TC",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SCM-3-OTA_00.00.03.16TC",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SCM-6-OTA_00.00.03.17TC",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SCM-6-OTA_00.00.03.18TC",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SCM-6-OTA_00.00.03.20TC",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        }
+      ]
+    }
+  ]
+}

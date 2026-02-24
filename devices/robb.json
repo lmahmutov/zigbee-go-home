@@ -1,0 +1,489 @@
+{
+  "manufacturers": [
+    {
+      "name": "ROBB smarrt",
+      "models": [
+        {
+          "model": "HK-PLUG-A",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "Motor Controller",
+          "friendly_name": "Zigbee curtain motor controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ROB_200-001-0",
+          "friendly_name": "Door/window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-003-0",
+          "friendly_name": "Zigbee AC in wall switch (push switch)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-003-1",
+          "friendly_name": "Zigbee AC in wall switch (normal switch)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-004-0",
+          "friendly_name": "Zigbee AC phase-cut dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ROB_200-004-1",
+          "friendly_name": "Zigbee AC phase-cut dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ROB_200-006-0",
+          "friendly_name": "Zigbee LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ROB_200-007-0",
+          "friendly_name": "Zigbee 8 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-008",
+          "friendly_name": "Zigbee 4 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-008-0",
+          "friendly_name": "Zigbee 4 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-009-0",
+          "friendly_name": "Zigbee 2 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-010-0",
+          "friendly_name": "Zigbee curtain motor controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ROB_200-011-0",
+          "friendly_name": "Zigbee AC phase-cut dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ROB_200-011-1",
+          "friendly_name": "Pro Zigbee Dimmer 400W",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ROB_200-014-0",
+          "friendly_name": "Zigbee AC phase-cut rotary dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ROB_200-016-0",
+          "friendly_name": "RGB CCT DIM 3 in 1 Zigbee Remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-017-0",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-017-1",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1026,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-018-0",
+          "friendly_name": "Zigbee knob smart dimmer",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-024-0",
+          "friendly_name": "Zigbee 3.0 4 channel remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-025-0",
+          "friendly_name": "Zigbee 8 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-026-0",
+          "friendly_name": "2-gang in-wall switch",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ROB_200-029-0",
+          "friendly_name": "Zigbee curtain motor controller",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "ROB_200-030-0",
+          "friendly_name": "Zigbee AC in wall switch 400W (2-wire) (push switch)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-030-1",
+          "friendly_name": "Zigbee AC in wall switch 400W (2-wire) (normal switch)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-035-0",
+          "friendly_name": "1 channel switch with power monitoring",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ROB_200-050-0",
+          "friendly_name": "4 port switch with 2 usb ports (no metering)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-060-0",
+          "friendly_name": "Zigbee LED driver",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ROB_200-061-0",
+          "friendly_name": "50W Zigbee CCT LED driver (constant current)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ROB_200-063-0",
+          "friendly_name": "Zigbee 0-10V PWM dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ROB_200-070-0",
+          "friendly_name": "Battery powered PIR presence, temperature, humidity and light sensors",
+          "bind": [
+            1,
+            1030,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ROB_200-081-0",
+          "friendly_name": "4-button wireless Zigbee switch",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZG2833K4_EU06",
+          "friendly_name": "Zigbee 4 button wall switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

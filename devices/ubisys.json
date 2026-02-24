@@ -1,0 +1,133 @@
+{
+  "manufacturers": [
+    {
+      "name": "ubisys",
+      "models": [
+        {
+          "model": "C4 (5504)",
+          "friendly_name": "Control unit C4",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "D1 (5503)",
+          "friendly_name": "Universal dimmer D1",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "D1-R (5603)",
+          "friendly_name": "Universal dimmer D1",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "H1",
+          "friendly_name": "Heating regulator",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "H10",
+          "friendly_name": "Heatingcontrol 10-Way",
+          "bind": [
+            6,
+            513
+          ]
+        },
+        {
+          "model": "J1 (5502)",
+          "friendly_name": "Shutter control J1",
+          "bind": [
+            258,
+            1794
+          ]
+        },
+        {
+          "model": "J1-R (5602)",
+          "friendly_name": "Shutter control J1",
+          "bind": [
+            258,
+            1794
+          ]
+        },
+        {
+          "model": "R0 (5501)",
+          "friendly_name": "Zigbee Router",
+          "bind": []
+        },
+        {
+          "model": "S1 (5501)",
+          "friendly_name": "Power switch S1",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S1-R (5601)",
+          "friendly_name": "Power switch S1-R",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S2 (5502)",
+          "friendly_name": "Power switch S2",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "S2-R (5602)",
+          "friendly_name": "Power switch S2",
+          "bind": [
+            6,
+            1794
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "manufacturers": [
+    {
+      "name": "HORNBACH",
+      "models": [
+        {
+          "model": "VIYU_A60_470_FI_D_CCT_10297665",
+          "friendly_name": "FLAIR Viyu smart LED bulb CCT E27 filament",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_A60_806_CCT_10454469",
+          "friendly_name": "FLAIR Viyu smart LED bulb CCT E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_A60_806_RGBW_10454471",
+          "friendly_name": "FLAIR Viyu smart LED bulb RGBW E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_C35_470_CCT_10454468",
+          "friendly_name": "FLAIR Viyu smart LED bulb CCT E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_C35_470_RGBW_10297667",
+          "friendly_name": "FLAIR Viyu smart LED bulb RGB E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_C35_470_RGBW_10454467",
+          "friendly_name": "FLAIR Viyu smart LED candle RGB E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_GU10_350_CCT_10454470",
+          "friendly_name": "FLAIR Viyu smart GU10 CCT lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_GU10_350_RGBW_10297666",
+          "friendly_name": "FLAIR Viyu smart GU10 RGBW lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_GU10_350_RGBW_10454466",
+          "friendly_name": "FLAIR Viyu smart LED GU10 RGBW lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU_MUSICA_CCT_10447293",
+          "friendly_name": "10445606 FLAIR Viyu Smart LED Ceiling Luminaire",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU-A60-806-CCT-10011723",
+          "friendly_name": "FLAIR Viyu smart LED bulb CCT E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU-A60-806-RGBW-10011725",
+          "friendly_name": "FLAIR Viyu smart LED bulb RGB E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU-C35-470-CCT-10011722",
+          "friendly_name": "FLAIR Viyu smart LED candle CCT E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "VIYU-GU10-350-CCT-10011724",
+          "friendly_name": "FLAIR Viyu smart GU10 CCT lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

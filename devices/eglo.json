@@ -1,0 +1,59 @@
+{
+  "manufacturers": [
+    {
+      "name": "EGLO",
+      "models": [
+        {
+          "model": "EBF_RGB_Zm_CLP",
+          "friendly_name": "ROVITO-Z ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "EGLO_ZM_RGB_TW",
+          "friendly_name": "RGB light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "EGLO_ZM_TW_CLP",
+          "friendly_name": "FUEVA-Z ceiling light IP44",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ERCU_3groups_Zm",
+          "friendly_name": "3 groups remote controller",
+          "bind": []
+        },
+        {
+          "model": "ESMLFzm_w6_TW",
+          "friendly_name": "ST64 adjustable white filament bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "EZMB-RGB-TW-CLB",
+          "friendly_name": "MASSIGNANO-Z ceiling light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

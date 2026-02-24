@@ -1,0 +1,228 @@
+{
+  "manufacturers": [
+    {
+      "name": "sengled",
+      "models": [
+        {
+          "model": "E11-G13",
+          "friendly_name": "Element classic (A19)",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "E11-G23",
+          "friendly_name": "Element classic (A60)",
+          "bind": []
+        },
+        {
+          "model": "E11-G33",
+          "friendly_name": "Element classic (A60)",
+          "bind": []
+        },
+        {
+          "model": "E11-N13",
+          "friendly_name": "Element extra bright (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-N13A",
+          "friendly_name": "Element extra bright (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-N14",
+          "friendly_name": "Element extra bright (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-N14A",
+          "friendly_name": "Element extra bright (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-N1EA",
+          "friendly_name": "Element plus color (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-N1G",
+          "friendly_name": "Vintage LED edison bulb (ST19)",
+          "bind": []
+        },
+        {
+          "model": "E11-U21U31",
+          "friendly_name": "Element touch (A19)",
+          "bind": []
+        },
+        {
+          "model": "E11-U2E",
+          "friendly_name": "Element color plus E27",
+          "bind": []
+        },
+        {
+          "model": "E11-U3E",
+          "friendly_name": "Element color plus B22",
+          "bind": []
+        },
+        {
+          "model": "E12-N14",
+          "friendly_name": "Element Classic (BR30)",
+          "bind": []
+        },
+        {
+          "model": "E12-N1E",
+          "friendly_name": "Smart LED multicolor (BR30)",
+          "bind": []
+        },
+        {
+          "model": "E13-A21",
+          "friendly_name": "Flood light with motion sensor light outdoor",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "E13-N11",
+          "friendly_name": "Flood light with motion sensor light outdoor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "E1A-AC2",
+          "friendly_name": "Element downlight smart LED bulb",
+          "bind": []
+        },
+        {
+          "model": "E1C-NB6",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E1C-NB7",
+          "friendly_name": "Smart plug with energy tracker",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E1D-G73",
+          "friendly_name": "Smart window and door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "E1E-G7F",
+          "friendly_name": "Smart switch",
+          "bind": []
+        },
+        {
+          "model": "E1F-N5E",
+          "friendly_name": "Element color plus E12",
+          "bind": []
+        },
+        {
+          "model": "E1F-N9G",
+          "friendly_name": "Smart LED filament candle (E12)",
+          "bind": []
+        },
+        {
+          "model": "E1G-G8E",
+          "friendly_name": "Multicolor light strip (2M)",
+          "bind": []
+        },
+        {
+          "model": "E1M-G7H",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E21-N13A",
+          "friendly_name": "Smart LED (A19)",
+          "bind": []
+        },
+        {
+          "model": "E21-N14A",
+          "friendly_name": "Smart light bulb, dimmable 5000K, E26/A19",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "E21-N1EA",
+          "friendly_name": "Smart LED multicolor A19 bulb",
+          "bind": []
+        },
+        {
+          "model": "E22-N1E",
+          "friendly_name": "Smart LED multicolor BR30 bulb",
+          "bind": []
+        },
+        {
+          "model": "E2D-G73",
+          "friendly_name": "Smart window and door sensor G2",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "Z01-A19NAE26",
+          "friendly_name": "Element plus (A19)",
+          "bind": []
+        },
+        {
+          "model": "Z01-A60EAE27",
+          "friendly_name": "Element Plus (A60)",
+          "bind": []
+        },
+        {
+          "model": "Z01-CIA19NAE26",
+          "friendly_name": "Element touch (A19)",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

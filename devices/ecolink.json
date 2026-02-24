@@ -1,0 +1,27 @@
+{
+  "manufacturers": [
+    {
+      "name": "Ecolink",
+      "models": [
+        {
+          "model": "4655BC0-R",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

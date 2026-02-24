@@ -1,0 +1,1117 @@
+{
+  "manufacturers": [
+    {
+      "name": "innr",
+      "models": [
+        {
+          "model": "AE 260",
+          "friendly_name": "E26/24 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AE 262",
+          "friendly_name": "Smart E26 LED bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AE 264",
+          "friendly_name": "Smart E26 LED bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "AE 270 T",
+          "friendly_name": "E26/24 bulb 1100lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AE 270 T-2",
+          "friendly_name": "E26/24 bulb 1100lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AE 280 C",
+          "friendly_name": "E26 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AE 282 C",
+          "friendly_name": "Smart Bulb Colour E27 (800lm)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "AE 287 C",
+          "friendly_name": "E26 bulb 1100lm, RGBCW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BB 262",
+          "friendly_name": "Smart Bulb White 800lm B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BB 282 C",
+          "friendly_name": "B22 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BB 287 C",
+          "friendly_name": "Smart Bulb Colour E27 1210lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BB 287 C-2",
+          "friendly_name": "Smart Bulb Colour E27 1210lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BE 220",
+          "friendly_name": "E26/E24 white bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BF 263",
+          "friendly_name": "B22 filament bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BF 265",
+          "friendly_name": "B22 bulb filament clear",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BY 165",
+          "friendly_name": "B22 bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BY 178 T",
+          "friendly_name": "Smart bulb tunable white B22",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BY 185 C",
+          "friendly_name": "B22 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BY 265",
+          "friendly_name": "B22 bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BY 266",
+          "friendly_name": "B22 (Bayonet) bulb, dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "BY 285 C",
+          "friendly_name": "B22 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "BY 286 C",
+          "friendly_name": "B22 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "DL 110 N",
+          "friendly_name": "Spot narrow",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "DL 110 W",
+          "friendly_name": "Spot wide",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FL 120 C",
+          "friendly_name": "Color Flex LED strip",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FL 122 C",
+          "friendly_name": "Flex light colour LED strip 2m, 1440lm, RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FL 130 C",
+          "friendly_name": "Color Flex LED strip",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FL 140 C",
+          "friendly_name": "Color Flex LED strip 4m 1200lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FL 142 C",
+          "friendly_name": "Color Flex LED strip 4m 2000lm",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OFL 120 C",
+          "friendly_name": "Outdoor flex light colour LED strip 2m, 550lm, RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OFL 122 C",
+          "friendly_name": "Outdoor flex light colour LED strip 2m, 1440lm, RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OFL 140 C",
+          "friendly_name": "Outdoor flex light colour LED strip 4m, 1000lm, RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OFL 142 C",
+          "friendly_name": "Outdoor flex light colour LED strip 4m, 1440lm, RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "OGL 130 C",
+          "friendly_name": "Outdoor smart globe lights",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "OLS 210",
+          "friendly_name": "Smart outdoor light string",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "OPL 130 C",
+          "friendly_name": "Outdoor smart pedestal light colour",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "OSL 130 C",
+          "friendly_name": "Outdoor smart spot colour, 230lm/spot, RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OSL 132 C",
+          "friendly_name": "Outdoor smart spot color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OSL 140 C",
+          "friendly_name": "Outdoor smart spot XL color",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "OSP 210",
+          "friendly_name": "Outdoor smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "OSP 240",
+          "friendly_name": "Outdoor smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PL 110",
+          "friendly_name": "Puck Light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "PL 115",
+          "friendly_name": "Puck Light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 145",
+          "friendly_name": "E14 candle",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 148 T",
+          "friendly_name": "E14 candle with white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 162",
+          "friendly_name": "E27 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 165",
+          "friendly_name": "E27 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 172 W",
+          "friendly_name": "Zigbee E27 retrofit bulb, warm dimmable 2200-2700K, 806 Lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 175 W",
+          "friendly_name": "E27 bulb warm dimming",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 178 T",
+          "friendly_name": "Smart bulb tunable white E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 185 C",
+          "friendly_name": "E27 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 243",
+          "friendly_name": "E14 candle",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 245",
+          "friendly_name": "E14 candle",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 246 T",
+          "friendly_name": "E14 mini bulb, dimmable with, color temp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 247 T",
+          "friendly_name": "E14 candle, dimmable with, color temp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 248 T",
+          "friendly_name": "E14 candle with white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 249 T",
+          "friendly_name": "E14 candle, dimmable with, color temp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 250 C",
+          "friendly_name": "E14 bulb RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 251 C",
+          "friendly_name": "E14 bulb RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 252 C",
+          "friendly_name": "Smart bulb Candle Colour E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 255 C",
+          "friendly_name": "E14 mini bulb RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 256 C",
+          "friendly_name": "Smart Mini Bulb Colour E14",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 262",
+          "friendly_name": "Smart Bulb White 800lm E27",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 265",
+          "friendly_name": "E27 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 266",
+          "friendly_name": "E27 bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 267",
+          "friendly_name": "E27 smart bulb white 1100",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 272 T",
+          "friendly_name": "Smart bulb tunable white E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 278 T",
+          "friendly_name": "Smart bulb tunable white E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 279 T",
+          "friendly_name": "Smart bulb tunable white E27",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 282 C",
+          "friendly_name": "E27 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 285 C",
+          "friendly_name": "E27 bulb RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RB 286 C",
+          "friendly_name": "E27 bulb RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RB 287 C",
+          "friendly_name": "Smart Bulb Colour E27 1200lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RC 110",
+          "friendly_name": "Innr RC 110 Remote Control",
+          "bind": []
+        },
+        {
+          "model": "RC 210",
+          "friendly_name": "Remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RC 250",
+          "friendly_name": "Remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RCL 110",
+          "friendly_name": "Round ceiling light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RCL 231 T",
+          "friendly_name": "Round Ceiling Light - Warm to Cool White",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RCL 232 C",
+          "friendly_name": "Round ceilng light - white and colour",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RCL 240 T",
+          "friendly_name": "Smart round ceiling lamp comfort",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RF 261",
+          "friendly_name": "E27 filament bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RF 262",
+          "friendly_name": "E27 smart filament LED light bulb",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RF 263",
+          "friendly_name": "E27 filament bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RF 264",
+          "friendly_name": "E27 filament bulb dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RF 265",
+          "friendly_name": "E27 bulb filament clear",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RF 271 T",
+          "friendly_name": "Smart E27 filament LED globe light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RF 273 T",
+          "friendly_name": "Smart E27 filament LED light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RF 274 T",
+          "friendly_name": "Smart filament bulb E27 tunable edison",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 122",
+          "friendly_name": "GU10 spot",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 125",
+          "friendly_name": "GU10 spot",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 128 T",
+          "friendly_name": "GU10 spot 350 lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 225",
+          "friendly_name": "GU10 Spot",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 226",
+          "friendly_name": "GU10 Spot",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 227 T",
+          "friendly_name": "GU10 spot 420 lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 228 T",
+          "friendly_name": "GU10 spot 350 lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 229 T",
+          "friendly_name": "GU10 spot 350 lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 230 C",
+          "friendly_name": "GU10 spot 350 lm, dimmable, RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 232 C",
+          "friendly_name": "GU10 spot, dimmable, RGBW",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 240",
+          "friendly_name": "Smart pot white GU10 ",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RS 241 T",
+          "friendly_name": "GU10 spot 420 lm, dimmable, white spectrum",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RS 242 C",
+          "friendly_name": "Smart spot colour GU10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RSL 110",
+          "friendly_name": "Recessed spot light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RSL 115",
+          "friendly_name": "Recessed spot light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SL 110 M",
+          "friendly_name": "Spot Flex medium",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SL 110 N",
+          "friendly_name": "Spot Flex narrow",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SL 110 W",
+          "friendly_name": "Spot Flex wide",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "SP 110",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 120",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 220",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 222",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 224",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 234",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 240",
+          "friendly_name": "Smart plug (EU)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 242",
+          "friendly_name": "Smart plug (EU)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SP 244",
+          "friendly_name": "Smart plug (EU)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ST 110",
+          "friendly_name": "Strip Light",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "UC 110",
+          "friendly_name": "Under cabinet light",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

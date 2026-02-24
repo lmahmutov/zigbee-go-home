@@ -1,0 +1,154 @@
+{
+  "manufacturers": [
+    {
+      "name": "Visonic",
+      "models": [
+        {
+          "model": "GB-540",
+          "friendly_name": "Glass break detector",
+          "bind": []
+        },
+        {
+          "model": "MCT-302 SMA",
+          "friendly_name": "Magnetic door & window contact senso",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MCT-340 E",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MCT-340 SMA",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MCT-350 SMA",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "MCT-370 SMA",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "MP-840",
+          "friendly_name": "Long range pet immune PIR motion sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MP-841",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

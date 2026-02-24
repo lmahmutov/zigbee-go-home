@@ -1,0 +1,563 @@
+{
+  "manufacturers": [
+    {
+      "name": "Develco Products A/S",
+      "models": [
+        {
+          "model": "AQSZB-110",
+          "friendly_name": "Air quality sensor",
+          "bind": [
+            1,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "EMIZB-132",
+          "friendly_name": "Wattle AMS HAN power-meter sensor",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "FLSZB-110",
+          "friendly_name": "Flood alarm device ",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "GWA1511_MotionSensor",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1024,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "GWA1512_SmokeSensor",
+          "friendly_name": "Smoke detector with siren",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "GWA1513_WindowSensor",
+          "friendly_name": "Window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HESZB-120",
+          "friendly_name": "Fire detector with siren",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HMSZB-110",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": []
+        },
+        {
+          "model": "HMSZB-120",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": []
+        },
+        {
+          "model": "IOMZB-110",
+          "friendly_name": "IO module",
+          "bind": []
+        },
+        {
+          "model": "KEPZB-110",
+          "friendly_name": "Keypad",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MOSZB-130",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "MOSZB-140",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1024,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MOSZB-141",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "MOSZB-153",
+          "friendly_name": "Motion sensor 2 pet",
+          "bind": []
+        },
+        {
+          "model": "REXZB-111",
+          "friendly_name": "Range extender with backup battery",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SBTZB-110",
+          "friendly_name": "Smart button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SIRZB-110",
+          "friendly_name": "Customizable siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SIRZB-111",
+          "friendly_name": "Customizable siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMRZB-143",
+          "friendly_name": "Smart cable",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMRZB-332",
+          "friendly_name": "Smart relay DIN",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SMSZB-120",
+          "friendly_name": "Smoke detector with siren",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPLZB-131",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPLZB-132",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPLZB-134",
+          "friendly_name": "Power plug (type G)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SPLZB-137",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "SPLZB-141",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "WISZB-120",
+          "friendly_name": "Window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WISZB-121",
+          "friendly_name": "Window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WISZB-134",
+          "friendly_name": "Window/door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "WISZB-137",
+          "friendly_name": "Vibration sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WISZB-138",
+          "friendly_name": "Window sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZHEMI101",
+          "friendly_name": "Energy meter",
+          "bind": [
+            1794
+          ]
+        }
+      ]
+    },
+    {
+      "name": "frient A/S",
+      "models": [
+        {
+          "model": "EMIZB-141",
+          "friendly_name": "Electricity meter interface 2 LED",
+          "bind": [
+            1,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "EMIZB-151",
+          "friendly_name": "Electricity Meter Interface 2 P1",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "SMRZB-153",
+          "friendly_name": "Smart Cable - Power switch with power measurement",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WISZB-131",
+          "friendly_name": "Temperature and contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

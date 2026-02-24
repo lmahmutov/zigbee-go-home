@@ -4,31 +4,75 @@
       "name": "LUMI",
       "models": [
         {
-          "model": "lumi.sensor_magnet.aq2",
-          "friendly_name": "Aqara Door/Window Sensor",
-          "bind": [6],
-          "properties": [
+          "model": "aqara.feeder.acn001",
+          "friendly_name": "Smart pet feeder C1",
+          "bind": []
+        },
+        {
+          "model": "lumi.airm.fhac01",
+          "friendly_name": "Air monitoring panel S1",
+          "bind": [
+            1026,
+            1029
+          ],
+          "reporting": [
             {
-              "cluster": 0,
-              "attribute": 65281,
-              "decoder": "xiaomi_tlv",
-              "values": [
-                {"tag": 1, "name": "battery_voltage"},
-                {"tag": 1, "name": "battery", "transform": "lumi_battery"},
-                {"tag": 3, "name": "device_temperature"},
-                {"tag": 5, "name": "power_outage_count", "transform": "minus_one"},
-                {"tag": 6, "name": "trigger_count", "transform": "lumi_trigger"},
-                {"tag": 100, "name": "contact", "transform": "bool_invert"}
-              ]
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
             }
           ]
         },
         {
-          "model": "lumi.sensor_ht.agl02",
-          "friendly_name": "Aqara T1 Temp/Humidity",
-          "bind": [],
+          "model": "lumi.airrtc.aeu001",
+          "friendly_name": "Floor heating thermostat W500",
+          "bind": [
+            513,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "lumi.airrtc.aeu005",
+          "friendly_name": "Radiator thermostat W600",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "lumi.airrtc.agl001",
+          "friendly_name": "Smart radiator thermostat E1",
+          "bind": [
+            1,
+            513
+          ],
           "reporting": [
-            {"cluster": 1026, "attribute": 0, "type": 41, "min": 10, "max": 300, "change": 10}
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "lumi.ctrl_ln1",
+          "friendly_name": "Smart wall switch (with neutral, single rocker)",
+          "bind": [
+            6
           ],
           "properties": [
             {
@@ -36,9 +80,4373 @@
               "attribute": 65281,
               "decoder": "xiaomi_tlv",
               "values": [
-                {"tag": 1, "name": "battery_voltage"},
-                {"tag": 1, "name": "battery", "transform": "lumi_battery"},
-                {"tag": 3, "name": "device_temperature"}
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.ctrl_ln1.aq1",
+          "friendly_name": "Smart wall switch (with neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.ctrl_ln2",
+          "friendly_name": "Smart wall switch (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.ctrl_ln2.aq1",
+          "friendly_name": "Smart wall switch (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.ctrl_neutral1",
+          "friendly_name": "Smart wall switch (no neutral, single rocker)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "lumi.ctrl_neutral2",
+          "friendly_name": "Smart wall switch (no neutral, double rocker)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "lumi.curtain.acn04",
+          "friendly_name": "Curtain controller C3",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "lumi.curtain.hagl04",
+          "friendly_name": "Curtain controller B1",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "lumi.curtain.hagl07",
+          "friendly_name": "Curtain controller C2",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "lumi.dimmer.acn003",
+          "friendly_name": "T1 light strip controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.dimmer.acn004",
+          "friendly_name": "T1 light strip controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.dimmer.acn005",
+          "friendly_name": "T1 light strip controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.dimmer.rcbac1",
+          "friendly_name": "Smart lightstrip driver",
+          "bind": []
+        },
+        {
+          "model": "lumi.flood.acn001",
+          "friendly_name": "Water leak sensor E1",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "water_leak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.flood.agl02",
+          "friendly_name": "Water leak sensor T1",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "water_leak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.light.acn003",
+          "friendly_name": "Ceiling light L1-350",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn004",
+          "friendly_name": "Smart dimmer controller T1 Pro",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn006",
+          "friendly_name": "Pro track light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn014",
+          "friendly_name": "Light bulb T1",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn023",
+          "friendly_name": "Spotlight T2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn024",
+          "friendly_name": "Spotlight T2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn025",
+          "friendly_name": "Spotlight T2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn026",
+          "friendly_name": "Spotlight T2",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn031",
+          "friendly_name": "Ceiling light T1M",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn032",
+          "friendly_name": "Ceiling light T1M",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.acn128",
+          "friendly_name": "Spotlight T3",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "lumi.light.agl001",
+          "friendly_name": "E27 RGB led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl002",
+          "friendly_name": "E27 CCT led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl003",
+          "friendly_name": "E27 RGB led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl004",
+          "friendly_name": "E27 CCT led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl005",
+          "friendly_name": "E27 RGB led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl006",
+          "friendly_name": "E27 CCT led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl007",
+          "friendly_name": "E27 RGB led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.agl008",
+          "friendly_name": "E27 CCT led bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.aqcn02",
+          "friendly_name": "Light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cbacn1",
+          "friendly_name": "Smart LED controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "lumi.light.cwac02",
+          "friendly_name": "Light bulb T1",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwacn1",
+          "friendly_name": "Smart color temperature light controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwjwcn01",
+          "friendly_name": "Jiawen LED Driver & Dimmer",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwjwcn02",
+          "friendly_name": "Embedded spot led light",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwopcn01",
+          "friendly_name": "Opple MX960",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwopcn02",
+          "friendly_name": "Opple MX650",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.cwopcn03",
+          "friendly_name": "Opple MX480",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.light.rgbac1",
+          "friendly_name": "Smart RGBW light controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "lumi.lock.v1",
+          "friendly_name": "Vima Smart Lock",
+          "bind": []
+        },
+        {
+          "model": "lumi.magnet.ac01",
+          "friendly_name": "Door and window sensor P1",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 6,
+                  "name": "trigger_count",
+                  "transform": "lumi_trigger"
+                },
+                {
+                  "tag": 100,
+                  "name": "contact",
+                  "transform": "bool_invert"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.magnet.acn001",
+          "friendly_name": "Door and window sensor E1",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 6,
+                  "name": "trigger_count",
+                  "transform": "lumi_trigger"
+                },
+                {
+                  "tag": 100,
+                  "name": "contact",
+                  "transform": "bool_invert"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.magnet.agl02",
+          "friendly_name": "Door and window sensor T1",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 6,
+                  "name": "trigger_count",
+                  "transform": "lumi_trigger"
+                },
+                {
+                  "tag": 100,
+                  "name": "contact",
+                  "transform": "bool_invert"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.motion.ac01",
+          "friendly_name": "Presence sensor FP1",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 100,
+                  "name": "occupancy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.motion.acn001",
+          "friendly_name": "Motion sensor E1",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 100,
+                  "name": "occupancy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.motion.agl02",
+          "friendly_name": "Motion sensor T1",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 100,
+                  "name": "occupancy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.motion.agl04",
+          "friendly_name": "High precision motion sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 100,
+                  "name": "occupancy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.plug.aeu001",
+          "friendly_name": "Smart wall outlet H2 EU",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.plug.aq1",
+          "friendly_name": "Smart plug",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.plug.macn01",
+          "friendly_name": "Smart plug T1, CN",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.plug.sacn02",
+          "friendly_name": "Smart wall outlet T1",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.plug.sacn03",
+          "friendly_name": "Smart wall outlet H1 (USB)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "on_off"
+                },
+                {
+                  "tag": 150,
+                  "name": "energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.relay.c2acn01",
+          "friendly_name": "Dual relay module",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "lumi.remote.acn003",
+          "friendly_name": "Wireless remote switch E1 (single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.acn004",
+          "friendly_name": "Wireless remote switch E1 (double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.acn007",
+          "friendly_name": "Wireless mini switch E1",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.acn008",
+          "friendly_name": "Wireless remote switch H1M (single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.acn009",
+          "friendly_name": "Wireless remote switch H1M (double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b186acn01",
+          "friendly_name": "Wireless remote switch (single rocker), 2018 model",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b186acn02",
+          "friendly_name": "Wireless remote switch D1 (single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b186acn03",
+          "friendly_name": "Wireless remote switch T1 (single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b18ac1",
+          "friendly_name": "Wireless remote switch H1 (single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b1acn01",
+          "friendly_name": "Wireless mini switch",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b1acn02",
+          "friendly_name": "Wireless mini switch T1",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b286acn01",
+          "friendly_name": "Wireless remote switch (double rocker), 2018 model",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b286acn02",
+          "friendly_name": "Wireless remote switch D1 (double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b286acn03",
+          "friendly_name": "Wireless remote switch T1 (double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b286opcn01",
+          "friendly_name": "Opple wireless switch (single band)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b486opcn01",
+          "friendly_name": "Opple wireless switch (double band)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.b686opcn01",
+          "friendly_name": "Opple wireless switch (triple band)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.remote.rkba01",
+          "friendly_name": "Smart rotary knob H1 (wireless)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sen_ill.agl01",
+          "friendly_name": "Light sensor T1",
+          "bind": [
+            1,
+            1024
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_86sw1",
+          "friendly_name": "Wireless remote switch (single rocker), 2016 model",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_86sw2",
+          "friendly_name": "Wireless remote switch (double rocker), 2016 model",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_86sw2.es1",
+          "friendly_name": "Wireless remote switch (double rocker), 2016 model",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_cube",
+          "friendly_name": "Cube",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_cube.aqgl01",
+          "friendly_name": "Cube",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_gas.acn02",
+          "friendly_name": "Smart natural gas detector",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_ht.agl001",
+          "friendly_name": "Climate Sensor W100",
+          "bind": [],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_ht.agl02",
+          "friendly_name": "Temperature and humidity sensor T1",
+          "bind": [],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_magnet.aq2",
+          "friendly_name": "Door and window sensor",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 6,
+                  "name": "trigger_count",
+                  "transform": "lumi_trigger"
+                },
+                {
+                  "tag": 100,
+                  "name": "contact",
+                  "transform": "bool_invert"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_motion.aq2",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1030
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                },
+                {
+                  "tag": 100,
+                  "name": "occupancy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_occupy.agl1",
+          "friendly_name": "Presence sensor",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_occupy.agl8",
+          "friendly_name": "Presence sensor FP300",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_smoke.acn03",
+          "friendly_name": "Smart smoke detector",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_swit",
+          "friendly_name": "Wireless mini switch (with gyroscope)",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_switch.aq2",
+          "friendly_name": "Wireless mini switch",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_switch.aq3",
+          "friendly_name": "Wireless mini switch (with gyroscope)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_wleak.aq1",
+          "friendly_name": "Water leak sensor",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 100,
+                  "name": "water_leak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn029",
+          "friendly_name": "Smart wall switch H1M (with neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn030",
+          "friendly_name": "Smart wall switch H1M (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn031",
+          "friendly_name": "Smart wall switch H1M (with neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn040",
+          "friendly_name": "Smart wall switch E1 (with neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn048",
+          "friendly_name": "Smart wall switch Z1 (single rocker)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn049",
+          "friendly_name": "Smart wall switch Z1 (double rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn054",
+          "friendly_name": "Smart wall switch Z1 (triple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn055",
+          "friendly_name": "Smart wall switch Z1 (quadruple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn056",
+          "friendly_name": "Smart wall switch Z1 Pro (single rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn057",
+          "friendly_name": "Smart wall switch Z1 Pro (double rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn058",
+          "friendly_name": "Smart wall switch Z1 Pro (triple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn059",
+          "friendly_name": "Smart wall switch Z1 Pro (quadruple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.acn061",
+          "friendly_name": "Smart wall switch H1 20A (with neutral, single rocker)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.agl004",
+          "friendly_name": "Light Switch H2 US (double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.agl005",
+          "friendly_name": "Light Switch H2 US (2 Buttons, 2 Channels)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.agl006",
+          "friendly_name": "Light Switch H2 US (quadruple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.agl009",
+          "friendly_name": "Light switch H2 EU (single rocker)",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.agl011",
+          "friendly_name": "Dimmer switch H2 EU",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1lacn01",
+          "friendly_name": "Smart wall switch T1 (no neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1lacn02",
+          "friendly_name": "Smart wall switch D1 (no neutral, single rocker)",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1laus01",
+          "friendly_name": "Smart wall switch (no neutral, single rocker), US",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1lc04",
+          "friendly_name": "Smart wall switch E1 (no neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1nacn01",
+          "friendly_name": "Smart wall switch T1 (with neutral, single rocker)",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1nacn02",
+          "friendly_name": "Smart wall switch D1 (with neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1naus01",
+          "friendly_name": "Smart wall switch (with neutral, single rocker), US",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b1nc01",
+          "friendly_name": "Smart wall switch E1 (with neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2lacn01",
+          "friendly_name": "Smart wall switch T1 (no neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2lacn02",
+          "friendly_name": "Smart wall switch D1 (no neutral, double rocker)",
+          "bind": [],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2laus01",
+          "friendly_name": "Smart wall switch (no neutral, double rocker), US",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2lc04",
+          "friendly_name": "Smart wall switch E1 (no neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2nacn01",
+          "friendly_name": "Smart wall switch T1 (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2nacn02",
+          "friendly_name": "Smart wall switch D1 (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2naus01",
+          "friendly_name": "Smart wall switch (with neutral, double rocker), US",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b2nc01",
+          "friendly_name": "Smart wall switch E1 (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b3l01",
+          "friendly_name": "Smart wall switch T1 (no neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.b3n01",
+          "friendly_name": "Smart wall switch T1 (with neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l0acn1",
+          "friendly_name": "Single switch module T1 (no neutral), CN",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l0agl1",
+          "friendly_name": "Single switch module T1 (no neutral)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l1acn1",
+          "friendly_name": "Smart wall switch H1 (no neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l1aeu1",
+          "friendly_name": "Smart wall switch H1 EU (no neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l2acn1",
+          "friendly_name": "Smart wall switch H1 (no neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l2aeu1",
+          "friendly_name": "Smart wall switch H1 EU (no neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l3acn1",
+          "friendly_name": "Smart wall switch H1 (no neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.l3acn3",
+          "friendly_name": "Smart wall switch D1 (no neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n0acn2",
+          "friendly_name": "Single switch module T1 (with neutral), CN",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n0agl1",
+          "friendly_name": "Single switch module T1 (with neutral)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n1acn1",
+          "friendly_name": "Smart wall switch H1 Pro (with neutral, single rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n1aeu1",
+          "friendly_name": "Smart wall switch H1 EU (with neutral, single rocker)",
+          "bind": [
+            6,
+            2820
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n2acn1",
+          "friendly_name": "Smart wall switch H1 Pro (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n2aeu1",
+          "friendly_name": "Smart wall switch H1 EU (with neutral, double rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n3acn1",
+          "friendly_name": "Smart wall switch H1 Pro (with neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n3acn3",
+          "friendly_name": "Smart wall switch D1 (with neutral, triple rocker)",
+          "bind": [
+            6
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.n4acn4",
+          "friendly_name": "Smart touch panel S1",
+          "bind": [
+            6,
+            513
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.switch.rkna01",
+          "friendly_name": "Smart rotary knob H1 (with neutral)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                },
+                {
+                  "tag": 5,
+                  "name": "power_outage_count",
+                  "transform": "minus_one"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.valve.agl001",
+          "friendly_name": "Valve controller T1",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "lumi.vibration.agl01",
+          "friendly_name": "Vibration sensor T1",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.vibration.aq1",
+          "friendly_name": "Vibration sensor",
+          "bind": [
+            1280
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.weather",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1026,
+            1027,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 300,
+              "change": 10
+            },
+            {
+              "cluster": 1027,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 300,
+              "change": 50
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 300,
+              "change": 100
+            }
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {
+                  "tag": 1,
+                  "name": "battery_voltage"
+                },
+                {
+                  "tag": 1,
+                  "name": "battery",
+                  "transform": "lumi_battery"
+                },
+                {
+                  "tag": 3,
+                  "name": "device_temperature"
+                }
               ]
             }
           ]

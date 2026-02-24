@@ -1,0 +1,669 @@
+{
+  "manufacturers": [
+    {
+      "name": "Nue / 3A",
+      "models": [
+        {
+          "model": "FB56-WTS04HM1.1",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSC04HG1.0",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FB56+ZSC05HG1.0",
+          "friendly_name": "Smart dimmer wall switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FB56+ZSN08KJ2.3",
+          "friendly_name": "Smart 4 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "FB56+ZSW05HG1.2",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FB56+ZSW1GKJ2.5",
+          "friendly_name": "Smart one gang wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1GKJ2.7",
+          "friendly_name": "Smart one gang wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1HKJ1.7",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1HKJ2.5",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1HKJ2.7",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1IKJ1.7",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1IKJ2.5",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1IKJ2.7",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FB56+ZSW1JKJ2.7",
+          "friendly_name": "Smart light switch - 4 gang v2.0",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FEB56-ZCW2CLX1.0",
+          "friendly_name": "9W RGB LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FEB56-ZSN26YS1.3",
+          "friendly_name": "Smart 4 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "FNB56-DOS07FB3.1",
+          "friendly_name": "Door/window sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "FNB56-SKT1DHG1.4",
+          "friendly_name": "Smart Double GPO",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-SKT1JXN1.0",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-ZBW01LX1.2",
+          "friendly_name": "Smart dimmer wall switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FNB56-ZCW25FB1.6",
+          "friendly_name": "Smart 7W E27 light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FNB56-ZCW25FB1.9",
+          "friendly_name": "Smart light controller RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FNB56-ZCW25FB2.1",
+          "friendly_name": "Smart 7W E27 light bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "FNB56-ZSC01LX1.2",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FNB56-ZSW02LX2.0",
+          "friendly_name": "Smart light switch - 2 gang v2.0",
+          "bind": []
+        },
+        {
+          "model": "FNB56-ZSW03LX2.0",
+          "friendly_name": "Smart light switch - 3 gang v2.0",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FNB56-ZSW23HG1.1",
+          "friendly_name": "Smart in-wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FTB56+ZSN15HG1.0",
+          "friendly_name": "Smart 1 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "FTB56+ZSN16HG1.0",
+          "friendly_name": "Smart 2 key scene wall switch",
+          "bind": []
+        },
+        {
+          "model": "LXN-1S27LX1.0",
+          "friendly_name": "Smart one gang wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN-3S27LX1.0",
+          "friendly_name": "Smart light switch - 3 gang v2.0",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN-4S27LX1.0",
+          "friendly_name": "Smart light switch - 4 gang v2.0",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-0S27LX1.1",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-0S27LX1.2",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-0S27LX1.3",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-1S27LX1.2",
+          "friendly_name": "Smart fan light switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-DC27LX1.1",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LXN56-DS27LX1.1",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LXN56-DS27LX1.3",
+          "friendly_name": "Smart light controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LXN56-LC27LX1.1",
+          "friendly_name": "Smart in-wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-LC27LX1.3",
+          "friendly_name": "Smart in-wall switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN56-TS27LX1.2",
+          "friendly_name": "Smart double GPO",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN59-1S7LX1.0",
+          "friendly_name": "Smart Zigbee 3.0 light controller",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN59-2S7LX1.0",
+          "friendly_name": "Smart light relay - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXN59-CS27LX1.0",
+          "friendly_name": "Zigbee smart curtain switch",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "LXN60-DS27LX1.3",
+          "friendly_name": "Smart dimmer wall switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LXN60-LS27-Z30",
+          "friendly_name": "9W RGB LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXT56-LS27LX1.4",
+          "friendly_name": "Smart Zigbee 3.0 strip light controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXT56-LS27LX1.7",
+          "friendly_name": "Smart Zigbee 3.0 strip light controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "LXX60-CS27LX1.0",
+          "friendly_name": "Zigbee smart curtain switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LXX60-FN27LX1.0",
+          "friendly_name": "Smart fan light switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "NUET56-DL27LX1.2",
+          "friendly_name": "RGB LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "manufacturers": [
+    {
+      "name": "GE",
+      "models": [
+        {
+          "model": "45852",
+          "friendly_name": "Zigbee plug-in smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "45853",
+          "friendly_name": "Plug-in smart switch",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "45856",
+          "friendly_name": "In-wall smart switch",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "45857",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Daylight",
+          "friendly_name": "Link smart LED light bulb, A19/BR30 cold white (5000K)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "Smart Switch",
+          "friendly_name": "Quirky smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SoftWhite",
+          "friendly_name": "Link smart LED light bulb, A19 soft white (2700K)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZHA Smart Plug",
+          "friendly_name": "Outlink smart remote outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZLL Light",
+          "friendly_name": "Link smart LED light bulb, A19/BR30 soft white (2700K)",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

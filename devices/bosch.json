@@ -1,0 +1,607 @@
+{
+  "manufacturers": [
+    {
+      "name": "BOSCH",
+      "models": [
+        {
+          "model": "Champion",
+          "friendly_name": "Twinguard",
+          "bind": []
+        },
+        {
+          "model": "ISW-ZPR1-WP13",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RBSH-MMD-ZB-EU",
+          "friendly_name": "Phase-cut dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RBSH-MMR-ZB-EU",
+          "friendly_name": "Relay (potential free)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RBSH-MMS-ZB-EU",
+          "friendly_name": "Light/shutter control unit II",
+          "bind": [
+            258,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "RBSH-OS-ZB-EU",
+          "friendly_name": "Outdoor siren",
+          "bind": []
+        },
+        {
+          "model": "RBSH-RTH0-BAT-ZB-EU",
+          "friendly_name": "Room thermostat II",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "RBSH-RTH0-ZB-EU",
+          "friendly_name": "Room thermostat II 230V",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "RBSH-SD-ZB-EU",
+          "friendly_name": "Smoke alarm II",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SP-ZB-EU",
+          "friendly_name": "Smart plug compact (type F plug)",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SP-ZB-FR",
+          "friendly_name": "Smart plug compact (type F plug)",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SP-ZB-GB",
+          "friendly_name": "Smart plug compact (type F plug)",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SP2-ZB-EU",
+          "friendly_name": "Smart plug compact [+M]",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SWD-ZB",
+          "friendly_name": "Door/window contact II",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SWD2-ZB",
+          "friendly_name": "Door/window contact II [+M]",
+          "bind": []
+        },
+        {
+          "model": "RBSH-SWDV-ZB",
+          "friendly_name": "Door/window contact II plus",
+          "bind": []
+        },
+        {
+          "model": "RBSH-TRV0-ZB-EU",
+          "friendly_name": "Radiator thermostat II",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "RBSH-TRV1-ZB-EU",
+          "friendly_name": "Radiator thermostat II",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "RBSH-US4BTN-ZB-EU",
+          "friendly_name": "Universal Switch II",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RBSH-WS-ZB-EU",
+          "friendly_name": "Water alarm (formerly known as BWA-1)",
+          "bind": []
+        },
+        {
+          "model": "RFDL-ZB",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-CHI",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-ES",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-EU",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-H",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-K",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFDL-ZB-MS",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB-CHI",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB-ES",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB-EU",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB-MS",
+          "friendly_name": "Wireless motion detector",
+          "bind": [
+            1,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RFPR-ZB-SH-EU",
+          "friendly_name": "Motion detector",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

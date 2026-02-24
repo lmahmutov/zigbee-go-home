@@ -1,0 +1,145 @@
+{
+  "manufacturers": [
+    {
+      "name": "icasa",
+      "models": [
+        {
+          "model": "ICZB-DC11",
+          "friendly_name": "Zigbee 12-36V DC LED dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ICZB-FC",
+          "friendly_name": "Zigbee 3.0 Filament Lamp 60/64/95/125 mm, 806 lumen, dimmable, clear",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ICZB-IW11D",
+          "friendly_name": "Zigbee AC dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ICZB-IW11SW",
+          "friendly_name": "Zigbee 3.0 AC switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ICZB-IW21D",
+          "friendly_name": "Zigbee AC dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "ICZB-KPD12",
+          "friendly_name": "Zigbee 3.0 Keypad Pulse 2",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ICZB-KPD14S",
+          "friendly_name": "Zigbee 3.0 Keypad Pulse 4S",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ICZB-KPD18S",
+          "friendly_name": "Zigbee 3.0 Keypad Pulse 8S",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ICZB-R11D",
+          "friendly_name": "Zigbee AC dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ICZB-R12D",
+          "friendly_name": "Zigbee AC dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ICZB-RM11S",
+          "friendly_name": "Zigbee 3.0 remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

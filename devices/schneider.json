@@ -1,0 +1,1021 @@
+{
+  "manufacturers": [
+    {
+      "name": "Schneider Electric",
+      "models": [
+        {
+          "model": "1GANG/DALI/1",
+          "friendly_name": "Merten MEG5171 PlusLink Dimmer insert with Merten Wiser System M Push Button (1fold)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "1GANG/DIMMER/1",
+          "friendly_name": "Merten MEG5171 PlusLink Dimmer insert with Merten Wiser System M Push Button (1fold)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "1GANG/ESWITCH/1",
+          "friendly_name": "Merten MEG5151 switch insert with Merten System M push button (1fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "1GANG/SHUTTER/1",
+          "friendly_name": "Merten MEG5165 PlusLink Shutter insert with Merten Wiser System M Push Button (1fold)",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "1GANG/SWITCH/1",
+          "friendly_name": "Merten PlusLink relay insert with Merten Wiser system M push button (1fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "1GANG/SWITCH/2",
+          "friendly_name": "Merten MEG5162 switch insert (2fold) with Merten System M push button (1fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2GANG/DIMMER/1",
+          "friendly_name": "Merten MEG5171 PlusLink Dimmer insert with Merten Wiser System M Push Button (2fold)",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "2GANG/DIMMER/2",
+          "friendly_name": "Merten MEG5172 PlusLink Dimmer insert with Merten Wiser System M Push Button (2fold)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "2GANG/ESWITCH/2",
+          "friendly_name": "Merten MEG5152 switch insert (2fold) with Merten System M push button (2fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2GANG/SWITCH/1",
+          "friendly_name": "Merten MEG5165 PlusLink relais insert with Merten Wiser System M push button (2fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2GANG/SWITCH/2",
+          "friendly_name": "Merten MEG5165 PlusLink relais insert with Merten Wiser System M push button (2fold)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "755WSA",
+          "friendly_name": "Wiser smoke alarm",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "A3N31SR800ZB_xx_C1",
+          "friendly_name": "Wiser AvatarOn 1G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "A3N32SR800ZB_xx_C1",
+          "friendly_name": "Wiser AvatarOn 2G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "A3N33SR800ZB_xx_C1",
+          "friendly_name": "Wiser AvatarOn 3G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CCT591011_AS",
+          "friendly_name": "Wiser window/door sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "CCT592011_AS",
+          "friendly_name": "Wiser water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "CCT593011_AS",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CCT595011_AS",
+          "friendly_name": "Wiser motion sensor",
+          "bind": [
+            1,
+            1024
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CCTFR6100",
+          "friendly_name": "Wiser radiator thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CCTFR6730",
+          "friendly_name": "Wiser power micromodule",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CH/DIMMER/1",
+          "friendly_name": "Wiser 40/300-Series Module Dimmer",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "CH/Socket/2",
+          "friendly_name": "Dual connected smart socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CH10AX/SWITCH/1",
+          "friendly_name": "Wiser 40/300-Series module switch 10AX with ControlLink",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CH2AX/SWITCH/1",
+          "friendly_name": "Wiser 40/300-Series module switch 2AX",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CHFAN/SWITCH/1",
+          "friendly_name": "Wiser 40/300-Series Module AC Fan Controller",
+          "bind": []
+        },
+        {
+          "model": "E8331DST300ZB",
+          "friendly_name": "Wiser AvatarOn 1G dimmer switch",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "E8331SCN200ZB",
+          "friendly_name": "Wiser AvatarOn 1G curtain switch",
+          "bind": []
+        },
+        {
+          "model": "E8331SRY800ZB",
+          "friendly_name": "Wiser AvatarOn 1G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E8332DST350ZB",
+          "friendly_name": "Wiser AvatarOn 2G dimmer switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "E8332RWMZB",
+          "friendly_name": "Wiser AvatarOn 2K Freelocate",
+          "bind": []
+        },
+        {
+          "model": "E8332SCN300ZB",
+          "friendly_name": "Wiser AvatarOn 2G curtain switch",
+          "bind": []
+        },
+        {
+          "model": "E8332SRY800ZB",
+          "friendly_name": "Wiser AvatarOn 2G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E8333SRY800ZB",
+          "friendly_name": "Wiser AvatarOn 3G onoff switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E8334RWMZB",
+          "friendly_name": "Wiser AvatarOn 4K Freelocate",
+          "bind": []
+        },
+        {
+          "model": "EH-ZB-HACT",
+          "friendly_name": "Wiser H-Relay (HACT)",
+          "bind": [
+            513,
+            1794
+          ]
+        },
+        {
+          "model": "EH-ZB-LMACT",
+          "friendly_name": "Zigbee load actuator with power meter",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "EH-ZB-RTS",
+          "friendly_name": "Wiser thermostat (RTS)",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "EH-ZB-SPD-V2",
+          "friendly_name": "Zigbee smart plug with power meter",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "EH-ZB-VACT",
+          "friendly_name": "Wiser radiator thermostat (VACT)",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "EKO07259",
+          "friendly_name": "Smart thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "EVSCKT/OUTLET/1",
+          "friendly_name": "Mureva EVlink Smart socket outlet",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FLS/AIRLINK/4",
+          "friendly_name": "LK FUGA wiser wireless battery 4 button switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FLS/SYSTEM-M/4",
+          "friendly_name": "Wiser wireless switch 1-gang or 2-gang",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "iTRV",
+          "friendly_name": "Wiser radiator thermostat",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LK Dimmer",
+          "friendly_name": "LK FUGA wiser wireless dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "LK Switch",
+          "friendly_name": "LK FUGA wiser wireless double relay",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "LK/OUTLET/1",
+          "friendly_name": "LK FUGA wiser wireless socket outlet",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "MEG5779",
+          "friendly_name": "Merten Connected Room Temperature Controller",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "NHMOTION/DIMMER/1",
+          "friendly_name": "Motion sensor with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "NHMOTION/SWITCH/1",
+          "friendly_name": "Motion sensor with switch",
+          "bind": [
+            6,
+            1024,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "NHMOTION/UNIDIM/1",
+          "friendly_name": "Motion sensor with dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "NHPB/DIMMER/1",
+          "friendly_name": "Push button dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "NHPB/SHUTTER/1",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "NHPB/SWITCH/1",
+          "friendly_name": "Odace connectable relay switch 10A",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "NHPB/UNIDIM/1",
+          "friendly_name": "Push button dimmer",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "NHROTARY/DIMMER/1",
+          "friendly_name": "Rotary dimmer",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "NHROTARY/UNIDIM/1",
+          "friendly_name": "Rotary dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "PUCK/DIMMER/1",
+          "friendly_name": "Micro module dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "PUCK/SHUTTER/1",
+          "friendly_name": "Roller shutter module",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "PUCK/SWITCH/1",
+          "friendly_name": "Micro module switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PUCK/UNIDIM/1",
+          "friendly_name": "Micro module dimmer with neutral lead",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "S520619",
+          "friendly_name": "Wiser Odace Smart thermostat",
+          "bind": [
+            1026,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SMARTPLUG/1",
+          "friendly_name": "Wiser smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "SOCKET/OUTLET/1",
+          "friendly_name": "Zigbee smart socket with power meter",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "SOCKET/OUTLET/2",
+          "friendly_name": "Zigbee smart socket with power meter",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "U201DST600ZB",
+          "friendly_name": "EZinstall3 1 gang 550W dimmer module",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "U201SRY2KWZB",
+          "friendly_name": "Ulti 240V 9.1 A 1 gang relay switch impress switch module, amber LED",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "U202DST600ZB",
+          "friendly_name": "EZinstall3 2 gang 2x300W dimmer module",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "U202SRY2KWZB",
+          "friendly_name": "Ulti 240V 9.1 A 2 gangs relay switch impress switch module, amber LED",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "W564100",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            6,
+            1024,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "W599001",
+          "friendly_name": "Wiser smoke alarm",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "W599501",
+          "friendly_name": "Wiser smoke alarm",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "WDE002497",
+          "friendly_name": "Smart thermostat",
+          "bind": [
+            1026,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "WDE011680",
+          "friendly_name": "Smart thermostat",
+          "bind": [
+            1026,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

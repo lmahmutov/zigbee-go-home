@@ -1,0 +1,190 @@
+{
+  "manufacturers": [
+    {
+      "name": "SOMFY",
+      "models": [
+        {
+          "model": "1811680",
+          "friendly_name": "Zigbee opening sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "1811681",
+          "friendly_name": "Zigbee motion sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "1822647",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "Glydea Ultra Curtain",
+          "friendly_name": "Glydea Curtain motor Zigbee module",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Roll Up 24 WF Li-ion Roller",
+          "friendly_name": "Blinds",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Sonesse 28 WF Li-Ion Roller",
+          "friendly_name": "Sonesse 28 WF Li-Ion roller shades",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Sonesse 28 WF Roller",
+          "friendly_name": "Sonesse 28 WF Li-Ion roller shades",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Sonesse 30 DC 24V Roller",
+          "friendly_name": "Sonesse 30 DC 24V roller shades",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Sonesse Ultra 30 WF Li-Ion Rolle",
+          "friendly_name": "Blinds",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Sonesse2 28 WF Li-Ion Roller",
+          "friendly_name": "Sonesse2 28 WF Li-Ion roller shades",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Sonesse2 28 WF Roller",
+          "friendly_name": "Sonesse2 28 WF roller shades",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Sonesse2 40 Zigbee Roller",
+          "friendly_name": "Sonesse2 40 Zigbee roller shades",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Sonesse2 ULTRA 30 WF Li-ion Roll",
+          "friendly_name": "Blinds",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Tilt & Lift 25 WF Roller",
+          "friendly_name": "Tilt and lift blinds motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "Ysia 1 Zigbee Europe",
+          "friendly_name": "Ysia 1 channel blinds remote",
+          "bind": [
+            1,
+            6,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Ysia 5 HP Zigbee",
+          "friendly_name": "Ysia 5 channel blinds remote",
+          "bind": [
+            1,
+            6,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

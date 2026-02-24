@@ -1,0 +1,262 @@
+{
+  "manufacturers": [
+    {
+      "name": "Aurora",
+      "models": [
+        {
+          "model": "1GBatteryDimmer50AU",
+          "friendly_name": "AOne one gang wireless battery rotary dimmer",
+          "bind": []
+        },
+        {
+          "model": "2GBatteryDimmer50AU",
+          "friendly_name": "AOne two gang wireless battery rotary dimmer",
+          "bind": []
+        },
+        {
+          "model": "AU-A1CE14ZCX6",
+          "friendly_name": "AOne smart tuneable candle lamp bulb",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "DoubleSocket50AU",
+          "friendly_name": "Double smart socket UK",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "FWA60Bulb50AU",
+          "friendly_name": "AOne 4W smart dimmable Vintage GLS lamp 1900K",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWBulb51AU",
+          "friendly_name": "AOne 9W smart GLS B22",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWG125Bulb50AU",
+          "friendly_name": "AOne 4W smart dimmable G125 lamp 1900K",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWGU10Bulb01UK",
+          "friendly_name": "AOne 4.8W smart dimmable GU10 lamp 3000K",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWGU10Bulb50AU",
+          "friendly_name": "AOne 4.8W smart dimmable GU10 lamp 3000K",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "MotionSensor51AU",
+          "friendly_name": "AOne PIR sensor",
+          "bind": [
+            1024,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1024,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 5
+            }
+          ]
+        },
+        {
+          "model": "NPD3032",
+          "friendly_name": "AOne 1-10V in-line dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "Remote50AU",
+          "friendly_name": "AOne smart remote",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RGBBulb01UK",
+          "friendly_name": "AOne 9.5W smart RGBW GLS E27/B22",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBBulb02UK",
+          "friendly_name": "AOne 9.5W smart RGBW GLS E27/B22",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBBulb51AU",
+          "friendly_name": "AOne 9.5W smart RGBW GLS E27/B22",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBCXStrip50AU",
+          "friendly_name": "RGBW LED strip controller",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBGU10Bulb50AU",
+          "friendly_name": "AOne 5.6w smart RGBW tuneable GU10 lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBGU10Bulb50AU2",
+          "friendly_name": "AOne 5.6w smart RGBW tuneable GU10 lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "SingleSocket50AU",
+          "friendly_name": "Power plug Zigbee EU",
+          "bind": [
+            6,
+            2820
+          ]
+        },
+        {
+          "model": "Smart16ARelay51AU",
+          "friendly_name": "Aurora Smart Inline Relay",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SmartPlug51AU",
+          "friendly_name": "Aurora smart plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "TWBulb51AU",
+          "friendly_name": "AOne GLS lamp 9w tunable dimmable 2200-5000K",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWGU10Bulb50AU",
+          "friendly_name": "AOne 5.4W smart tuneable GU10 lamp",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWMPROZXBulb50AU",
+          "friendly_name": "AOne MPROZX fixed IP65 fire rated smart tuneable LED downlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "WallDimmerMaster",
+          "friendly_name": "AOne 250W smart rotary dimmer module",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "WindowSensor51AU",
+          "friendly_name": "Magnetic door & window contact sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

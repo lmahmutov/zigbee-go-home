@@ -1,0 +1,330 @@
+{
+  "manufacturers": [
+    {
+      "name": "Climax Technology Co.",
+      "models": [
+        {
+          "model": "CO_00.00.00.15TC",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CO_00.00.00.22TC",
+          "friendly_name": "Smart carbon monoxide sensor",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "KP-ACE_00.00.03.11TC",
+          "friendly_name": "Remote Keypad",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "KP-ACE_00.00.03.12TC",
+          "friendly_name": "Remote Keypad",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PRL_00.00.03.04TC",
+          "friendly_name": "Zigbee 12-24V relay controller",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PSM_00.00.00.35TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.02.02TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.12TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.15TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.16TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.03.19TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.05.01TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSMP5_00.00.05.10TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "PSS_00.00.00.15TC",
+          "friendly_name": "Power plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "RS_00.00.02.06TC",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SCM-3_00.00.03.15",
+          "friendly_name": "Roller shutter",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SD8SC_00.00.03.12TC",
+          "friendly_name": "Smoke detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SRAC_00.00.00.16TC",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SRACB_00.00.03.07TC",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SRACBP5_00.00.03.06TC",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SRACBP5_00.00.05.10TC",
+          "friendly_name": "Smart siren",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WS15_00.00.00.10TC",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WS15_00.00.00.14TC",
+          "friendly_name": "Water leak sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

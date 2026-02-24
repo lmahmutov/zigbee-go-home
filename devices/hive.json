@@ -1,0 +1,418 @@
+{
+  "manufacturers": [
+    {
+      "name": "HiveHome.com",
+      "models": [
+        {
+          "model": "DWS003",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "FWBulb01",
+          "friendly_name": "Active smart bulb white LED (E27)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWBulb02UK",
+          "friendly_name": "Active smart bulb white LED (B22)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWCLBulb01UK",
+          "friendly_name": "Active smart bulb white LED (E14)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWGU10Bulb02UK",
+          "friendly_name": "GU10 warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "FWGU10Bulb03UK",
+          "friendly_name": "GU10 warm white",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "KEYPAD001",
+          "friendly_name": "Alarm security keypad",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MOT003",
+          "friendly_name": "Motion sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "OTR1",
+          "friendly_name": "Single channel heating receiver",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLB2",
+          "friendly_name": "Signal booster",
+          "bind": []
+        },
+        {
+          "model": "SLP2",
+          "friendly_name": "Active plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SLP2b",
+          "friendly_name": "Active plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SLP2c",
+          "friendly_name": "Active plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SLP3",
+          "friendly_name": "Active plug",
+          "bind": [
+            6,
+            1794
+          ]
+        },
+        {
+          "model": "SLR1",
+          "friendly_name": "Heating thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR1b",
+          "friendly_name": "Heating thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR1c",
+          "friendly_name": "Heating thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR1d",
+          "friendly_name": "Single channel receiver",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR2",
+          "friendly_name": "Dual channel heating and hot water receiver",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR2b",
+          "friendly_name": "Dual channel heating and hot water thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR2c",
+          "friendly_name": "Dual channel heating and hot water thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLR2d",
+          "friendly_name": "Dual channel heating and hot water thermostat",
+          "bind": [
+            513
+          ]
+        },
+        {
+          "model": "SLT2",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT3",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT3B",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT3C",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT3d",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT6",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SLT6b",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "TWBulb01UK",
+          "friendly_name": "Active light, warm to cool white (E27 & B22)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWBulb01US",
+          "friendly_name": "Active light cool to warm white (E26) ",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWBulb02UK",
+          "friendly_name": "Active light, warm to cool white (E27 & B22)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWCLBulb01UK",
+          "friendly_name": "Active light, warm to cool white (E14)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "TWGU10Bulb01UK",
+          "friendly_name": "Active light, warm to cool white (GU10)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "WPT1",
+          "friendly_name": "Heating thermostat remote control",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

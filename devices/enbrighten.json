@@ -1,0 +1,170 @@
+{
+  "manufacturers": [
+    {
+      "name": "Jasco Products",
+      "models": [
+        {
+          "model": "43076",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43078",
+          "friendly_name": "Zigbee in-wall smart switch with energy monitoring",
+          "bind": [
+            6,
+            1794,
+            2820
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43080",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "43082",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "43084",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43090",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "43094",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43096",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "43100",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43102",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43109",
+          "friendly_name": "Zigbee in-wall smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "43113",
+          "friendly_name": "Zigbee in-wall smart dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

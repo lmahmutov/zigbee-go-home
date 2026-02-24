@@ -1,0 +1,831 @@
+{
+  "manufacturers": [
+    {
+      "name": "OSRAM",
+      "models": [
+        {
+          "model": "A60 DIM Z3",
+          "friendly_name": "SMART+ classic E27 dimmable",
+          "bind": []
+        },
+        {
+          "model": "A60 TW Z3",
+          "friendly_name": "SMART+ classic E27 TW",
+          "bind": []
+        },
+        {
+          "model": "B40 DIM Z3",
+          "friendly_name": "SMART+ Candle E14 Dimmable White",
+          "bind": []
+        },
+        {
+          "model": "Ceiling TW OSRAM",
+          "friendly_name": "Smart+ Ceiling TW",
+          "bind": []
+        },
+        {
+          "model": "CLA60 RGBW II Z3",
+          "friendly_name": "SMART+ LED CLASSIC E27 RGBW V2",
+          "bind": []
+        },
+        {
+          "model": "CLA60 RGBW OSRAM",
+          "friendly_name": "LIGHTIFY LED CLA60 E27 RGBW",
+          "bind": []
+        },
+        {
+          "model": "CLA60 RGBW Z3",
+          "friendly_name": "SMART+ LED CLASSIC E27 RGBW",
+          "bind": []
+        },
+        {
+          "model": "CLA60 TW OSRAM",
+          "friendly_name": "SMART+ CLASSIC A 60 TW",
+          "bind": []
+        },
+        {
+          "model": "Classic A60 RGBW",
+          "friendly_name": "Classic A60 RGBW",
+          "bind": []
+        },
+        {
+          "model": "Classic A60 TW",
+          "friendly_name": "LIGHTIFY LED A19 tunable white / Classic A60 TW",
+          "bind": []
+        },
+        {
+          "model": "Classic A60 W clear - LIGHTIFY",
+          "friendly_name": "LIGHTIFY LED Classic A60 clear",
+          "bind": []
+        },
+        {
+          "model": "Classic B40 TW - LIGHTIFY",
+          "friendly_name": "LIGHTIFY LED Classic B40 tunable white",
+          "bind": []
+        },
+        {
+          "model": "Connected Tube Z3",
+          "friendly_name": "OSRAM SubstiTUBE T8 Advanced UO Connected",
+          "bind": []
+        },
+        {
+          "model": "Control box TW",
+          "friendly_name": "Lightify tunable white controller",
+          "bind": []
+        },
+        {
+          "model": "Flex Outdoor RGBW",
+          "friendly_name": "Outdoor Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "Flex RGBW",
+          "friendly_name": "Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "Gardenpole Mini RGBW OSRAM",
+          "friendly_name": "Smart+ mini gardenpole RGBW",
+          "bind": []
+        },
+        {
+          "model": "Gardenpole RGBW Z3",
+          "friendly_name": "Smart+ gardenpole 4W RGBW",
+          "bind": []
+        },
+        {
+          "model": "Gardenpole RGBW-Lightify",
+          "friendly_name": "Smart+ gardenpole 8.7W RGBW",
+          "bind": []
+        },
+        {
+          "model": "Gardenspot RGB",
+          "friendly_name": " Gardenspot LED mini RGB",
+          "bind": []
+        },
+        {
+          "model": "Gardenspot W",
+          "friendly_name": "Lightify mini gardenspot WT",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY A19 Tunable White",
+          "friendly_name": "LIGHTIFY LED A19 tunable white / Classic A60 TW",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY FLEX OUTDOOR RGBW",
+          "friendly_name": "Outdoor Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY Flex RGBW",
+          "friendly_name": "Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY Indoor Flex RGBW",
+          "friendly_name": "Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY Outdoor Flex RGBW",
+          "friendly_name": "Outdoor Flex RGBW",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY PAR38 ON/OFF/DIM",
+          "friendly_name": "Smart home soft white PAR38 outdoor bulb",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY RT RGBW",
+          "friendly_name": "LIGHTIFY RT5/6 LED",
+          "bind": []
+        },
+        {
+          "model": "Lightify Switch Mini",
+          "friendly_name": "Smart+ switch mini",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Lightify Switch Mini blue",
+          "friendly_name": "Smart+ switch mini",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LIGHTIFY Under Cabinet TW",
+          "friendly_name": "Lightify under cabinet tunable white",
+          "bind": []
+        },
+        {
+          "model": "Motion Sensor-A",
+          "friendly_name": "SMART+ Motion Sensor",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MR16 TW OSRAM",
+          "friendly_name": "SMART+ spot GU5.3 tunable white",
+          "bind": []
+        },
+        {
+          "model": "Outdoor Lantern B50 RGBW OSRAM",
+          "friendly_name": "SMART+ outdoor lantern RGBW",
+          "bind": []
+        },
+        {
+          "model": "Outdoor Lantern W RGBW OSRAM",
+          "friendly_name": "SMART+ outdoor wall lantern RGBW",
+          "bind": []
+        },
+        {
+          "model": "Panel TW 595 UGR22",
+          "friendly_name": "OSRAM LED panel TW 595 UGR22",
+          "bind": []
+        },
+        {
+          "model": "PAR 16 50 RGBW - LIGHTIFY",
+          "friendly_name": "Smart+ Spot GU10 Multicolor",
+          "bind": []
+        },
+        {
+          "model": "PAR16 50 TW",
+          "friendly_name": "LIGHTIFY LED PAR16 50 GU10 tunable white",
+          "bind": []
+        },
+        {
+          "model": "PAR16 DIM Z3",
+          "friendly_name": "SMART+ LED PAR16 GU10",
+          "bind": []
+        },
+        {
+          "model": "PAR16 RGBW Z3",
+          "friendly_name": "SMART+ Spot GU10 Multicolor",
+          "bind": []
+        },
+        {
+          "model": "PAR16 TW Z3",
+          "friendly_name": "LIGHTIFY LED PAR16 50 GU10 tunable white",
+          "bind": []
+        },
+        {
+          "model": "PBC",
+          "friendly_name": "Lightify pro push button controller (PBC)",
+          "bind": []
+        },
+        {
+          "model": "SubstiTube",
+          "friendly_name": "OSRAM SubstiTUBE T8 Advanced UO Connected",
+          "bind": []
+        },
+        {
+          "model": "Surface Light TW",
+          "friendly_name": "LIGHTIFY Surface Light LED Tunable White",
+          "bind": []
+        },
+        {
+          "model": "Switch 4x EU-LIGHTIFY",
+          "friendly_name": "Smart+ switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Switch 4x-LIGHTIFY",
+          "friendly_name": "Smart+ switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Switch-LIGHTIFY",
+          "friendly_name": "Smart+ switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Zigbee 3.0 DALI CONV LI",
+          "friendly_name": "Zigbee 3.0 DALI CONV LI dimmer for DALI-based luminaires (only one device)",
+          "bind": []
+        },
+        {
+          "model": "ZLO-CeilingTW-OS",
+          "friendly_name": "LIGHTIFY Surface Light LED Tunable White",
+          "bind": []
+        }
+      ]
+    },
+    {
+      "name": "LEDVANCE",
+      "models": [
+        {
+          "model": "A60 DIM T",
+          "friendly_name": "SMART+ Classic A E27 dimmable white",
+          "bind": []
+        },
+        {
+          "model": "A60 FIL DIM T",
+          "friendly_name": "SMART+ Filament Classic A 52 E27 Amber dimmable",
+          "bind": []
+        },
+        {
+          "model": "A60 RGBW B22D T",
+          "friendly_name": "SMART+ lamp B22D RGBTW",
+          "bind": []
+        },
+        {
+          "model": "A60 RGBW T",
+          "friendly_name": "SMART+ lamp E27 RGBTW",
+          "bind": []
+        },
+        {
+          "model": "A60 RGBW Value II",
+          "friendly_name": "SMART+ CLASSIC MULTICOLOUR 60 10W E27",
+          "bind": []
+        },
+        {
+          "model": "A60 TW T",
+          "friendly_name": "SMART+ CL A60 E27 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "A60 TW Value II",
+          "friendly_name": "Classic E27 Tunable White",
+          "bind": []
+        },
+        {
+          "model": "A60S RGBW",
+          "friendly_name": "SMART+ lamp E27 RGBW",
+          "bind": []
+        },
+        {
+          "model": "A60S TW",
+          "friendly_name": "SMART+ Classic A60 E27 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "B40 DIM T",
+          "friendly_name": "SMART+ Classic B40 E14 dimmable white",
+          "bind": []
+        },
+        {
+          "model": "B40 TW T",
+          "friendly_name": "SMART+ CL B40 E14 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "B40 TW Value",
+          "friendly_name": "Classic E14 tunable white",
+          "bind": []
+        },
+        {
+          "model": "B40 TW Z3",
+          "friendly_name": "SMART+ candle E14 tunable white",
+          "bind": []
+        },
+        {
+          "model": "B40S TW",
+          "friendly_name": "SMART+ Classic B40 E14 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "CLA60 RGBW JP",
+          "friendly_name": "SMART+ lamp B22D RGBTW",
+          "bind": []
+        },
+        {
+          "model": "CLA60 TW Value",
+          "friendly_name": "Classic E26 tunable white 9w 800 lumen",
+          "bind": []
+        },
+        {
+          "model": "Connected Tube Value II",
+          "friendly_name": "SubstiTUBE connected advanced ultra output",
+          "bind": []
+        },
+        {
+          "model": "DR_ZBD_NFC_P_45W_220-240V_1A2",
+          "friendly_name": "PL CMFT 600 ZB P 33W 840 U19",
+          "bind": []
+        },
+        {
+          "model": "EDISON60 FIL DIM T",
+          "friendly_name": "SMART+ Filament Edison 52 E27 Amber dimmable",
+          "bind": []
+        },
+        {
+          "model": "FLEX RGBW T",
+          "friendly_name": "SMART+ Indoor Flex multicolor RGBW",
+          "bind": []
+        },
+        {
+          "model": "FLEX RGBW Z3",
+          "friendly_name": "Flex 3P multicolor",
+          "bind": []
+        },
+        {
+          "model": "Gardenpole Mini RGBW Z3",
+          "friendly_name": "SMART+ gardenpole multicolour",
+          "bind": []
+        },
+        {
+          "model": "GARDENPOLE RGBW T",
+          "friendly_name": "SMART+ Gardenpole 5P Multicolor",
+          "bind": []
+        },
+        {
+          "model": "GLOBE60 FIL DIM T",
+          "friendly_name": "SMART+ Filament Globe125 52 E27 Amber dimmable",
+          "bind": []
+        },
+        {
+          "model": "LEDVANCE DIM",
+          "friendly_name": "SMART+ candle E14 dimmable white",
+          "bind": []
+        },
+        {
+          "model": "OUTDOOR FLEX RGBW T",
+          "friendly_name": "SMART+ Outdoor Flex multicolor RGBW",
+          "bind": []
+        },
+        {
+          "model": "Outdoor FLEX RGBW Z3",
+          "friendly_name": "SMART+ outdoor flex multicolor",
+          "bind": []
+        },
+        {
+          "model": "Outdoor Plug",
+          "friendly_name": "Smart Zigbee outdoor plug",
+          "bind": []
+        },
+        {
+          "model": "P40 DIM T",
+          "friendly_name": "SMART+ Classic P40 E14 dimmable white",
+          "bind": []
+        },
+        {
+          "model": "P40 TW T",
+          "friendly_name": "SMART+ CL P40 E14 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "P40 TW Value",
+          "friendly_name": "SMART+ Lighting - Classic E14 tunable white",
+          "bind": []
+        },
+        {
+          "model": "P40S TW",
+          "friendly_name": "SMART+ classic P 40 E14 tunable white",
+          "bind": []
+        },
+        {
+          "model": "Panel Light 2x2 TW",
+          "friendly_name": "LEDVANCE 74746 Sylvania smart+ Zigbee dimmable edge-lit panel",
+          "bind": []
+        },
+        {
+          "model": "Panel TW 620 UGR19",
+          "friendly_name": "Panel TW LED 625 UGR19",
+          "bind": []
+        },
+        {
+          "model": "Panel TW Z3",
+          "friendly_name": "SMART+ panel 60x60cm/120x30cm tunable white",
+          "bind": []
+        },
+        {
+          "model": "PAR16 DIM T",
+          "friendly_name": "SMART+ Spot PAR16 50 GU10 dimmable white",
+          "bind": []
+        },
+        {
+          "model": "PAR16 RGBW T",
+          "friendly_name": "SMART+ Spot PAR16 28 GU10 Multicolor",
+          "bind": []
+        },
+        {
+          "model": "PAR16 RGBW Value",
+          "friendly_name": "SMART+ spot GU10 multicolor RGBW",
+          "bind": []
+        },
+        {
+          "model": "PAR16 TW T",
+          "friendly_name": "SMART+ PAR16 GU10 Tunable white",
+          "bind": []
+        },
+        {
+          "model": "PAR16S RGBW",
+          "friendly_name": "SMART+ spot GU10 multicolor RGBW",
+          "bind": []
+        },
+        {
+          "model": "PAR16S TW",
+          "friendly_name": "SMART+ spot GU10 tunable white",
+          "bind": []
+        },
+        {
+          "model": "PL HCL300x1200 01",
+          "friendly_name": "Biolux HCL Panel 1200 Zigbee tunable white",
+          "bind": []
+        },
+        {
+          "model": "PL_HCL600_01",
+          "friendly_name": "Biolux HCL Panel 600 Zigbee tunable white",
+          "bind": []
+        },
+        {
+          "model": "PL_HCL625_01",
+          "friendly_name": "Biolux HCL Panel 625 Zigbee tunable white",
+          "bind": []
+        },
+        {
+          "model": "PLUG COMPACT EU EM T",
+          "friendly_name": "SMART+ Compact outdoor plug EU with energy meter",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "PLUG COMPACT EU T",
+          "friendly_name": "SMART+ Compact Outdoor Plug EU",
+          "bind": []
+        },
+        {
+          "model": "PLUG COMPACT OUTDOOR EU EM T",
+          "friendly_name": "SMART+ Compact outdoor plug EU with energy meter",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "PLUG EU EM T",
+          "friendly_name": "SMART+ Plug indoor EU with energy meter ",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "PLUG EU EM T, black",
+          "friendly_name": "SMART+ Plug indoor EU with energy meter ",
+          "bind": [
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "PLUG EU T",
+          "friendly_name": "SMART+ Plug UK",
+          "bind": []
+        },
+        {
+          "model": "PLUG OUTDOOR EU T",
+          "friendly_name": "SMART+ Plug EU (Outdoor)",
+          "bind": []
+        },
+        {
+          "model": "PLUG UK T",
+          "friendly_name": "SMART+ Plug UK",
+          "bind": []
+        },
+        {
+          "model": "Plug Value",
+          "friendly_name": "SMART+ Plug EU (Outdoor)",
+          "bind": []
+        },
+        {
+          "model": "Tibea TW Z3",
+          "friendly_name": "SMART+ lamp E27 tuneable white",
+          "bind": []
+        },
+        {
+          "model": "TUBE_T8_CON_1200_16W_840ZBV",
+          "friendly_name": "LED Tube T8 EM Connected 1200 mm 16W 840",
+          "bind": []
+        },
+        {
+          "model": "TUBE_T8_CON_1500_24W_840ZBV",
+          "friendly_name": "LED Tube T8 EM Connected P 1500mm 24W 840",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Undercabinet TW Z3",
+          "friendly_name": "SMART+ indoor undercabinet light",
+          "bind": []
+        }
+      ]
+    },
+    {
+      "name": "Sylvania",
+      "models": [
+        {
+          "model": "A19 G2 RGBW",
+          "friendly_name": "Smart+ adjustable white and full color bulb A19",
+          "bind": []
+        },
+        {
+          "model": "A19 RGBW",
+          "friendly_name": "LIGHTIFY LED RGBW A19",
+          "bind": []
+        },
+        {
+          "model": "A19 TW 10 year",
+          "friendly_name": "Smart Home adjustable white A19 LED bulb",
+          "bind": []
+        },
+        {
+          "model": "A19 W 10 year",
+          "friendly_name": "LIGHTIFY LED soft white dimmable A19",
+          "bind": []
+        },
+        {
+          "model": "A19 W non CEC",
+          "friendly_name": "Smart+ LED A19 dimmable soft white",
+          "bind": []
+        },
+        {
+          "model": "BR30 RGBW",
+          "friendly_name": "LIGHTIFY LED RGBW BR30",
+          "bind": []
+        },
+        {
+          "model": "BR30 TW",
+          "friendly_name": "LIGHTIFY LED adjustable white BR30",
+          "bind": []
+        },
+        {
+          "model": "BR30 W 10 year",
+          "friendly_name": "LIGHTIFY LED soft white BR30",
+          "bind": []
+        },
+        {
+          "model": "Contact Sensor-A",
+          "friendly_name": "Smart+ contact and temperature sensor",
+          "bind": [
+            1,
+            1026,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Edge-lit Under Cabinet TW",
+          "friendly_name": "SMART+ Zigbee adjustable white edge-lit under cabinet light",
+          "bind": []
+        },
+        {
+          "model": "Flex RGBW Pro",
+          "friendly_name": "SMART+ Flex XL RGBW strip",
+          "bind": []
+        },
+        {
+          "model": "Flex XL RGBW",
+          "friendly_name": "SMART+ Flex XL RGBW strip",
+          "bind": []
+        },
+        {
+          "model": "Flushmount TW",
+          "friendly_name": "SMART+ Zigbee adjustable white edge-lit flush mount light",
+          "bind": []
+        },
+        {
+          "model": "iQBR30",
+          "friendly_name": "Dimmable soft white BR30 LED flood light bulb",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY A19 ON/OFF/DIM",
+          "friendly_name": "LIGHTIFY LED soft white dimmable A19",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY A19 ON/OFF/DIM 10 Year",
+          "friendly_name": "LIGHTIFY LED soft white dimmable A19",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY A19 RGBW",
+          "friendly_name": "LIGHTIFY LED RGBW A19",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY BR ON/OFF/DIM",
+          "friendly_name": "LIGHTIFY LED soft white dimmable BR30",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY BR RGBW",
+          "friendly_name": "LIGHTIFY LED RGBW BR30",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY BR Tunable White",
+          "friendly_name": "LIGHTIFY LED adjustable white BR30",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY Dimming Switch",
+          "friendly_name": "Lightify Smart Dimming Switch",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "LIGHTIFY Gardenspot RGB",
+          "friendly_name": "LIGHTIFY LED gardenspot mini RGB",
+          "bind": []
+        },
+        {
+          "model": "LIGHTIFY RT Tunable White",
+          "friendly_name": "LIGHTIFY LED adjustable white RT 5/6",
+          "bind": []
+        },
+        {
+          "model": "MR16 TW",
+          "friendly_name": "Smart Home adjustable white MR16 LED bulb",
+          "bind": []
+        },
+        {
+          "model": "Outdoor Accent Light RGB",
+          "friendly_name": "SMART+ Outdoor Accent RGB lighting kit",
+          "bind": []
+        },
+        {
+          "model": "Outdoor Accent RGB",
+          "friendly_name": "SMART+ Outdoor Accent RGB lighting kit",
+          "bind": []
+        },
+        {
+          "model": "PAR38 W 10 year",
+          "friendly_name": "Smart Home soft white PAR38 outdoor bulb",
+          "bind": []
+        },
+        {
+          "model": "PLUG",
+          "friendly_name": "SMART+ Smart Plug",
+          "bind": []
+        },
+        {
+          "model": "RT RGBW",
+          "friendly_name": "LIGHTIFY LED adjustable color RT 5/6",
+          "bind": []
+        },
+        {
+          "model": "RT TW",
+          "friendly_name": "LIGHTIFY LED adjustable white RT 5/6",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

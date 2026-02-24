@@ -1,0 +1,103 @@
+{
+  "manufacturers": [
+    {
+      "name": "MLI",
+      "models": [
+        {
+          "model": "Bulb white+color",
+          "friendly_name": "Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white",
+          "bind": []
+        },
+        {
+          "model": "Retro Bulb Gold XXL white+ambiance",
+          "friendly_name": "tint LED-Globe Retro Gold XXL E27",
+          "bind": []
+        },
+        {
+          "model": "RGB-CCT",
+          "friendly_name": "Tint LED Panel, color, opal white",
+          "bind": []
+        },
+        {
+          "model": "RGBW Lighting",
+          "friendly_name": "Tint LED Stripe, color, opal white",
+          "bind": []
+        },
+        {
+          "model": "Smart Socket",
+          "friendly_name": "Smart power strip",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "tint smart power strip",
+          "friendly_name": "Smart power strip",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "tint-ColorTemperature",
+          "friendly_name": "CCT LED-bulb",
+          "bind": []
+        },
+        {
+          "model": "tint-ColorTemperature2",
+          "friendly_name": "CCT LED-bulb",
+          "bind": []
+        },
+        {
+          "model": "tint-ExtendedColor",
+          "friendly_name": "Tint LED white+color",
+          "bind": []
+        },
+        {
+          "model": "tint-Spotlights",
+          "friendly_name": "Tint LED-Spotlights, white+color 3x (1800-6500K+RGB) 19W",
+          "bind": []
+        },
+        {
+          "model": "ZBT-CCTLight-GU100000",
+          "friendly_name": "Tint retro LED bulb GU10, dimmable",
+          "bind": []
+        },
+        {
+          "model": "ZBT-ColorTemperature",
+          "friendly_name": "Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, opal white",
+          "bind": []
+        },
+        {
+          "model": "ZBT-DIMLight-A4700001",
+          "friendly_name": "LED bulb E27 470 lumen, dimmable, clear",
+          "bind": []
+        },
+        {
+          "model": "ZBT-ExtendedColor",
+          "friendly_name": "Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

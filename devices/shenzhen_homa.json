@@ -1,0 +1,141 @@
+{
+  "manufacturers": [
+    {
+      "name": "Shenzhen Homa",
+      "models": [
+        {
+          "model": "00A",
+          "friendly_name": "Smart LED driver",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "012",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "019",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "050",
+          "friendly_name": "Smart LED driver",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HOMA0006",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA000F",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA0019",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA1002",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA1004",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA1005",
+          "friendly_name": "3 channel relay module",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "HOMA1008",
+          "friendly_name": "Smart LED driver",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA1009",
+          "friendly_name": "Smart LED driver",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HOMA1022",
+          "friendly_name": "Smart LED driver",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "HOMA1031",
+          "friendly_name": "Zigbee AC phase-cut dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "HOMA1064",
+          "friendly_name": "Wireless dimmable controller",
+          "bind": [
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

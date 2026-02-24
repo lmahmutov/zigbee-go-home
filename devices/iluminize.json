@@ -1,0 +1,309 @@
+{
+  "manufacturers": [
+    {
+      "name": "iluminize",
+      "models": [
+        {
+          "model": "511.010",
+          "friendly_name": "Zigbee LED-Controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "511.012",
+          "friendly_name": "Zigbee LED-Controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "511.020",
+          "friendly_name": "Zigbee 3.0 LED controller multi 4 - 5A, CCT WW/CW LED",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "511.201",
+          "friendly_name": "Zigbee 3.0 dimming actuator mini 1x 230V",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "511.202",
+          "friendly_name": "Zigbee 3.0 switch mini 1x230V, 200W/400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "511.324",
+          "friendly_name": "Zigbee handheld remote CCT 4 channels",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "5110.40",
+          "friendly_name": "Zigbee 3.0 LED controller, 5 Ch (12V - 24V) - 4A, RGB W/CCT LED",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5110.80",
+          "friendly_name": "Zigbee 3.0 LED controller, 5 Ch (12V - 24V) - 4A, RGB W/CCT LED",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5112.80",
+          "friendly_name": "Zigbee 3.0 LED controller, 5 Ch (12V - 24V) - 4A, RGB W/CCT LED",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "5120.1100",
+          "friendly_name": "Zigbee 3.0 dimming actuator mini 1x 230V",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "5120.1110",
+          "friendly_name": "Zigbee 3.0 dimming actuator mini 1x 230V",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "5120.1200",
+          "friendly_name": "Zigbee 3.0 switch mini 1x230V with neutral, 200W/400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "5120.1210",
+          "friendly_name": "Zigbee 3.0 switch mini 1x230V without neutral, 200W/400W",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "5120.2110",
+          "friendly_name": "Zigbee 3.0 dimming actuator mini 1x 230V",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "5120.2210",
+          "friendly_name": "Zigbee 3.0 actuator mini 1x 230V",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "5121.10",
+          "friendly_name": "Rotary dimmer with integrated Zigbee 3.0 dimming actuator",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "5123.1110",
+          "friendly_name": "Zigbee 3.0 controller with adjustable current 250-1500mA, max. 50W / 48V SELV",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "5128.10",
+          "friendly_name": "Zigbee 3.0 switch shutter SW with level control",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "5715",
+          "friendly_name": "Zigbee micro smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "5717",
+          "friendly_name": "Zigbee din rail smart dimmer",
+          "bind": [
+            6,
+            8,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "HK-ZD-RGB-A",
+          "friendly_name": "Zigbee 3.0 LED controller, 5 Ch (12V - 24V) - 4A, RGB W/CCT LED",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZG2801K2-G1-RGB-CCT-LEAD",
+          "friendly_name": "Zigbee 3.0 wall dimmer",
+          "bind": []
+        },
+        {
+          "model": "ZGRC-KEY-001",
+          "friendly_name": "Zigbee 3.0 wall dimmer with switches",
+          "bind": [
+            1,
+            6,
+            8
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-002",
+          "friendly_name": "Single color wall mounted push button remote",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-KEY-005",
+          "friendly_name": "RGB CCT 3 in 1 Remote Controller",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZGRC-TEUR-001",
+          "friendly_name": "Zigbee 3.0 wall dimmer RGBW 4 zones",
+          "bind": []
+        },
+        {
+          "model": "ZGRC-TEUR-002",
+          "friendly_name": "Zigbee 3.0 wall dimmer RGBW 1 zone",
+          "bind": []
+        },
+        {
+          "model": "ZGRC-TEUR-003",
+          "friendly_name": "Zigbee 3.0 wall dimmer CCT 4 zones",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

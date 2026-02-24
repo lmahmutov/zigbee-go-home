@@ -1,0 +1,189 @@
+{
+  "manufacturers": [
+    {
+      "name": "Kwikset",
+      "models": [
+        {
+          "model": "Smartcode",
+          "friendly_name": "Home connect smart lock conversion kit",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_CONVERT_GEN1",
+          "friendly_name": "Home connect smart lock conversion kit",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_CONVERT_GEN1_W3",
+          "friendly_name": "Home connect smart lock conversion kit",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_10_L",
+          "friendly_name": "SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_10_W3",
+          "friendly_name": "SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_10_W3_L",
+          "friendly_name": "SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_10T_W3",
+          "friendly_name": "SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_5",
+          "friendly_name": "910 SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_DEADBOLT_5_L",
+          "friendly_name": "910 SmartCode traditional electronic deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SMARTCODE_LEVER_5",
+          "friendly_name": "912 SmartCode traditional electronic lever",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

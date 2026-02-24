@@ -1,0 +1,27 @@
+{
+  "manufacturers": [
+    {
+      "name": "Schlage",
+      "models": [
+        {
+          "model": "BE468",
+          "friendly_name": "Connect smart deadbolt",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

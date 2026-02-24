@@ -1,0 +1,144 @@
+{
+  "manufacturers": [
+    {
+      "name": "Niko NV",
+      "models": [
+        {
+          "model": "Battery switch, 1 button",
+          "friendly_name": "Battery switch with 1 button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Battery switch, 2 button",
+          "friendly_name": "Battery switch with 2 buttons",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Battery switch, 4 button",
+          "friendly_name": "Battery switch with 4 buttons",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Connectable dimmer,3-200W,2-wire",
+          "friendly_name": "Connectable dimmer",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "Connectable motion sensor,Zigbee",
+          "friendly_name": "Wireless motion sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Connectable motor control,3A",
+          "friendly_name": "Connectable motor control",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Connected socket outlet",
+          "friendly_name": "Connected socket outlet",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Double connectable switch,10A",
+          "friendly_name": "Double connectable switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "Single connectable switch,10A",
+          "friendly_name": "Single connectable switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "Smart plug Zigbee PE",
+          "friendly_name": "Smart plug with earthing pin",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        },
+        {
+          "model": "Smart plug Zigbee SE",
+          "friendly_name": "Smart plug with side earthing pin",
+          "bind": [
+            6,
+            1794,
+            2820
+          ]
+        }
+      ]
+    }
+  ]
+}

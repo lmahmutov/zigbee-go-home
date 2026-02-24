@@ -1,0 +1,894 @@
+{
+  "manufacturers": [
+    {
+      "name": "ORVIBO",
+      "models": [
+        {
+          "model": "074b3ffba5a045b7afd94c47079dd553",
+          "friendly_name": "Smart light switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "093199ff04984948b4c78167c8e7f47e",
+          "friendly_name": "Smart curtain motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "095db3379e414477ba6c2f7e0c6aa026",
+          "friendly_name": "Smart light switch - 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "0e93fa9c36bb417a90ad5d8a184b683a",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "131c854783bc45c9b2ac58088d09571c",
+          "friendly_name": "Occupancy sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "1a20628504bf48c88ed698fe96b7867c",
+          "friendly_name": "Downlight (Q series)",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "20513b10079f4cc68cffb8b0dc6d3277",
+          "friendly_name": "MixSwitch 4 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "250bccf66c41421b91b5e3242942c164",
+          "friendly_name": "Smart spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "2810c2403b9c4a5db62cc62d1030d95e",
+          "friendly_name": "In wall switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2a103244da0b406fa51410c692f79ead",
+          "friendly_name": "Smart blind controller",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2ae011fb6d0542f58705d6861064eb5f",
+          "friendly_name": "MixSwitch 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "2e13af8e17434961be98f055d68c2166",
+          "friendly_name": "MixSwitch 2 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "31c989b65ebb45beaf3b67b1361d3965",
+          "friendly_name": "Neutral smart switch 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "396483ce8b3f4e0d8e9d79079a35a420",
+          "friendly_name": "Multi-functional 3 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "3c4e4fc81ed442efaf69353effcdfc5f",
+          "friendly_name": "Smart sticker switch",
+          "bind": []
+        },
+        {
+          "model": "428f8caf93574815be1a98fa6732c3ea",
+          "friendly_name": "Smart curtain motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "4a33f5ea766a4c96a962b371ffde9943",
+          "friendly_name": "Downlight (S series)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "50938c4c3c0b4049923cd5afbc151bde",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "51725b7bcba945c8a595b325127461e9",
+          "friendly_name": "Smart sticker switch",
+          "bind": []
+        },
+        {
+          "model": "52debf035a1b4a66af56415474646c02",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "585fdfb8c2304119a2432e9845cf2623",
+          "friendly_name": "Occupancy sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "6fd24c0f58a04c848fea837aaa7d6e0f",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "71a0b275d9ba4895afdaf400bc7e3a0d",
+          "friendly_name": "MixSwitch 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "72bd56c539ca4c7fba73a9be0ae0d19f",
+          "friendly_name": "Smart emergency button",
+          "bind": []
+        },
+        {
+          "model": "75a4bfe8ef9c4350830a25d13e3ab068",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "7c8f476a0f764cd4b994bc73d07c906d",
+          "friendly_name": "MixSwitch 2 gang (without neutral wire)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "82c167c95ed746cdbd21d6817f72c593",
+          "friendly_name": "Multi-functional 3 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "83b9b27d5ffb4830bf35be5b1023623e",
+          "friendly_name": "In wall switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "8643db61de35494d93e72c1289b526a3",
+          "friendly_name": "Zigbee LED controller RGB + CCT or RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "8762413da99140cbb809195ff40f8c51",
+          "friendly_name": "Multi-functional 3 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "888a434f3cfc47f29ec4a3a03e9fc442",
+          "friendly_name": "Temperature & humidity Sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "898ca74409a740b28d5841661e72268d",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "93e29b89b2ee45bea5bdbb7679d75d24",
+          "friendly_name": "Smart socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "987b1869e4944218aa0034750d4ac585",
+          "friendly_name": "Smart emergency button",
+          "bind": []
+        },
+        {
+          "model": "9ea4d5d8778d4f7089ac06a3969e784b",
+          "friendly_name": "In wall switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "9f76c9f31b4c4a499e3aca0977ac4494",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "9ff5a780c5a4470d9087175c71d50f92",
+          "friendly_name": "Spot light S10",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "af22cef59b2543d1be1dfab4f1c9c920",
+          "friendly_name": "Smart spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "b2e57a0f606546cd879a1a54790827d6",
+          "friendly_name": "Occupancy sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "b467083cfc864f5e826459e5d8ea6079",
+          "friendly_name": "Temperature & humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "b7313321dbe74da384d136a2a3fa2005",
+          "friendly_name": "MixSwitch 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "b7e305eb329f497384e966fe3fb0ac69",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "ba8120ad03f744ecb6a973672369e80d",
+          "friendly_name": "MixSwitch 1 gang (without neutral wire)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "bbfed49c738948b989911f9f9f73d759",
+          "friendly_name": "In-wall switch 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "bcb949e87e8c4ea6bc2803052dd8fbf5",
+          "friendly_name": "MixSwitch 6 gangs",
+          "bind": []
+        },
+        {
+          "model": "c2ea8c76f9fe40e5a7de5e8fb8dfb765",
+          "friendly_name": "MixSwitch 4 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "c670e231d1374dbc9e3c6a9fffbd0ae6",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "c8daea86aa9c415aa524365775b1218",
+          "friendly_name": "Smart curtain motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "c8daea86aa9c415aa524365775b1218c",
+          "friendly_name": "Smart curtain motor",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "cb7ce9fe2cb147e69c5ea700b39b3d5b",
+          "friendly_name": "0-10v dimmer",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ccb9f56837ab41dcad366fb1452096b6",
+          "friendly_name": "Smart spotlight",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "da2edf1ded0d44e1815d06f45ce02029",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "e0fc98cc88df4857847dc4ae73d80b9e",
+          "friendly_name": "In wall switch - 2 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "e8d667cb184b4a2880dd886c23d00976",
+          "friendly_name": "MixSwitch 3 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "f3be30b8c43c44da85aac622e5b56111",
+          "friendly_name": "MixSwitch 3 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "f58591161f344ccea242688a6de7d25d",
+          "friendly_name": "MixSwitch 3 gangs",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "fdd76effa0e146b4bdafa0c203a37192",
+          "friendly_name": "Door or window contact switch",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MultIR",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "ORVIBO Socket",
+          "friendly_name": "Smart socket",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZL1-EN",
+          "friendly_name": "Water leakage sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

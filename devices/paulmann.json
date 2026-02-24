@@ -1,0 +1,405 @@
+{
+  "manufacturers": [
+    {
+      "name": "Paulmann Licht GmbH",
+      "models": [
+        {
+          "model": "371000001",
+          "friendly_name": "SmartHome led spot tuneable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "371000002",
+          "friendly_name": "Amaris LED panels",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "371050043",
+          "friendly_name": "Solar LED house number light",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "371222402",
+          "friendly_name": "Puric pane pendant light 6x6W dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "371232040",
+          "friendly_name": "LED panels",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "500.43",
+          "friendly_name": "SmartHome controller (Relay)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "500.44",
+          "friendly_name": "URail power supply",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "500.45",
+          "friendly_name": "SmartHome Zigbee Pendulum Light Aptare",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "500.46",
+          "friendly_name": "SmartHome Zigbee MaxLED tunable white controller max. 144W / 24V DC",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "500.48",
+          "friendly_name": "SmartHome Zigbee YourLED dim/switch controller max. 60 W",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "500.49",
+          "friendly_name": "Smart Home Zigbee YourLED RGB Controller max. 60W / Smart Home Zigbee LED Reflektor 3,5W GU10 RGBW dimmbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "50067",
+          "friendly_name": "RGB remote control",
+          "bind": []
+        },
+        {
+          "model": "501.34",
+          "friendly_name": "Smart switch 4 buttons white",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "501.37",
+          "friendly_name": "Smart switch 4 buttons white",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "501.40",
+          "friendly_name": "RGB remote control",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "50131",
+          "friendly_name": "Smart plug for Euro- and Schuko-sockets",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "50140",
+          "friendly_name": "RGB remote control",
+          "bind": [
+            1,
+            6,
+            8,
+            768
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "50141",
+          "friendly_name": "Remote control Smart Home Zigbee 3.0 White",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "94842",
+          "friendly_name": "Outdoor lighting Zigbee motion detector",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "98442",
+          "friendly_name": "Azalena Smart Home Zigbee LED Light with motion detection (HF)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "98443",
+          "friendly_name": "Azalena Smart Home Zigbee LED Light with motion detection (HF)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "CCT light",
+          "friendly_name": "SmartHome led spot",
+          "bind": []
+        },
+        {
+          "model": "CCT light ",
+          "friendly_name": "SmartHome led spot",
+          "bind": []
+        },
+        {
+          "model": "CCT light bulb",
+          "friendly_name": "LED Filament Bulb tuneable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "CCT_light",
+          "friendly_name": "SmartHome led spot",
+          "bind": []
+        },
+        {
+          "model": "CCT_light_bulb",
+          "friendly_name": "LED Filament Bulb tuneable white",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Dimmablelight",
+          "friendly_name": "SmartHome Zigbee Dimmer or LED-stripe",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "H036-0001",
+          "friendly_name": "Plug Shine Zigbee controller",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "H036-0005",
+          "friendly_name": "SmartHome Zigbee LED-Modul Coin 1x6W White",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "H036-0006",
+          "friendly_name": "SmartHome Zigbee LED-Modul Coin 1x6W Tunable White",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "H036-0007",
+          "friendly_name": "Smart home Zigbee LED module coin 1x2.5W RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "H036-0500",
+          "friendly_name": "URail rail adapter smart home Zigbee on/off/dimm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "RemoteControl",
+          "friendly_name": "RGB remote control",
+          "bind": []
+        },
+        {
+          "model": "RGBCW_LIGHT",
+          "friendly_name": "Smart Home Zigbee LED bulb 9,3W Matt E27 RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBW light",
+          "friendly_name": "Smart Home Zigbee YourLED RGB Controller max. 60W / Smart Home Zigbee LED Reflektor 3,5W GU10 RGBW dimmbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBW_light",
+          "friendly_name": "Smart Home Zigbee YourLED RGB Controller max. 60W / Smart Home Zigbee LED Reflektor 3,5W GU10 RGBW dimmbar",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "RGBWW",
+          "friendly_name": "Smart Home Zigbee LED bulb 4,9W Matt E14 RGBW",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Switch Controller",
+          "friendly_name": "SmartHome Zigbee Cephei Switch Controller",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

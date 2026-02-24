@@ -1,0 +1,122 @@
+{
+  "manufacturers": [
+    {
+      "name": "Paul Neuhaus",
+      "models": [
+        {
+          "model": "JZ-CT-Z01",
+          "friendly_name": "Q-FLAG LED panel, Smart-Home CCT",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JZ-RC-J4R",
+          "friendly_name": "Q RGBW remote controller",
+          "bind": []
+        },
+        {
+          "model": "JZ-RGBW-Z01",
+          "friendly_name": "Q-VIDAL RGBW ceiling lamp, 6032-55",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "JZD60-J4R150",
+          "friendly_name": "Q-LED Lamp RGBW E27 socket",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Neuhaus NLG-TW light",
+          "friendly_name": "Various tunable white lights (e.g. 8195-55)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "Neuhaus remote",
+          "friendly_name": "Q-REMOTE",
+          "bind": []
+        },
+        {
+          "model": "Neuhaus RGB+CCT light",
+          "friendly_name": "Q-MIA LED RGBW wall lamp, 9185-13",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NLG-CCT light",
+          "friendly_name": "Various color temperature lights (e.g. 100.424.11)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NLG-plug",
+          "friendly_name": "Q-PLUG adapter plug with night orientation light",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "NLG-remote",
+          "friendly_name": "Q-REMOTE",
+          "bind": []
+        },
+        {
+          "model": "NLG-RGB-TW light",
+          "friendly_name": "Various RGB + tunable white lights (e.g. 100.470.92)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NLG-RGBW light",
+          "friendly_name": "Various RGBW lights (e.g. 100.111.57)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "NLG-TW light",
+          "friendly_name": "Various tunable white lights (e.g. 8195-55)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "manufacturers": [
+    {
+      "name": "Inovelli",
+      "models": [
+        {
+          "model": "VZM30-SN",
+          "friendly_name": "On/off switch",
+          "bind": []
+        },
+        {
+          "model": "VZM31-SN",
+          "friendly_name": "2-in-1 switch + dimmer",
+          "bind": []
+        },
+        {
+          "model": "VZM32-SN",
+          "friendly_name": "mmWave Zigbee Dimmer",
+          "bind": []
+        },
+        {
+          "model": "VZM35-SN",
+          "friendly_name": "Fan controller",
+          "bind": []
+        },
+        {
+          "model": "VZM36",
+          "friendly_name": "Fan canopy module",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

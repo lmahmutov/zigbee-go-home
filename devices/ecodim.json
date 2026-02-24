@@ -1,0 +1,119 @@
+{
+  "manufacturers": [
+    {
+      "name": "EcoDim B.V.",
+      "models": [
+        {
+          "model": "eco-dim13-zigbee",
+          "friendly_name": "Dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ED-10010",
+          "friendly_name": "Zigbee 2 button wall switch - white",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ED-10011",
+          "friendly_name": "Zigbee 2 button wall switch - black",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ED-10012",
+          "friendly_name": "Zigbee 4 button wall switch - white",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ED-10013",
+          "friendly_name": "Zigbee 4 button wall switch - black",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ED-10014",
+          "friendly_name": "Zigbee 8 button wall switch - white",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ED-10015",
+          "friendly_name": "Zigbee 8 button wall switch - black",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

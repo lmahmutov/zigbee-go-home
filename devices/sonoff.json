@@ -1,0 +1,938 @@
+{
+  "manufacturers": [
+    {
+      "name": "SONOFF",
+      "models": [
+        {
+          "model": "01MINIZB",
+          "friendly_name": "Zigbee two way smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "BASICZBR3",
+          "friendly_name": "Zigbee smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "Cuber ZLI Router",
+          "friendly_name": "Router",
+          "bind": []
+        },
+        {
+          "model": "DONGLE-E_R",
+          "friendly_name": "Sonoff Zigbee 3.0 USB Dongle Plus (EFR32MG21) with router firmware",
+          "bind": []
+        },
+        {
+          "model": "Dongle-LMG21_ZBRouter",
+          "friendly_name": "Dongle Lite Zigbee MG21 (EFR32MG21) with router firmware",
+          "bind": []
+        },
+        {
+          "model": "Dongle-M_ZBRouter",
+          "friendly_name": "Dongle Max MG24 (EFR32MG24) with router firmware",
+          "bind": []
+        },
+        {
+          "model": "Dongle-PMG24_ZBRouter",
+          "friendly_name": "Zigbee Dongle Plus MG24 (EFR32MG24) with router firmware",
+          "bind": []
+        },
+        {
+          "model": "KF-01",
+          "friendly_name": "Wireless button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "KF01",
+          "friendly_name": "Wireless button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MG1_5RZ",
+          "friendly_name": "Zigbee human presence radar (5.8 GHz)",
+          "bind": [
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MINI-ZB2GS",
+          "friendly_name": "Zigbee dual-channel smart switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "MINI-ZB2GS-L",
+          "friendly_name": "Zigbee dual-channel smart switch",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "MINI-ZBDIM",
+          "friendly_name": "Zigbee smart mini dimmer switch",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "MINI-ZBRBS",
+          "friendly_name": "Zigbee smart roller shutter switch",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "NSPanelP-Router",
+          "friendly_name": "Router",
+          "bind": []
+        },
+        {
+          "model": "S26R2ZB",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S31 Lite zb",
+          "friendly_name": "Zigbee smart plug (US version)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S40LITE",
+          "friendly_name": "15A Zigbee smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S60ZBTPF",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "S60ZBTPG",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6,
+            1794
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SNZB-01M",
+          "friendly_name": "Four-way wireless button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SNZB-01P",
+          "friendly_name": "Wireless button",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SNZB-02D",
+          "friendly_name": "Temperature and humidity sensor with screen",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SNZB-02DR2",
+          "friendly_name": "Temperature and humidity sensor with display and relay control",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SNZB-02LD",
+          "friendly_name": "Waterproof (IP65) sensor with screen and probe temperature detection",
+          "bind": [
+            1,
+            1026
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SNZB-02P",
+          "friendly_name": "Temperature and humidity sensor",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SNZB-02WD",
+          "friendly_name": "Waterproof (IP65) temperature and humidity sensor with screen",
+          "bind": [
+            1,
+            1026,
+            1029
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 1026,
+              "attribute": 0,
+              "type": 41,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            },
+            {
+              "cluster": 1029,
+              "attribute": 0,
+              "type": 33,
+              "min": 10,
+              "max": 3600,
+              "change": 100
+            }
+          ]
+        },
+        {
+          "model": "SNZB-03P",
+          "friendly_name": "Zigbee PIR sensor",
+          "bind": [
+            1,
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            },
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SNZB-04P",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "SNZB-04PR2",
+          "friendly_name": "Contact sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "SNZB-06P",
+          "friendly_name": "Zigbee occupancy sensor",
+          "bind": [
+            1030
+          ],
+          "reporting": [
+            {
+              "cluster": 1030,
+              "attribute": 0,
+              "type": 24,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SWV",
+          "friendly_name": "Zigbee smart water valve",
+          "bind": [
+            1,
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            },
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "TRVZB",
+          "friendly_name": "Zigbee thermostatic radiator valve",
+          "bind": [
+            1,
+            513
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBCurtain",
+          "friendly_name": "Zigbee smart curtain motor",
+          "bind": [
+            1,
+            258
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBM5-1C-120",
+          "friendly_name": "Zigbee Smart one-channel wall switch (type 120).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBM5-1C-80/86",
+          "friendly_name": "Zigbee Smart one-channel wall switch (type 80/86).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBM5-2C-120",
+          "friendly_name": "Zigbee Smart two-channel wall switch (type 120).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBM5-2C-80/86",
+          "friendly_name": "Zigbee Smart two-channel wall switch (type 80/86).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBM5-3C-120",
+          "friendly_name": "Zigbee Smart three-channel wall switch (type 120).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBM5-3C-80/86",
+          "friendly_name": "Zigbee Smart three-channel wall switch (type 80/86).",
+          "bind": [
+            6
+          ]
+        },
+        {
+          "model": "ZBMicro",
+          "friendly_name": "Zigbee USB repeater plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBMINI-L",
+          "friendly_name": "Zigbee smart switch (no neutral)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBMINIL2",
+          "friendly_name": "Zigbee smart switch (no neutral)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBMINIR2",
+          "friendly_name": "Zigbee smart switch",
+          "bind": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eWeLink",
+      "models": [
+        {
+          "model": "CK-BL702-MSW-01(7010)",
+          "friendly_name": "CMARS Zigbee smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CK-BL702-MSW-01(7011)-1",
+          "friendly_name": "CMARS Zigbee smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "CK-BL702-ROUTER-01(7018)",
+          "friendly_name": "USB router",
+          "bind": []
+        },
+        {
+          "model": "CK-TLSR8656-SS5-01(7019)",
+          "friendly_name": "Zigbee water sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "E220-KR2N0Z0-HA",
+          "friendly_name": "Smart light switch/2 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "MYRX25Z-1",
+          "friendly_name": "Reax Curtain",
+          "bind": [
+            258
+          ]
+        },
+        {
+          "model": "SA-003-Zigbee",
+          "friendly_name": "Zigbee smart plug",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SA-030-1",
+          "friendly_name": "Zigbee 3.0 smart plug 13A (3120W)(UK version)",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SNZB-05",
+          "friendly_name": "Zigbee water sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SWITCH-ZR02",
+          "friendly_name": "Zigbee smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SWITCH-ZR03-1",
+          "friendly_name": "Zigbee smart switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "SWITCH-ZR03-2",
+          "friendly_name": "Smart light switch/2 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "WS01",
+          "friendly_name": "Rainfall sensor",
+          "bind": []
+        },
+        {
+          "model": "ZB-SW01",
+          "friendly_name": "Smart light switch - 1 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SW02",
+          "friendly_name": "Smart light switch/2 gang relay",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SW03",
+          "friendly_name": "Smart light switch - 3 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SW04",
+          "friendly_name": "Smart light switch - 4 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-SW05",
+          "friendly_name": "Smart light switch - 5 gang",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "manufacturers": [
+    {
+      "name": "ASSA ABLOY",
+      "models": [
+        {
+          "model": "0600000001",
+          "friendly_name": "Digital lock",
+          "bind": []
+        },
+        {
+          "model": "06e0152204",
+          "friendly_name": "Biometric digital lock",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "06e01d220c",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": []
+        },
+        {
+          "model": "06ffff2027",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": []
+        },
+        {
+          "model": "06ffff2029",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": [
+            257
+          ]
+        },
+        {
+          "model": "0700000001",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": []
+        },
+        {
+          "model": "c700000202",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": [
+            257
+          ]
+        },
+        {
+          "model": "iZBModule01",
+          "friendly_name": "Real living lock / Intelligent biometric digital lock",
+          "bind": []
+        },
+        {
+          "model": "LIA",
+          "friendly_name": "Digital Lock Lia",
+          "bind": []
+        },
+        {
+          "model": "YDD-D4F0 TSDB",
+          "friendly_name": "Lockwood T-Lock",
+          "bind": []
+        },
+        {
+          "model": "YMC 420",
+          "friendly_name": "Digital Lock YMC 420 W",
+          "bind": []
+        },
+        {
+          "model": "YMC 420 W",
+          "friendly_name": "Digital Lock YMC 420 W",
+          "bind": []
+        },
+        {
+          "model": "YMC420",
+          "friendly_name": "Digital Lock YMC 420 W",
+          "bind": []
+        },
+        {
+          "model": "YMC420 W",
+          "friendly_name": "Digital Lock YMC 420 W",
+          "bind": []
+        },
+        {
+          "model": "YRD210 PB DB",
+          "friendly_name": "Real living keyless push button deadbolt lock",
+          "bind": []
+        },
+        {
+          "model": "YRD216 PBDB",
+          "friendly_name": "Real living keyless push button deadbolt lock",
+          "bind": []
+        },
+        {
+          "model": "YRD220/240 TSDB",
+          "friendly_name": "Lockwood keyless push button deadbolt lock",
+          "bind": []
+        },
+        {
+          "model": "YRD226 TSDB",
+          "friendly_name": "Assure lock",
+          "bind": []
+        },
+        {
+          "model": "YRD226/246 TSDB",
+          "friendly_name": "Assure lock",
+          "bind": []
+        },
+        {
+          "model": "YRD226L TSDB",
+          "friendly_name": "Assure lock",
+          "bind": []
+        },
+        {
+          "model": "YRD246 TSDB",
+          "friendly_name": "Assure lock key free deadbolt with Zigbee",
+          "bind": []
+        },
+        {
+          "model": "YRD256 TSDB",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRD256-TSDB",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRD256L TSDB",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRD410 PB",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD410 TS",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD420 TS",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD430 PB",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD430 TS",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD446 BLE TSDB",
+          "friendly_name": "Assure lock",
+          "bind": []
+        },
+        {
+          "model": "YRD450 TS",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD450-F TS",
+          "friendly_name": "Assure lock 2",
+          "bind": []
+        },
+        {
+          "model": "YRD652 TSDB",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRD652L TSDB",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRL226 TS",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRL226L TS",
+          "friendly_name": "Assure lock SL",
+          "bind": []
+        },
+        {
+          "model": "YRL256 TS",
+          "friendly_name": "Assure lock",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "YRM476 TS BLE",
+          "friendly_name": "Assure lock",
+          "bind": [
+            1,
+            257
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

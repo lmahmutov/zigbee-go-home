@@ -1,0 +1,319 @@
+{
+  "manufacturers": [
+    {
+      "name": "GLEDOPTO",
+      "models": [
+        {
+          "model": "GL-B-001Z",
+          "friendly_name": "Zigbee 4W E12/E14 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-B-001ZS",
+          "friendly_name": "Zigbee 4W E12/E14 Bulb RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-B-002P",
+          "friendly_name": "Zigbee smart filament LED bulb",
+          "bind": []
+        },
+        {
+          "model": "GL-B-003P",
+          "friendly_name": "Zigbee 7W E26/E27 Bulb RGB+CCT (pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-B-004P",
+          "friendly_name": "Filament LED light bulb E27 G95 7W pro",
+          "bind": []
+        },
+        {
+          "model": "GL-B-007Z",
+          "friendly_name": "Zigbee 6W E26/E27 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-B-007ZS",
+          "friendly_name": "Zigbee 6W E26/E27 Bulb RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-B-008Z",
+          "friendly_name": "Zigbee 12W E26/E27 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-B-008ZS",
+          "friendly_name": "Zigbee 12W E26/E27 Bulb RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-C-004P",
+          "friendly_name": "Zigbee LED Strip Light Kit",
+          "bind": []
+        },
+        {
+          "model": "GL-C-006S",
+          "friendly_name": "Zigbee LED Controller WW/CW (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-C-007S",
+          "friendly_name": "Zigbee LED Controller RGBW (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-C-008S",
+          "friendly_name": "Zigbee LED Controller RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-C-009S",
+          "friendly_name": "Zigbee LED Controller W (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-C-103P",
+          "friendly_name": "Zigbee LED controller (pro)",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "GL-C-310P",
+          "friendly_name": "Zigbee relay switch",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "GL-D-001P",
+          "friendly_name": "Zigbee 9W Downlight RGB+CCT 350-450 lm",
+          "bind": []
+        },
+        {
+          "model": "GL-D-003Z",
+          "friendly_name": "Zigbee 6W Downlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-D-003ZS",
+          "friendly_name": "Zigbee 6W Downlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-D-004Z",
+          "friendly_name": "Zigbee 9W Downlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-D-004ZS",
+          "friendly_name": "Zigbee 9W Downlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-D-005Z",
+          "friendly_name": "Zigbee 12W Downlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-D-005ZS",
+          "friendly_name": "Zigbee 12W Downlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-D-007P",
+          "friendly_name": "Zigbee 12W anti-glare downlight RGB+CCT (pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-D-008P",
+          "friendly_name": "Na Versiion smart led 9w downlight",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-004TZ",
+          "friendly_name": "Zigbee 10W Floodlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-004TZS",
+          "friendly_name": "Zigbee 10W Floodlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-005TZ",
+          "friendly_name": "Zigbee 30W Floodlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-005TZS",
+          "friendly_name": "Zigbee 30W Floodlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-006TZ",
+          "friendly_name": "Zigbee 60W Floodlight RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-006TZS",
+          "friendly_name": "Zigbee 60W Floodlight RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-FL-007P",
+          "friendly_name": "Zigbee 100W Floodlight RGB+CCT (pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-G-001Z",
+          "friendly_name": "Zigbee 12W Garden Lamp RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-G-001ZS",
+          "friendly_name": "Zigbee 12W Garden Lamp RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-G-004P",
+          "friendly_name": "Zigbee 7W garden light Pro RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-G-005P",
+          "friendly_name": "Zigbee 7W garden light Pro RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-G-007Z",
+          "friendly_name": "Zigbee 9W garden lamp RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-LB-001P",
+          "friendly_name": "Zigbee USB LED bar RGB+CCT (pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-MC-001",
+          "friendly_name": "Zigbee USB Mini LED Controller RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-MC-002P",
+          "friendly_name": "Zigbee USB Mini LED Controller RGB+CCT (Pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-P-101P",
+          "friendly_name": "Zigbee pro constant current CCT LED driver",
+          "bind": []
+        },
+        {
+          "model": "GL-S-003Z",
+          "friendly_name": "Zigbee 5W GU10 Bulb RGBW",
+          "bind": []
+        },
+        {
+          "model": "GL-S-004Z",
+          "friendly_name": "Zigbee 4W MR16 Bulb 30deg RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-S-004ZS",
+          "friendly_name": "Zigbee 4W MR16 Bulb RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-S-005Z",
+          "friendly_name": "Zigbee 4W MR16 Bulb 120deg RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-S-007Z",
+          "friendly_name": "Zigbee 5W GU10 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-S-007Z(lk)",
+          "friendly_name": "Zigbee 5W GU10 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-S-007ZS",
+          "friendly_name": "Zigbee 4W GU10 Bulb RGB+CCT (plus)",
+          "bind": []
+        },
+        {
+          "model": "GL-S-008Z",
+          "friendly_name": "Zigbee 5W PAR16 Bulb RGB+CCT",
+          "bind": []
+        },
+        {
+          "model": "GL-S-014P",
+          "friendly_name": "Zigbee 5W MR16 bulb RGB+CCT (pro)",
+          "bind": []
+        },
+        {
+          "model": "GL-SD-001",
+          "friendly_name": "Zigbee triac AC dimmer",
+          "bind": []
+        },
+        {
+          "model": "GL-SD-001P",
+          "friendly_name": "Triac-dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "GL-SD-002",
+          "friendly_name": "Zigbee 3.0 smart home switch",
+          "bind": []
+        },
+        {
+          "model": "GL-SD-003P",
+          "friendly_name": "Zigbee DIN Rail triac AC dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "GL-SD-301P",
+          "friendly_name": "Zigbee triac AC dimmer",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "GL-W-001Z",
+          "friendly_name": "Zigbee on/off wall switch",
+          "bind": []
+        },
+        {
+          "model": "HOMA2023",
+          "friendly_name": "Zigbee LED Controller WW/CW",
+          "bind": []
+        }
+      ]
+    }
+  ]
+}

@@ -269,5 +269,31 @@ Remove and re-pair the device so it goes through a fresh interview with the new 
 
 ## Current Files
 
-- **`xiaomi.json`** — LUMI/Aqara devices with Xiaomi TLV property decoding
-- **`IKEA.json`** — IKEA TRADFRI devices
+81 device definition files covering 3199 devices from major Zigbee manufacturers.
+
+### Major Vendors
+
+- **`xiaomi.json`** — LUMI/Aqara devices (157 models) with Xiaomi TLV property decoding
+- **`IKEA.json`** — IKEA of Sweden (192 models): lights, remotes, sensors, plugs, blinds
+- **`philips.json`** — Philips Hue (923 models): lights, sensors, remotes, accessories
+- **`innr.json`** — Innr (117 models): lights, plugs
+- **`osram.json`** — OSRAM / LEDVANCE / Sylvania (136 models): lights
+- **`sonoff.json`** — SONOFF / eWeLink (62 models): switches, sensors
+- **`heiman.json`** — HEIMAN (78 models): smoke, gas, water leak, door/window sensors
+- **`schneider.json`** — Schneider Electric (75 models): switches, dimmers, outlets
+- **`namron.json`** — Namron (74 models): switches, dimmers, thermostats
+- **`sunricher.json`** — Sunricher (73 models): LED controllers, dimmers
+- **`tuya.json`** — Tuya (66 models): generic Tuya-protocol devices
+- **`gledopto.json`** — GLEDOPTO (57 models): LED controllers
+- **`nue.json`** — Nue / 3A (52 models): switches, dimmers
+- **`smartthings.json`** — SmartThings / CentraLite (48 models): sensors, plugs
+- **`adeo.json`** — ADEO (47 models): lights
+- **`bosch.json`** — Bosch (33 models): sensors, thermostats
+
+### Other Vendors
+
+AduroSmart, Aurora, Calex, Climax, Cree, Danalock, Danfoss, Datek, Dawon, Develco/Frient, Dresden Elektronik, EcoDim, Ecolink, EcoSmart, EGLO, Enbrighten, Eurotronic, Feibit, GE, Hampton Bay, Hive, HomeSeer, HORNBACH, iCasa, Iluminize, Immax, Inovelli, Iris, Keen Home, Konke, Kwikset, Leedarson, Legrand/BTicino, Leviton, Linkind, Lupus, Müller Licht, Niko, Nordtronic, Nyce, Orvibo, OWON, Paul Neuhaus, Paulmann, Perenio, Plugwise, RGB Genie, ROBB, Salus, Schlage, Sengled, Sercomm, Shelly, Shenzhen Homa, ShinaSystem, Sinopé, SmaBiT, SOMFY, Stelpro, Swann, Third Reality, Trust, Ubisys, Visonic, Yale, Zemismart
+
+## Device Images
+
+The `img/` subdirectory contains product images for ~300 popular devices. Images are PNG files named by the manufacturer's display model number (e.g., `SNZB-01P.png`, `E1524-E1810.png`).

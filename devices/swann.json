@@ -1,0 +1,28 @@
+{
+  "manufacturers": [
+    {
+      "name": "SWANN",
+      "models": [
+        {
+          "model": "SWO-KEF1PA",
+          "friendly_name": "Key fob remote",
+          "bind": []
+        },
+        {
+          "model": "SWO-MOS1PA",
+          "friendly_name": "Motion and temperature sensor",
+          "bind": [
+            1280
+          ]
+        },
+        {
+          "model": "SWO-WDS1PA",
+          "friendly_name": "Window/door sensor",
+          "bind": [
+            1280
+          ]
+        }
+      ]
+    }
+  ]
+}

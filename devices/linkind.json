@@ -1,0 +1,241 @@
+{
+  "manufacturers": [
+    {
+      "name": "Linkind",
+      "models": [
+        {
+          "model": "A001082",
+          "friendly_name": "Water leak sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-DoorSensor-D0003",
+          "friendly_name": "Door/window Sensor",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-KeyfodGeneric-D0001",
+          "friendly_name": "Security system key fob",
+          "bind": []
+        },
+        {
+          "model": "ZB-KeypadGeneric-D0002",
+          "friendly_name": "Security keypad battery",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZB-MotionSensor-D0003",
+          "friendly_name": "PIR motion sensor, wireless motion detector",
+          "bind": [
+            1,
+            1280
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-BR300107",
+          "friendly_name": "Zigbee LED 7.4W BR30 bulb E26, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-C4700107",
+          "friendly_name": "Zigbee LED 5.4W C35 bulb E14, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-D0106",
+          "friendly_name": "Zigbee LED 9W A19 bulb, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-D115",
+          "friendly_name": "Ceiling light 28W, 3000 lm, Ø40CM CCT",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-GLS0108",
+          "friendly_name": "Zigbee LED 9W A19 bulb, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-GLS0109",
+          "friendly_name": "Zigbee LED 9W A19 bulb, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-CCTLight-M3500107",
+          "friendly_name": "Zigbee LED 4.8W GU10 bulb, dimmable & tunable",
+          "bind": [
+            6,
+            8,
+            768
+          ]
+        },
+        {
+          "model": "ZBT-DIMLight-A4700003",
+          "friendly_name": "Zigbee A60 led filament, dimmable warm light (2200K), E27. 4.2W, 420lm",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZBT-DIMLight-D0120",
+          "friendly_name": "Zigbee A60 filament bulb 6.3W",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZBT-DIMLight-GLS0010",
+          "friendly_name": "Zigbee LED 9W 2700K A19 bulb, dimmable",
+          "bind": [
+            6,
+            8
+          ]
+        },
+        {
+          "model": "ZBT-DIMSwitch-D0001",
+          "friendly_name": "1-key remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-OnOffPlug-D0001",
+          "friendly_name": "Control outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-OnOffPlug-D0011",
+          "friendly_name": "Control outlet",
+          "bind": [
+            6
+          ],
+          "reporting": [
+            {
+              "cluster": 6,
+              "attribute": 0,
+              "type": 16,
+              "min": 0,
+              "max": 3600,
+              "change": 0
+            }
+          ]
+        },
+        {
+          "model": "ZBT-RGBWSwitch-D0801",
+          "friendly_name": "5-key smart bulb dimmer switch light remote control",
+          "bind": [
+            1
+          ],
+          "reporting": [
+            {
+              "cluster": 1,
+              "attribute": 33,
+              "type": 32,
+              "min": 3600,
+              "max": 62000,
+              "change": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
