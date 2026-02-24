@@ -1,0 +1,19 @@
+ncp:
+  type: nrf52840
+  port: /dev/ttyACM0
+  baud: 460800
+
+network:
+  channel: 15
+  pan_id: 0x1A62
+  extended_pan_id: "DDDDDDDDDDDDDDDD"
+
+web:
+  listen: "0.0.0.0:8080"
+
+store:
+  path: /var/lib/zigbee-go-home/zigbee-home.db
+
+log:
+  level: info
+  format: text

@@ -1,0 +1,94 @@
+{{template "layout" .}}
+{{define "content"}}
+<!-- NCP info cards -->
+<div class="section">
+    <h2 class="section-title" data-i18n="network.ncp_info">NCP Information</h2>
+    <div class="network-grid">
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.ncp_type">NCP Type</div>
+            <div class="network-card-value">{{.ncp_type}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.serial_port">Serial Port</div>
+            <div class="network-card-value mono">{{.port}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.baud_rate">Baud Rate</div>
+            <div class="network-card-value">{{.baud}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.coordinator_ieee">Coordinator IEEE</div>
+            <div class="network-card-value mono">{{.coordinator_ieee}}</div>
+        </div>
+        {{if .fw_version}}
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.fw_version">Firmware Version</div>
+            <div class="network-card-value">{{.fw_version}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.stack_version">Stack Version</div>
+            <div class="network-card-value">{{.stack_version}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.protocol_version">Protocol Version</div>
+            <div class="network-card-value">{{.protocol_version}}</div>
+        </div>
+        {{end}}
+    </div>
+</div>
+
+<!-- Network info cards -->
+<div class="section">
+    <h2 class="section-title" data-i18n="network.net_info">Network Information</h2>
+    <div class="network-grid">
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.channel">Channel</div>
+            <div class="network-card-value">{{.channel}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.pan_id">PAN ID</div>
+            <div class="network-card-value mono">{{.pan_id}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.ext_pan_id">Extended PAN ID</div>
+            <div class="network-card-value mono">{{.ext_pan_id}}</div>
+        </div>
+        <div class="network-card">
+            <div class="network-card-label" data-i18n="network.devices">Devices</div>
+            <div class="network-card-value">{{.device_count}}</div>
+        </div>
+    </div>
+</div>
+
+<!-- Permit Join -->
+<div class="section">
+    <h2 class="section-title" data-i18n="network.permit_join">Permit Join</h2>
+    <div class="permit-join-panel">
+        <p class="muted mb-16" style="font-size:13px" data-i18n="network.permit_join_desc">Allow new devices to join the network for a specified duration.</p>
+        <div class="permit-join-buttons">
+            <button onclick="permitJoin(60)" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="16"/>
+                    <line x1="8" y1="12" x2="16" y2="12"/>
+                </svg>
+                <span data-i18n="network.60s">60 seconds</span>
+            </button>
+            <button onclick="permitJoin(120)" class="btn btn-primary" data-i18n="network.120s">120 seconds</button>
+            <button onclick="permitJoin(254)" class="btn btn-primary" data-i18n="network.254s">254 seconds</button>
+            <button onclick="permitJoin(0)" class="btn btn-danger" data-i18n="network.close">Close</button>
+        </div>
+        <div class="permit-join-timer" id="permit-join-timer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span class="permit-join-countdown" id="permit-join-countdown">0</span>
+            <span data-i18n="network.seconds_remaining">seconds remaining</span>
+            <div class="permit-join-progress">
+                <div class="permit-join-progress-bar" id="permit-join-progress"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

@@ -1,0 +1,340 @@
+{{template "layout" .}}
+{{define "content"}}
+<!-- Device header -->
+<div class="card mb-16">
+    <div class="flex-center gap-16">
+        {{if .Device.HasPhoto}}
+        <img src="{{.Device.PhotoURL}}" alt="{{.Device.Model}}" class="device-photo">
+        {{else}}
+        <div class="device-icon" id="detail-icon" style="width:56px;height:56px;">
+            {{if eq .Device.DeviceType "light"}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:28px;height:28px">
+                <path d="M9 18h6"/><path d="M10 22h4"/>
+                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/>
+            </svg>
+            {{else if eq .Device.DeviceType "switch"}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:28px;height:28px">
+                <path d="M12 2v6"/><circle cx="12" cy="14" r="8"/><circle cx="12" cy="14" r="3"/>
+            </svg>
+            {{else if eq .Device.DeviceType "sensor"}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:28px;height:28px">
+                <path d="M14 4v10.54a4 4 0 11-4 0V4a2 2 0 014 0z"/>
+            </svg>
+            {{else}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:28px;height:28px">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6" rx="1"/>
+            </svg>
+            {{end}}
+        </div>
+        {{end}}
+        <div style="flex:1">
+            <div style="font-size:18px;font-weight:600;display:flex;align-items:center;gap:8px">
+                <span id="device-name-display">{{if .Device.FriendlyName}}{{.Device.FriendlyName}}{{else if and .Device.Manufacturer .Device.Model}}{{.Device.Manufacturer}} {{.Device.Model}}{{else}}{{.Device.IEEEAddress}}{{end}}</span>
+                <button class="btn-icon" onclick="startRename()" title="Rename" style="padding:4px;border:none;border-radius:4px;background:transparent;color:var(--md-on-surface-variant);cursor:pointer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 3a2.83 2.83 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+                </button>
+                <div id="device-name-edit" style="display:none;flex:1;align-items:center;gap:8px">
+                    <input type="text" id="device-name-input" class="form-input" style="flex:1;font-size:16px;padding:4px 8px"
+                           value="{{.Device.FriendlyName}}"
+                           onkeydown="if(event.key==='Enter')saveRename('{{.Device.IEEEAddress}}');if(event.key==='Escape')cancelRename()">
+                    <button class="btn btn-primary btn-sm" onclick="saveRename('{{.Device.IEEEAddress}}')" data-i18n="detail.save">Save</button>
+                    <button class="btn btn-sm" onclick="cancelRename()" data-i18n="detail.cancel">Cancel</button>
+                </div>
+            </div>
+            <div class="muted" style="font-size:13px">
+                {{.Device.DeviceType}} &middot; {{.Device.EndpointCount}} endpoint{{if ne .Device.EndpointCount 1}}s{{end}}
+            </div>
+        </div>
+        <div>
+            {{if .Device.Interviewed}}
+            <span class="badge badge-success" data-i18n="detail.interviewed">Interviewed</span>
+            {{else}}
+            <span class="badge badge-warning" data-i18n="detail.not_interviewed">Not Interviewed</span>
+            {{end}}
+        </div>
+    </div>
+</div>
+
+<!-- Device Status (always rendered so WebSocket can update dynamically) -->
+<div class="section" id="device-status-section" {{if not (or (ge .Device.BatteryPercent 0) (ne .Device.LQIQuality "") .Device.HasTemperature (ne .Device.Contact ""))}}style="display:none"{{end}}>
+    <h2 class="section-title" data-i18n="detail.status">Device Status</h2>
+    <div class="card">
+        <div class="status-grid" id="device-status">
+            <div class="status-item" id="status-battery" {{if lt .Device.BatteryPercent 0}}style="display:none"{{end}}>
+                <div class="status-icon" id="status-battery-icon">
+                    {{if ge .Device.BatteryPercent 75}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" width="24" height="24"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="14" height="8" rx="1" fill="#4caf50" opacity="0.3"/></svg>
+                    {{else if ge .Device.BatteryPercent 50}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#8bc34a" stroke-width="2" width="24" height="24"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="10" height="8" rx="1" fill="#8bc34a" opacity="0.3"/></svg>
+                    {{else if ge .Device.BatteryPercent 25}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff9800" stroke-width="2" width="24" height="24"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="6" height="8" rx="1" fill="#ff9800" opacity="0.3"/></svg>
+                    {{else}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#f44336" stroke-width="2" width="24" height="24"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="3" height="8" rx="1" fill="#f44336" opacity="0.3"/></svg>
+                    {{end}}
+                </div>
+                <div class="status-details">
+                    <span class="status-label" data-i18n="detail.battery">Battery</span>
+                    <span class="status-value" id="status-battery-pct">{{if ge .Device.BatteryPercent 0}}{{.Device.BatteryPercent}}%{{end}}</span>
+                    <span class="status-sub muted" id="status-battery-mv">{{if gt .Device.BatteryVoltage 0}}{{.Device.BatteryVoltage}} mV{{end}}</span>
+                </div>
+            </div>
+            <div class="status-item" id="status-signal" {{if eq .Device.LQIQuality ""}}style="display:none"{{end}}>
+                <div class="status-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                        <rect x="2" y="18" width="3" height="4" rx="1" {{if ne .Device.LQIQuality ""}}fill="currentColor"{{end}}/>
+                        <rect x="7" y="14" width="3" height="8" rx="1" {{if or (eq .Device.LQIQuality "fair") (eq .Device.LQIQuality "good")}}fill="currentColor"{{end}}/>
+                        <rect x="12" y="9" width="3" height="13" rx="1" {{if eq .Device.LQIQuality "good"}}fill="currentColor"{{end}}/>
+                        <rect x="17" y="4" width="3" height="18" rx="1" {{if eq .Device.LQIQuality "good"}}fill="currentColor"{{end}}/>
+                    </svg>
+                </div>
+                <div class="status-details">
+                    <span class="status-label" data-i18n="detail.signal">Signal</span>
+                    <span class="status-value" id="status-lqi">LQI {{.Device.LQI}}</span>
+                    <span class="status-sub muted" id="status-rssi">{{.Device.RSSI}} dBm</span>
+                </div>
+            </div>
+            <div class="status-item" id="status-temperature" {{if not .Device.HasTemperature}}style="display:none"{{end}}>
+                <div class="status-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                        <path d="M14 4v10.54a4 4 0 11-4 0V4a2 2 0 014 0z"/>
+                    </svg>
+                </div>
+                <div class="status-details">
+                    <span class="status-label" data-i18n="detail.temperature">Temperature</span>
+                    <span class="status-value" id="status-temp">{{if .Device.HasTemperature}}{{.Device.Temperature}}&deg;C{{end}}</span>
+                </div>
+            </div>
+            <div class="status-item" id="status-contact" {{if eq .Device.Contact ""}}style="display:none"{{end}}>
+                <div class="status-icon" id="status-contact-icon">
+                    {{if eq .Device.Contact "open"}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff9800" stroke-width="2" width="24" height="24">
+                        <path d="M8 2v4"/><path d="M16 2v4"/>
+                        <rect x="3" y="6" width="18" height="15" rx="2"/>
+                        <path d="M3 10h18"/>
+                    </svg>
+                    {{else}}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" width="24" height="24">
+                        <rect x="3" y="11" width="18" height="11" rx="2"/>
+                        <path d="M7 11V7a5 5 0 0110 0v4"/>
+                    </svg>
+                    {{end}}
+                </div>
+                <div class="status-details">
+                    <span class="status-label" data-i18n="detail.contact">Contact</span>
+                    <span class="status-value" id="status-contact-val">{{if eq .Device.Contact "open"}}<span data-i18n="detail.open">Open</span>{{else if eq .Device.Contact "closed"}}<span data-i18n="detail.closed">Closed</span>{{end}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Device info -->
+<div class="section">
+    <h2 class="section-title" data-i18n="detail.info">Device Information</h2>
+    <div class="card">
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.ieee">IEEE Address</span>
+                <span class="info-value mono">{{.Device.IEEEAddress}}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.short_addr">Short Address</span>
+                <span class="info-value mono">0x{{printf "%04X" .Device.ShortAddress}}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.manufacturer">Manufacturer</span>
+                <span class="info-value">{{if .Device.Manufacturer}}{{.Device.Manufacturer}}{{else}}<span class="muted" data-i18n="detail.unknown">Unknown</span>{{end}}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.model">Model</span>
+                <span class="info-value">{{if .Device.Model}}{{.Device.Model}}{{else}}<span class="muted" data-i18n="detail.unknown">Unknown</span>{{end}}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.joined">Joined</span>
+                <span class="info-value">{{.Device.JoinedAt.Format "2006-01-02 15:04:05"}}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label" data-i18n="detail.last_seen">Last Seen</span>
+                <span class="info-value last-seen" data-time="{{.Device.LastSeen.Unix}}">{{.Device.LastSeen.Format "2006-01-02 15:04:05"}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Controls (if applicable) -->
+{{if or .Device.HasOnOff .Device.HasLevel}}
+<div class="section">
+    <h2 class="section-title" data-i18n="detail.controls">Controls</h2>
+    <div class="card">
+        <div class="controls-section">
+            {{if .Device.HasOnOff}}
+            <div class="control-row">
+                <span class="control-label" data-i18n="detail.power">Power</span>
+                <div class="flex-center gap-12">
+                    <span class="control-value" id="detail-onoff-state">--</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="detail-toggle"
+                               onchange="toggleDevice('{{.Device.IEEEAddress}}', {{.Device.PrimaryEndpoint}}, this.checked)">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+            {{end}}
+            {{if .Device.HasLevel}}
+            <div class="control-row">
+                <span class="control-label" data-i18n="detail.brightness">Brightness</span>
+                <div class="slider-control">
+                    <input type="range" id="detail-level" min="0" max="254" value="0"
+                           onchange="setLevel('{{.Device.IEEEAddress}}', {{.Device.PrimaryEndpoint}}, this.value)">
+                    <span class="control-value" id="detail-level-value">0%</span>
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</div>
+{{end}}
+
+<!-- Live attributes -->
+<div class="section">
+    <h2 class="section-title" data-i18n="detail.live_attrs">Live Attributes</h2>
+    <div class="card">
+        <table class="attr-table" id="attr-table">
+            <thead>
+                <tr>
+                    <th data-i18n="detail.endpoint">Endpoint</th>
+                    <th data-i18n="detail.cluster">Cluster</th>
+                    <th data-i18n="detail.attribute">Attribute</th>
+                    <th data-i18n="detail.value">Value</th>
+                    <th data-i18n="detail.updated">Updated</th>
+                </tr>
+            </thead>
+            <tbody id="attr-table-body">
+                <tr><td colspan="5" class="muted" style="text-align:center;padding:16px" data-i18n="detail.waiting_attrs">Waiting for attribute reports...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Endpoints (hidden for known devices) -->
+{{if not .Device.IsKnown}}
+<div class="section">
+    <h2 class="section-title" data-i18n="detail.endpoints">Endpoints</h2>
+    {{range .Endpoints}}
+    <div class="card endpoint-section mb-16">
+        <div class="endpoint-header">
+            <span class="endpoint-id"><span data-i18n="detail.endpoint">Endpoint</span> {{.ID}}</span>
+            <span class="endpoint-meta">Profile: 0x{{printf "%04X" .ProfileID}} &middot; Device: 0x{{printf "%04X" .DeviceID}}</span>
+        </div>
+        <div class="cluster-grid">
+            <div class="cluster-section">
+                <h4 data-i18n="detail.input_clusters">Input Clusters</h4>
+                {{if .InClusters}}
+                <ul class="cluster-list">
+                    {{range .InClusters}}
+                    <li class="cluster-item">
+                        <span class="cluster-id">0x{{printf "%04X" .ID}}</span>
+                        {{if .Name}}{{.Name}}{{else}}<span class="muted" data-i18n="detail.unknown">Unknown</span>{{end}}
+                    </li>
+                    {{end}}
+                </ul>
+                {{else}}
+                <div class="muted" style="font-size:13px" data-i18n="detail.none">None</div>
+                {{end}}
+            </div>
+            <div class="cluster-section">
+                <h4 data-i18n="detail.output_clusters">Output Clusters</h4>
+                {{if .OutClusters}}
+                <ul class="cluster-list">
+                    {{range .OutClusters}}
+                    <li class="cluster-item">
+                        <span class="cluster-id">0x{{printf "%04X" .ID}}</span>
+                        {{if .Name}}{{.Name}}{{else}}<span class="muted" data-i18n="detail.unknown">Unknown</span>{{end}}
+                    </li>
+                    {{end}}
+                </ul>
+                {{else}}
+                <div class="muted" style="font-size:13px" data-i18n="detail.none">None</div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+    {{end}}
+</div>
+{{end}}
+
+<!-- Actions (hidden for known devices) -->
+{{if not .Device.IsKnown}}
+<div class="section">
+    <h2 class="section-title" data-i18n="detail.actions">Actions</h2>
+    <div class="actions-grid">
+        <div class="action-card">
+            <h3 data-i18n="detail.read_attribute">Read Attribute</h3>
+            <form onsubmit="readAttribute(event, '{{.Device.IEEEAddress}}')">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="detail.endpoint">Endpoint</label>
+                        <select class="form-input" id="read-ep" onchange="onReadEpChange()"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="detail.cluster">Cluster</label>
+                        <select class="form-input" id="read-cluster" onchange="onReadClusterChange()"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="detail.attribute">Attribute</label>
+                    <select class="form-input" id="read-attrs"></select>
+                </div>
+                <button type="submit" class="btn btn-primary mt-8" data-i18n="detail.read">Read</button>
+            </form>
+            <pre class="result-output" id="read-result"></pre>
+        </div>
+
+        <div class="action-card">
+            <h3 data-i18n="detail.send_command">Send Command</h3>
+            <form onsubmit="sendCommand(event, '{{.Device.IEEEAddress}}')">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="detail.endpoint">Endpoint</label>
+                        <select class="form-input" id="cmd-ep" onchange="onCmdEpChange()"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="detail.cluster">Cluster</label>
+                        <select class="form-input" id="cmd-cluster" onchange="onCmdClusterChange()"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="detail.command">Command</label>
+                        <select class="form-input" id="cmd-id"></select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-8" data-i18n="detail.send">Send</button>
+            </form>
+            <div class="quick-actions">
+                <button onclick="quickCommand('{{.Device.IEEEAddress}}', {{.Device.PrimaryEndpoint}}, 6, 1)" class="btn btn-accent btn-sm" data-i18n="detail.on">On</button>
+                <button onclick="quickCommand('{{.Device.IEEEAddress}}', {{.Device.PrimaryEndpoint}}, 6, 0)" class="btn btn-sm" data-i18n="detail.off">Off</button>
+                <button onclick="quickCommand('{{.Device.IEEEAddress}}', {{.Device.PrimaryEndpoint}}, 6, 2)" class="btn btn-sm" data-i18n="detail.toggle">Toggle</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}
+
+<!-- Delete -->
+<div class="section">
+    <button class="btn btn-danger" onclick="deleteDevice('{{.Device.IEEEAddress}}')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+            <polyline points="3 6 5 6 21 6"/>
+            <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
+            <path d="M10 11v6"/><path d="M14 11v6"/>
+            <path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/>
+        </svg>
+        <span data-i18n="detail.delete_device">Delete Device</span>
+    </button>
+</div>
+
+<script>
+    window.currentDeviceIEEE = '{{.Device.IEEEAddress}}';
+    window.deviceMeta = {{.EndpointMeta}};
+</script>
+{{end}}

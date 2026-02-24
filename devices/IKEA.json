@@ -1,0 +1,13 @@
+{
+  "devices": [
+    {
+      "manufacturer": "IKEA of Sweden",
+      "model": "TRADFRI on/off switch",
+      "friendly_name": "IKEA On/Off Switch",
+      "bind": [6, 8],
+      "reporting": [
+        {"cluster": 1, "attribute": 33, "type": 32, "min": 3600, "max": 65534, "change": 10}
+      ]
+    }
+  ]
+}

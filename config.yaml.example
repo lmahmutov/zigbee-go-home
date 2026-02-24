@@ -1,0 +1,41 @@
+# NCP backend: nRF52840 (ZBOSS NCP over USB CDC ACM)
+ncp:
+  type: nrf52840
+  port: /dev/ttyACM0
+  baud: 460800
+
+network:
+  channel: 15                              # Zigbee channel (11-26)
+  pan_id: 0x1A62
+  extended_pan_id: "DD:DD:DD:DD:DD:DD:DD:DD"
+
+web:
+  listen: ":8080"
+  # api_key: "my-secret-key"               # uncomment to enable auth
+  # allowed_origins:
+  #   - "http://localhost:*"
+
+store:
+  path: "./zigbee-home.db"
+
+devices_dir: "./devices"
+scripts_dir: "./scripts"
+
+mqtt:
+  enabled: false
+  broker: "tcp://localhost:1883"
+  username: ""
+  password: ""
+  topic_prefix: "zigbee2mqtt"
+
+telegram:
+  bot_token: ""
+  chat_ids: []
+
+exec:
+  allowlist: []                            # e.g. ["/usr/bin/curl", "/usr/local/bin/notify-send"]
+  timeout: "10s"
+
+log:
+  level: info                              # debug, info, warn, error
+  format: text                             # text, json

@@ -1,0 +1,8 @@
+zigbee-home
+zigbee-home-*
+*.db
+*.exe
+*.pdf
+CLAUDE.md
+config.yaml
+scripts/

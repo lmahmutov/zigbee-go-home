@@ -1,0 +1,49 @@
+{
+  "manufacturers": [
+    {
+      "name": "LUMI",
+      "models": [
+        {
+          "model": "lumi.sensor_magnet.aq2",
+          "friendly_name": "Aqara Door/Window Sensor",
+          "bind": [6],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {"tag": 1, "name": "battery_voltage"},
+                {"tag": 1, "name": "battery", "transform": "lumi_battery"},
+                {"tag": 3, "name": "device_temperature"},
+                {"tag": 5, "name": "power_outage_count", "transform": "minus_one"},
+                {"tag": 6, "name": "trigger_count", "transform": "lumi_trigger"},
+                {"tag": 100, "name": "contact", "transform": "bool_invert"}
+              ]
+            }
+          ]
+        },
+        {
+          "model": "lumi.sensor_ht.agl02",
+          "friendly_name": "Aqara T1 Temp/Humidity",
+          "bind": [],
+          "reporting": [
+            {"cluster": 1026, "attribute": 0, "type": 41, "min": 10, "max": 300, "change": 10}
+          ],
+          "properties": [
+            {
+              "cluster": 0,
+              "attribute": 65281,
+              "decoder": "xiaomi_tlv",
+              "values": [
+                {"tag": 1, "name": "battery_voltage"},
+                {"tag": 1, "name": "battery", "transform": "lumi_battery"},
+                {"tag": 3, "name": "device_temperature"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

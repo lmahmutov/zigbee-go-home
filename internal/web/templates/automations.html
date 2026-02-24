@@ -1,0 +1,90 @@
+{{template "layout" .}}
+{{define "content"}}
+<div class="section">
+    <div class="flex-center gap-16" style="justify-content:space-between;margin-bottom:16px">
+        <h2 class="section-title" style="margin-bottom:0" data-i18n="auto.title">Automations</h2>
+        <button class="btn btn-primary" onclick="createAutomation()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            <span data-i18n="auto.new">New Automation</span>
+        </button>
+    </div>
+
+    <div id="automations-list">
+        {{if .Scripts}}
+        {{range .Scripts}}
+        <div class="card mb-16 automation-item" data-id="{{.ID}}">
+            <div class="flex-center gap-12" style="justify-content:space-between">
+                <div style="flex:1;min-width:0">
+                    <div style="font-size:15px;font-weight:600">{{.Meta.Name}}</div>
+                    {{if .Meta.Description}}<div class="muted" style="font-size:13px">{{.Meta.Description}}</div>{{end}}
+                </div>
+                <div class="flex-center gap-8">
+                    {{if .Meta.Enabled}}
+                    <span class="badge badge-success" data-i18n="auto.enabled">Enabled</span>
+                    {{else}}
+                    <span class="badge badge-warning" data-i18n="auto.disabled">Disabled</span>
+                    {{end}}
+                    <button class="btn btn-sm btn-accent" onclick="runAutomation('{{.ID}}')" data-i18n="auto.run">Run</button>
+                    <button class="btn btn-sm" onclick="editAutomation('{{.ID}}')" data-i18n="auto.edit">Edit</button>
+                    <button class="btn btn-sm" onclick="toggleAutomation('{{.ID}}', {{not .Meta.Enabled}})">
+                        {{if .Meta.Enabled}}<span data-i18n="auto.disable">Disable</span>{{else}}<span data-i18n="auto.enable">Enable</span>{{end}}
+                    </button>
+                    <button class="btn btn-sm btn-danger" onclick="deleteAutomation('{{.ID}}')" data-i18n="auto.delete">Delete</button>
+                </div>
+            </div>
+        </div>
+        {{end}}
+        {{else}}
+        <div class="empty-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+            <p data-i18n="auto.no_automations">No automations yet</p>
+            <button class="btn btn-primary" onclick="createAutomation()" data-i18n="auto.create_first">Create your first automation</button>
+        </div>
+        {{end}}
+    </div>
+</div>
+
+<!-- Blockly editor modal -->
+<div class="blockly-modal" id="blockly-modal" style="display:none">
+    <div class="blockly-modal-header">
+        <button class="btn btn-sm" onclick="closeBlocklyEditor()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+            </svg>
+            <span data-i18n="auto.back">Back</span>
+        </button>
+        <input type="text" id="blockly-script-name" class="form-input" placeholder="Automation name" data-i18n-placeholder="auto.name_placeholder" style="flex:1;max-width:300px;font-size:14px;padding:6px 12px">
+        <input type="text" id="blockly-script-desc" class="form-input" placeholder="Description (optional)" data-i18n-placeholder="auto.desc_placeholder" style="flex:1;max-width:300px;font-size:14px;padding:6px 12px">
+        <button class="btn btn-sm" id="btn-toggle-lua" onclick="toggleLuaPreview()" data-i18n="auto.view_lua">View Lua</button>
+        <button class="btn btn-accent btn-sm" onclick="runBlocklyScript()" data-i18n="auto.run">Run</button>
+        <button class="btn btn-primary btn-sm" onclick="saveBlocklyScript()" data-i18n="auto.save">Save</button>
+    </div>
+    <div class="blockly-workspace-container" id="blockly-workspace-container">
+        <div id="blockly-div" style="flex:1"></div>
+        <div class="lua-preview" id="lua-preview" style="display:none">
+            <div class="lua-preview-header">
+                <span data-i18n="auto.generated_lua">Generated Lua</span>
+                <button class="btn btn-sm" onclick="toggleLuaPreview()" data-i18n="auto.close">Close</button>
+            </div>
+            <pre id="lua-preview-code"></pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/blockly@11.2.1/blockly_compressed.js"></script>
+<script>
+    // Load Blockly locale based on saved language preference
+    (function() {
+        var lang = localStorage.getItem("zigbee-lang") || "en";
+        var locale = (lang === "ru") ? "ru" : "en";
+        document.write('<script src="https://unpkg.com/blockly@11.2.1/msg/' + locale + '.js"><\/script>');
+    })();
+</script>
+<script src="https://unpkg.com/blockly@11.2.1/blocks_compressed.js"></script>
+<script src="https://unpkg.com/blockly@11.2.1/lua_compressed.js"></script>
+<script src="/static/automation.js"></script>
+{{end}}
