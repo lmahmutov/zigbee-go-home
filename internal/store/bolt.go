@@ -76,6 +76,31 @@ func (s *BoltStore) GetDevice(ieee string) (*Device, error) {
 	return &dev, nil
 }
 
+func (s *BoltStore) UpdateDevice(ieee string, fn func(dev *Device) error) error {
+	return s.db.Update(func(tx *bolt.Tx) error {
+		b := tx.Bucket(bucketDevices)
+		if b == nil {
+			return fmt.Errorf("bucket %q not found", bucketDevices)
+		}
+		data := b.Get([]byte(ieee))
+		if data == nil {
+			return fmt.Errorf("device %s: %w", ieee, ErrNotFound)
+		}
+		var dev Device
+		if err := json.Unmarshal(data, &dev); err != nil {
+			return err
+		}
+		if err := fn(&dev); err != nil {
+			return err
+		}
+		out, err := json.Marshal(&dev)
+		if err != nil {
+			return err
+		}
+		return b.Put([]byte(ieee), out)
+	})
+}
+
 func (s *BoltStore) DeleteDevice(ieee string) error {
 	return s.db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket(bucketDevices)

@@ -15,6 +15,8 @@ import (
 	lua "github.com/yuin/gopher-lua"
 )
 
+const commandChanBuffer = 64
+
 // RunResult is the result of a one-shot script execution.
 type RunResult struct {
 	OK       bool     `json:"ok"`
@@ -50,8 +52,9 @@ type Engine struct {
 	systemCfg   SystemConfig
 	telegramCfg TelegramConfig
 
-	mu   sync.Mutex
-	vms  map[string]*scriptVM // script ID -> running VM
+	mu    sync.Mutex
+	vms   map[string]*scriptVM // script ID -> running VM
+	vmWg  sync.WaitGroup       // tracks command loop goroutines
 	unsub func()
 }
 
@@ -69,6 +72,9 @@ func NewEngine(coord *coordinator.Coordinator, mgr *Manager, logger *slog.Logger
 
 // Start subscribes to the EventBus and loads all enabled scripts.
 func (e *Engine) Start() {
+	if e.unsub != nil {
+		e.unsub()
+	}
 	e.unsub = e.coord.Events().OnAll(func(event coordinator.Event) {
 		e.dispatchEvent(event)
 	})
@@ -91,19 +97,21 @@ func (e *Engine) Start() {
 	e.logger.Info("automation engine started", "scripts", len(e.vms))
 }
 
-// Stop cancels all VMs and unsubscribes from EventBus.
+// Stop cancels all VMs, waits for goroutines to exit, and unsubscribes from EventBus.
 func (e *Engine) Stop() {
-	e.mu.Lock()
-	defer e.mu.Unlock()
+	if e.unsub != nil {
+		e.unsub()
+		e.unsub = nil
+	}
 
+	e.mu.Lock()
 	for id, vm := range e.vms {
 		vm.cancel()
 		delete(e.vms, id)
 	}
+	e.mu.Unlock()
 
-	if e.unsub != nil {
-		e.unsub()
-	}
+	e.vmWg.Wait()
 
 	e.logger.Info("automation engine stopped")
 }
@@ -148,10 +156,17 @@ func (e *Engine) RunLuaCode(code string) *RunResult {
 	start := time.Now()
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
 
-	L := lua.NewState(lua.Options{SkipOpenLibs: false})
+	L := lua.NewState(lua.Options{
+		SkipOpenLibs:    false,
+		CallStackSize:   120,
+		RegistrySize:    1024 * 20,
+		RegistryMaxSize: 1024 * 80,
+	})
+	// Cancel context BEFORE closing LState so zigbee.after() goroutines exit
+	// before the Lua state is freed. Defers execute LIFO.
 	defer L.Close()
+	defer cancel()
 
 	// Sandbox
 	L.SetGlobal("os", lua.LNil)
@@ -163,11 +178,13 @@ func (e *Engine) RunLuaCode(code string) *RunResult {
 	L.SetGlobal("debug", lua.LNil)
 	L.SetGlobal("package", lua.LNil)
 
+	sandboxStringRep(L)
+
 	L.SetContext(ctx)
 
 	vm := &scriptVM{
 		state:    L,
-		commands: make(chan func(*lua.LState), 64),
+		commands: make(chan func(*lua.LState), commandChanBuffer),
 		ctx:      ctx,
 		cancel:   cancel,
 	}
@@ -219,44 +236,6 @@ func (e *Engine) RunLuaCode(code string) *RunResult {
 		return &RunResult{OK: false, Error: errStr, Logs: logs, Duration: dur.String()}
 	}
 
-	// If the script registered event handlers (typical for Blockly-generated code),
-	// invoke each one with a synthetic event so the actions actually execute.
-	vm.mu.Lock()
-	handlers := make([]luaEventHandler, len(vm.handlers))
-	copy(handlers, vm.handlers)
-	vm.mu.Unlock()
-
-	e.logger.Info("RunLuaCode: invoking handlers", "count", len(handlers))
-
-	for i, h := range handlers {
-		eventTable := L.NewTable()
-		eventTable.RawSetString("type", lua.LString(h.eventType))
-		if h.ieee != "" {
-			eventTable.RawSetString("ieee", lua.LString(h.ieee))
-		}
-		if h.property != "" {
-			eventTable.RawSetString("property", lua.LString(h.property))
-		}
-		// Set a default value=true so "if event.value == true" conditions pass
-		eventTable.RawSetString("value", lua.LBool(true))
-
-		e.logger.Info("RunLuaCode: calling handler", "index", i, "event_type", h.eventType, "ieee", h.ieee, "property", h.property)
-
-		if err := L.CallByParam(lua.P{
-			Fn:      h.fn,
-			NRet:    0,
-			Protect: true,
-		}, eventTable); err != nil {
-			errStr := err.Error()
-			if strings.Contains(errStr, "context deadline exceeded") {
-				errStr = "timeout (5s)"
-			}
-			e.logger.Warn("RunLuaCode: handler error", "index", i, "err", errStr)
-			dur := time.Since(start)
-			return &RunResult{OK: false, Error: errStr, Logs: logs, Duration: dur.String()}
-		}
-	}
-
 	dur := time.Since(start)
 	e.logger.Info("RunLuaCode: complete", "ok", true, "logs", len(logs), "duration", dur)
 	return &RunResult{OK: true, Logs: logs, Duration: dur.String()}
@@ -277,7 +256,10 @@ func (e *Engine) startScript(s *Script) error {
 	ctx, cancel := context.WithCancel(context.Background())
 
 	L := lua.NewState(lua.Options{
-		SkipOpenLibs: false,
+		SkipOpenLibs:    false,
+		CallStackSize:   120,
+		RegistrySize:    1024 * 20,
+		RegistryMaxSize: 1024 * 80,
 	})
 
 	// Sandbox: remove dangerous libs and functions
@@ -290,9 +272,11 @@ func (e *Engine) startScript(s *Script) error {
 	L.SetGlobal("debug", lua.LNil)
 	L.SetGlobal("package", lua.LNil)
 
+	sandboxStringRep(L)
+
 	vm := &scriptVM{
 		state:    L,
-		commands: make(chan func(*lua.LState), 64),
+		commands: make(chan func(*lua.LState), commandChanBuffer),
 		ctx:      ctx,
 		cancel:   cancel,
 	}
@@ -314,14 +298,23 @@ func (e *Engine) startScript(s *Script) error {
 	e.mu.Unlock()
 
 	// Start command loop goroutine — exits when context is cancelled.
+	e.vmWg.Add(1)
 	go func() {
+		defer e.vmWg.Done()
 		defer L.Close()
 		for {
 			select {
 			case <-ctx.Done():
 				return
 			case fn := <-vm.commands:
-				fn(L)
+				func() {
+					defer func() {
+						if r := recover(); r != nil {
+							e.logger.Error("command loop panic", "script", s.ID, "err", r)
+						}
+					}()
+					fn(L)
+				}()
 			}
 		}
 	}()
@@ -345,6 +338,7 @@ func (e *Engine) dispatchEvent(event coordinator.Event) {
 		copy(handlers, vm.handlers)
 		vm.mu.Unlock()
 
+	nextVM:
 		for _, h := range handlers {
 			if !matchesHandler(h, event) {
 				continue
@@ -355,8 +349,8 @@ func (e *Engine) dispatchEvent(event coordinator.Event) {
 			// Check context first to avoid sending to a stopped VM.
 			select {
 			case <-vm.ctx.Done():
-				// VM stopped, skip remaining handlers
-				break
+				// VM stopped, skip remaining handlers for this VM.
+				break nextVM
 			case vm.commands <- func(L *lua.LState) {
 				e.callHandler(L, fn, event)
 			}:
@@ -416,6 +410,37 @@ func (e *Engine) callHandler(L *lua.LState, fn *lua.LFunction, event coordinator
 	}, eventTable); err != nil {
 		e.logger.Error("lua handler error", "err", err)
 	}
+}
+
+const maxStringRepLen = 1 << 20 // 1 MB limit for string.rep result
+
+// sandboxStringRep overrides string.rep with a length-limited wrapper.
+func sandboxStringRep(L *lua.LState) {
+	strMod := L.GetField(L.GetField(L.Get(lua.EnvironIndex), "string"), "rep")
+	if strMod == lua.LNil {
+		return
+	}
+	origRep, ok := strMod.(*lua.LFunction)
+	if !ok {
+		return
+	}
+	L.SetField(L.GetField(L.Get(lua.EnvironIndex), "string"), "rep", L.NewFunction(func(L *lua.LState) int {
+		s := L.CheckString(1)
+		n := L.CheckInt(2)
+		if int64(len(s))*int64(n) > maxStringRepLen {
+			L.ArgError(2, "resulting string exceeds 1MB limit")
+			return 0
+		}
+		// Call the original string.rep.
+		if err := L.CallByParam(lua.P{Fn: origRep, NRet: 1, Protect: true}, lua.LString(s), lua.LNumber(n)); err != nil {
+			L.RaiseError("%s", err.Error())
+			return 0
+		}
+		ret := L.Get(-1)
+		L.Pop(1)
+		L.Push(ret)
+		return 1
+	}))
 }
 
 // goToLua converts a Go value to a Lua value.

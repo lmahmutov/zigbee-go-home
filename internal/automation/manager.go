@@ -5,6 +5,7 @@ package automation
 import (
 	"encoding/json"
 	"fmt"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -140,7 +141,9 @@ func (m *Manager) parseFile(path string) (*Script, error) {
 	// Parse JSON metadata from first line: -- {"name": "...", ...}
 	if len(lines) > 0 && strings.HasPrefix(lines[0], "-- {") {
 		jsonStr := strings.TrimPrefix(lines[0], "-- ")
-		_ = json.Unmarshal([]byte(jsonStr), &s.Meta)
+		if err := json.Unmarshal([]byte(jsonStr), &s.Meta); err != nil {
+			slog.Warn("script metadata parse error", "file", path, "err", err)
+		}
 	}
 
 	// Extract Blockly XML from --[[BLOCKLY_XML ... BLOCKLY_XML]]--
@@ -166,6 +169,10 @@ func (m *Manager) parseFile(path string) (*Script, error) {
 			continue
 		}
 		luaLines = append(luaLines, line)
+	}
+
+	if inBlockly {
+		slog.Warn("unclosed BLOCKLY_XML block", "file", path)
 	}
 
 	// Trim leading empty lines from Lua code

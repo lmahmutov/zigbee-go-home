@@ -4,6 +4,8 @@ package mqtt
 
 import (
 	"context"
+	"crypto/rand"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"log/slog"
@@ -35,14 +37,24 @@ type Bridge struct {
 	ctx    context.Context
 	cancel context.CancelFunc
 
+	// Async event processing channel.
+	eventCh chan coordinator.Event
+	eventWg sync.WaitGroup
+
 	// Per-device state accumulator.
 	mu     sync.Mutex
 	states map[string]map[string]any // IEEE -> property map
+
+	// Cached topic names to avoid DB reads on every publish.
+	topicNames map[string]string // IEEE -> topic name
 
 	// Track pending delayed discovery goroutines per IEEE to avoid duplicates.
 	pendingDiscovery map[string]context.CancelFunc
 	discoveryGen     map[string]uint64
 	nextDiscGen      uint64
+
+	// WaitGroup for delayedDiscovery goroutines so Stop() can wait.
+	discWg sync.WaitGroup
 }
 
 // NewBridge creates and connects an MQTT bridge.
@@ -52,7 +64,9 @@ func NewBridge(coord *coordinator.Coordinator, cfg Config, logger *slog.Logger) 
 		coord:            coord,
 		prefix:           cfg.TopicPrefix,
 		logger:           logger.With("component", "mqtt"),
+		eventCh:          make(chan coordinator.Event, 256),
 		states:           make(map[string]map[string]any),
+		topicNames:       make(map[string]string),
 		pendingDiscovery: make(map[string]context.CancelFunc),
 		discoveryGen:     make(map[string]uint64),
 		ctx:              ctx,
@@ -61,7 +75,7 @@ func NewBridge(coord *coordinator.Coordinator, cfg Config, logger *slog.Logger) 
 
 	opts := pahomqtt.NewClientOptions().
 		AddBroker(cfg.Broker).
-		SetClientID("zigbee-go-home").
+		SetClientID("zigbee-go-home-" + shortRandomID()).
 		SetAutoReconnect(true).
 		SetConnectRetry(true).
 		SetConnectRetryInterval(5 * time.Second).
@@ -96,19 +110,44 @@ func NewBridge(coord *coordinator.Coordinator, cfg Config, logger *slog.Logger) 
 
 // Start subscribes to coordinator events and begins MQTT publishing.
 func (b *Bridge) Start() {
-	b.unsub = b.coord.Events().OnAll(b.handleEvent)
+	b.eventWg.Add(1)
+	go b.eventLoop()
+
+	b.unsub = b.coord.Events().OnAll(func(event coordinator.Event) {
+		select {
+		case b.eventCh <- event:
+		default:
+			b.logger.Warn("MQTT event channel full, dropping event", "type", event.Type)
+		}
+	})
 	b.logger.Info("MQTT bridge started", "prefix", b.prefix)
 }
 
-// Stop publishes offline state, unsubscribes, and disconnects.
+// Stop publishes offline state, unsubscribes, waits for goroutines, and disconnects.
 func (b *Bridge) Stop() {
-	b.cancel()
 	if b.unsub != nil {
 		b.unsub()
 	}
-	b.publishBridgeState("offline")
+	b.cancel()
+	// Don't close eventCh — the OnAll callback may still be in-flight after unsub().
+	// The eventLoop exits via ctx cancellation instead.
+	b.eventWg.Wait()
+	b.discWg.Wait()
+	b.publishBridgeStateSynchronous("offline")
 	b.client.Disconnect(1000)
 	b.logger.Info("MQTT bridge stopped")
+}
+
+func (b *Bridge) eventLoop() {
+	defer b.eventWg.Done()
+	for {
+		select {
+		case event := <-b.eventCh:
+			b.handleEvent(event)
+		case <-b.ctx.Done():
+			return
+		}
+	}
 }
 
 func (b *Bridge) handleEvent(event coordinator.Event) {
@@ -119,7 +158,11 @@ func (b *Bridge) handleEvent(event coordinator.Event) {
 		b.handlePropertyUpdate(event)
 	case coordinator.EventDeviceAnnounce:
 		// Publish discovery after a delay to let interview complete.
-		go b.delayedDiscovery(event)
+		b.discWg.Add(1)
+		go func() {
+			defer b.discWg.Done()
+			b.delayedDiscovery(event)
+		}()
 	case coordinator.EventDeviceLeft:
 		b.handleDeviceLeft(event)
 	}
@@ -145,15 +188,26 @@ func (b *Bridge) handleAttributeReport(event coordinator.Event) {
 		return
 	}
 
-	// Convert bool OnOff to "ON"/"OFF" strings for Home Assistant.
-	if propName == "state" {
-		if b, ok := value.(bool); ok {
-			if b {
+	// Normalize values for Home Assistant compatibility.
+	switch propName {
+	case "state":
+		// Convert bool OnOff to "ON"/"OFF" strings.
+		if bv, ok := value.(bool); ok {
+			if bv {
 				value = "ON"
 			} else {
 				value = "OFF"
 			}
 		}
+	case "occupancy":
+		// Normalize occupancy to bool for HA binary_sensor.
+		value = toBool(value)
+	case "zone_status":
+		// Normalize zone_status (bitmap16) to bool for HA binary_sensor.
+		value = toBool(value)
+	case "brightness":
+		// HA JSON schema light needs color_mode alongside brightness.
+		b.updateAndPublishState(ieee, "color_mode", "brightness")
 	}
 
 	b.updateAndPublishState(ieee, propName, value)
@@ -175,6 +229,9 @@ func (b *Bridge) handlePropertyUpdate(event coordinator.Event) {
 }
 
 func (b *Bridge) updateAndPublishState(ieee, prop string, value any) {
+	// Read device info outside the lock to avoid holding it during DB reads.
+	dev, _ := b.coord.Devices().GetDevice(ieee)
+
 	b.mu.Lock()
 	state, ok := b.states[ieee]
 	if !ok {
@@ -183,9 +240,7 @@ func (b *Bridge) updateAndPublishState(ieee, prop string, value any) {
 	}
 	state[prop] = value
 
-	// Always include LQI and last_seen from the device store.
-	dev, err := b.coord.Devices().GetDevice(ieee)
-	if err == nil {
+	if dev != nil {
 		state["linkquality"] = dev.LQI
 		state["last_seen"] = dev.LastSeen.Format(time.RFC3339)
 	}
@@ -193,7 +248,7 @@ func (b *Bridge) updateAndPublishState(ieee, prop string, value any) {
 	payload := mustJSON(state)
 	b.mu.Unlock()
 
-	topic := b.prefix + "/" + b.topicName(ieee)
+	topic := b.prefix + "/" + b.cachedTopicName(ieee)
 	b.publish(topic, payload, true)
 }
 
@@ -207,15 +262,20 @@ func (b *Bridge) handleDeviceLeft(event coordinator.Event) {
 		return
 	}
 
+	// Clear retained state topic (publish empty payload).
+	stateTopic := b.prefix + "/" + b.cachedTopicName(ieee)
+	b.publish(stateTopic, nil, true)
+
 	// Remove discovery entries.
 	dev := &store.Device{IEEEAddress: ieee}
 	for _, msg := range buildRemoveDiscovery(dev) {
 		b.publish(msg.Topic, msg.Payload, true)
 	}
 
-	// Clear accumulated state.
+	// Clear accumulated state and cached topic name.
 	b.mu.Lock()
 	delete(b.states, ieee)
+	delete(b.topicNames, ieee)
 	b.mu.Unlock()
 }
 
@@ -265,7 +325,12 @@ func (b *Bridge) delayedDiscovery(event coordinator.Event) {
 			return
 		}
 		if dev.Interviewed {
+			// Cache the topic name after interview completes.
+			b.mu.Lock()
+			b.topicNames[ieee] = deviceTopicName(dev)
+			b.mu.Unlock()
 			b.publishDeviceDiscovery(dev)
+			b.subscribeDeviceCommands(dev)
 			return
 		}
 	}
@@ -276,6 +341,18 @@ func (b *Bridge) publishBridgeState(state string) {
 	b.publish(topic, []byte(state), true)
 }
 
+// publishBridgeStateSynchronous publishes bridge state and waits for completion.
+// Used during shutdown to ensure the message is sent before Disconnect().
+func (b *Bridge) publishBridgeStateSynchronous(state string) {
+	topic := b.prefix + "/bridge/state"
+	token := b.client.Publish(topic, 1, true, []byte(state))
+	if !token.WaitTimeout(5 * time.Second) {
+		b.logger.Warn("MQTT publish timeout on shutdown", "topic", topic)
+	} else if err := token.Error(); err != nil {
+		b.logger.Warn("MQTT publish error on shutdown", "topic", topic, "err", err)
+	}
+}
+
 func (b *Bridge) publishAllDiscovery() {
 	devices, err := b.coord.Devices().ListDevices()
 	if err != nil {
@@ -284,6 +361,10 @@ func (b *Bridge) publishAllDiscovery() {
 	}
 	for _, dev := range devices {
 		if dev.Interviewed {
+			// Populate topic name cache on startup.
+			b.mu.Lock()
+			b.topicNames[dev.IEEEAddress] = deviceTopicName(dev)
+			b.mu.Unlock()
 			b.publishDeviceDiscovery(dev)
 		}
 	}
@@ -334,12 +415,12 @@ func (b *Bridge) handleCommand(ieee string, payload []byte) {
 		return
 	}
 
-	ep := dev.Endpoints[0].ID
 	ctx, cancel := context.WithTimeout(b.coord.Context(), 10*time.Second)
 	defer cancel()
 
 	// Handle state command (ON/OFF).
 	if state, ok := cmd["state"].(string); ok {
+		ep := findEndpointWithCluster(dev, 0x0006)
 		switch strings.ToUpper(state) {
 		case "ON":
 			if err := b.coord.SendClusterCommand(ctx, dev.ShortAddress, ep, 0x0006, 0x01, nil); err != nil {
@@ -362,18 +443,36 @@ func (b *Bridge) handleCommand(ieee string, payload []byte) {
 
 	// Handle brightness command.
 	if brightness, ok := toFloat64(cmd["brightness"]); ok {
-		level := uint8(brightness)
-		if level > 254 {
-			level = 254
+		ep := findEndpointWithCluster(dev, 0x0008)
+		if brightness < 0 {
+			brightness = 0
 		}
+		if brightness > 254 {
+			brightness = 254
+		}
+		level := uint8(brightness)
 		// Move to Level with On/Off, transition time 5 (0.5s).
-		payload := []byte{level, 0x05, 0x00}
-		if err := b.coord.SendClusterCommand(ctx, dev.ShortAddress, ep, 0x0008, 0x04, payload); err != nil {
+		cmdPayload := []byte{level, 0x05, 0x00}
+		if err := b.coord.SendClusterCommand(ctx, dev.ShortAddress, ep, 0x0008, 0x04, cmdPayload); err != nil {
 			b.logger.Warn("brightness command failed", "ieee", ieee, "err", err)
 		} else {
 			b.updateAndPublishState(ieee, "brightness", level)
+			b.updateAndPublishState(ieee, "color_mode", "brightness")
 		}
 	}
+}
+
+// findEndpointWithCluster returns the endpoint ID that has the given cluster
+// as an input cluster. Falls back to the first endpoint if not found.
+func findEndpointWithCluster(dev *store.Device, clusterID uint16) uint8 {
+	for _, ep := range dev.Endpoints {
+		for _, cid := range ep.InClusters {
+			if cid == clusterID {
+				return ep.ID
+			}
+		}
+	}
+	return dev.Endpoints[0].ID
 }
 
 func (b *Bridge) publish(topic string, payload []byte, retained bool) {
@@ -387,13 +486,24 @@ func (b *Bridge) publish(topic string, payload []byte, retained bool) {
 	}()
 }
 
-// topicName returns the MQTT topic name for a device by IEEE.
-func (b *Bridge) topicName(ieee string) string {
+// cachedTopicName returns the MQTT topic name for a device, using a cache to avoid DB reads.
+func (b *Bridge) cachedTopicName(ieee string) string {
+	b.mu.Lock()
+	name, ok := b.topicNames[ieee]
+	b.mu.Unlock()
+	if ok {
+		return name
+	}
+	// Cache miss — read from DB.
 	dev, err := b.coord.Devices().GetDevice(ieee)
 	if err != nil {
 		return ieee
 	}
-	return deviceTopicName(dev)
+	name = deviceTopicName(dev)
+	b.mu.Lock()
+	b.topicNames[ieee] = name
+	b.mu.Unlock()
+	return name
 }
 
 // mapAttributeToProperty maps well-known cluster/attribute combos to property names.
@@ -427,12 +537,38 @@ func mapAttributeToProperty(clusterID uint16, attrName string) string {
 		if attrName == "Occupancy" || attrName == "occupancy" {
 			return "occupancy"
 		}
+	case 0x0500: // IAS Zone
+		if attrName == "ZoneStatus" || attrName == "zone_status" {
+			return "zone_status"
+		}
 	case 0x0001: // Power Configuration
 		if attrName == "BatteryPercentageRemaining" || attrName == "battery_percentage_remaining" {
 			return "battery"
 		}
 	}
 	return ""
+}
+
+// toBool converts various types to a boolean (non-zero = true).
+func toBool(v interface{}) bool {
+	switch n := v.(type) {
+	case bool:
+		return n
+	case uint8:
+		return n != 0
+	case uint16:
+		return n != 0
+	case uint32:
+		return n != 0
+	case int:
+		return n != 0
+	case int64:
+		return n != 0
+	case float64:
+		return n != 0
+	default:
+		return false
+	}
 }
 
 func toFloat64(v interface{}) (float64, bool) {
@@ -460,4 +596,10 @@ func mustJSON(v interface{}) []byte {
 		return []byte("{}")
 	}
 	return data
+}
+
+func shortRandomID() string {
+	b := make([]byte, 3)
+	_, _ = rand.Read(b)
+	return hex.EncodeToString(b)
 }

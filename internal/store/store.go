@@ -13,6 +13,10 @@ type Store interface {
 	DeleteDevice(ieee string) error
 	ListDevices() ([]*Device, error)
 
+	// UpdateDevice atomically reads, modifies, and saves a device in a single
+	// transaction. Returns ErrNotFound if the device does not exist.
+	UpdateDevice(ieee string, fn func(dev *Device) error) error
+
 	// Network state
 	SaveNetworkState(state *NetworkState) error
 	GetNetworkState() (*NetworkState, error)

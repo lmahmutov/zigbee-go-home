@@ -45,6 +45,8 @@ func (s *stubNCP) OnDeviceJoined(func(ncp.DeviceJoinedEvent))               {}
 func (s *stubNCP) OnDeviceLeft(func(ncp.DeviceLeftEvent))                    {}
 func (s *stubNCP) OnDeviceAnnounce(func(ncp.DeviceAnnounceEvent))            {}
 func (s *stubNCP) OnAttributeReport(func(ncp.AttributeReportEvent))          {}
+func (s *stubNCP) OnClusterCommand(func(ncp.ClusterCommandEvent))            {}
+func (s *stubNCP) OnNwkAddrUpdate(func(uint16))                              {}
 func (s *stubNCP) GetNCPInfo() *ncp.NCPInfo                                  { return nil }
 func (s *stubNCP) Close() error                                              { return nil }
 
@@ -327,16 +329,16 @@ func TestAuthMiddlewareHeader(t *testing.T) {
 	}
 }
 
-func TestAuthMiddlewareQueryParam(t *testing.T) {
+func TestAuthMiddlewareQueryParamRejected(t *testing.T) {
 	srv, _, _ := setupTestServer(t, "secret-key")
 
-	// With correct key via query param.
+	// Query param auth was removed for security — must be rejected.
 	req := httptest.NewRequest("GET", "/api/devices?api_key=secret-key", nil)
 	w := httptest.NewRecorder()
 	srv.ServeHTTP(w, req)
 
-	if w.Code != http.StatusOK {
-		t.Errorf("correct query key: status = %d, want %d", w.Code, http.StatusOK)
+	if w.Code != http.StatusUnauthorized {
+		t.Errorf("query key should be rejected: status = %d, want %d", w.Code, http.StatusUnauthorized)
 	}
 }
 

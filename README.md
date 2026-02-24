@@ -26,7 +26,7 @@ Zigbee smart home coordinator written in Go. Manages a Zigbee network through an
 - **Lua automation** — scripted rules with `zigbee.*`, `system.*`, `telegram.*` modules
 - **Blockly editor** — visual drag-and-drop automation builder
 - **61 ZCL clusters** — plus custom/proprietary cluster support via JSON
-- **Device definitions** — per-manufacturer config with bind, reporting, property decoding
+- **Device definitions** — per-manufacturer config with bind, reporting, property decoding (Xiaomi TLV, Tuya DP)
 - **BoltDB storage** — embedded key-value store, no external database
 
 ## Hardware
@@ -52,7 +52,7 @@ Open `http://localhost:8080` in a browser.
 
 ## Build
 
-Requires Go 1.24+.
+Requires Go 1.23+.
 
 ```bash
 make build                # local build (stripped)
@@ -167,11 +167,13 @@ GET    /api/version              Current version
 ### Automation
 
 ```
-GET    /api/scripts              List scripts
-POST   /api/scripts              Create script
-PUT    /api/scripts/{name}       Update script
-DELETE /api/scripts/{name}       Delete script
-POST   /api/scripts/{name}/run   Run script manually
+GET    /api/automations              List automations
+GET    /api/automations/{id}         Get automation
+POST   /api/automations              Create automation
+PUT    /api/automations/{id}         Update automation
+DELETE /api/automations/{id}         Delete automation
+POST   /api/automations/{id}/toggle  Toggle enabled/disabled
+POST   /api/automations/{id}/run     Run automation manually
 ```
 
 ## WebSocket
@@ -184,7 +186,8 @@ Connect to `ws://host:8080/ws` for real-time events.
 | `device_left` | Device leaves the network |
 | `device_announce` | Device announces presence |
 | `attribute_report` | Device reports attribute value |
-| `property_update` | Decoded proprietary attribute value |
+| `cluster_command` | Incoming cluster-specific command (e.g., Tuya DP) |
+| `property_update` | Decoded proprietary attribute/command value |
 | `network_state` | Network state changes |
 | `permit_join` | Permit join status updated |
 
@@ -199,14 +202,19 @@ homeassistant/{type}/{id}/config   # HA autodiscovery
 zigbee2mqtt/bridge/state           # online/offline
 ```
 
+Supported HA entity types: `light` (JSON schema, brightness), `switch` (on/off), `sensor` (temperature, humidity, pressure, illuminance, battery, analog, link quality), `binary_sensor` (occupancy, IAS zone).
+
 Supported commands: `state` (ON/OFF/TOGGLE), `brightness` (0-254).
 
 ## Authentication
 
-When `api_key` is set in config, all requests (except `/static/`) require:
+When `api_key` is set in config, all `/api/` routes require the `X-API-Key` header:
 
-- **Header:** `X-API-Key: my-secret-key`
-- **Query param:** `?api_key=my-secret-key`
+```
+X-API-Key: my-secret-key
+```
+
+Pages and WebSocket are not protected by the API key (browsers cannot send custom headers on page navigation). The API key is injected into HTML pages via a `<meta>` tag for use by client-side JavaScript.
 
 ## Device Definitions
 

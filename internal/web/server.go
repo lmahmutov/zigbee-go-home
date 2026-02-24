@@ -112,6 +112,11 @@ type DeviceView struct {
 	Temperature     int    // 0 if not available
 	HasTemperature  bool
 	Contact         string // "open", "closed", "" if not available
+	Occupancy       string // "detected", "clear", "" if not available
+	Illuminance     int    // lux, 0 if not available
+	HasIlluminance  bool
+	Humidity        int    // 0-100, 0 if not available
+	HasHumidity     bool
 	LQIQuality      string // "good", "fair", "poor"
 	Properties      map[string]any
 }
@@ -234,15 +239,42 @@ func (s *Server) routes() {
 	s.mux.HandleFunc("GET /ws", s.handleWS)
 }
 
-// ServeHTTP implements http.Handler, applying auth middleware if configured.
+// ServeHTTP implements http.Handler, applying auth and CORS middleware.
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	if s.apiKey != "" {
-		// Skip auth for static files.
-		if !strings.HasPrefix(r.URL.Path, "/static/") {
-			key := r.Header.Get("X-API-Key")
-			if key == "" {
-				key = r.URL.Query().Get("api_key")
+	// CORS: check Origin on mutating requests to prevent CSRF.
+	if len(s.allowedOrigins) > 0 {
+		origin := r.Header.Get("Origin")
+		if origin != "" {
+			if r.Method == http.MethodOptions {
+				// Preflight request.
+				if s.isOriginAllowed(origin) {
+					w.Header().Set("Access-Control-Allow-Origin", origin)
+					w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS")
+					w.Header().Set("Access-Control-Allow-Headers", "Content-Type, X-API-Key")
+					w.Header().Set("Access-Control-Max-Age", "3600")
+					w.WriteHeader(http.StatusNoContent)
+					return
+				}
+				http.Error(w, "Forbidden", http.StatusForbidden)
+				return
 			}
+
+			if r.Method != http.MethodGet {
+				if !s.isOriginAllowed(origin) {
+					http.Error(w, "Forbidden", http.StatusForbidden)
+					return
+				}
+				w.Header().Set("Access-Control-Allow-Origin", origin)
+			}
+		}
+	}
+
+	if s.apiKey != "" {
+		// Only require API key for /api/ endpoints. Static files, HTML pages,
+		// WebSocket, and device images are not API-key-protected because
+		// browsers cannot send custom headers on page navigation or WS upgrade.
+		if strings.HasPrefix(r.URL.Path, "/api/") {
+			key := r.Header.Get("X-API-Key")
 			if subtle.ConstantTimeCompare([]byte(key), []byte(s.apiKey)) != 1 {
 				http.Error(w, "Unauthorized", http.StatusUnauthorized)
 				return
@@ -250,6 +282,16 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	s.mux.ServeHTTP(w, r)
+}
+
+// isOriginAllowed checks if the origin matches any allowed origin pattern.
+func (s *Server) isOriginAllowed(origin string) bool {
+	for _, allowed := range s.allowedOrigins {
+		if allowed == "*" || allowed == origin {
+			return true
+		}
+	}
+	return false
 }
 
 // enrichDevice creates a DeviceView from a store.Device.
@@ -301,16 +343,23 @@ func (s *Server) enrichDevice(dev *store.Device) DeviceView {
 				v.PhotoURL = url
 			}
 		} else {
+			// Sanitize model name for filesystem: spaces → _, * → x.
+			sanitized := strings.ReplaceAll(dev.Model, " ", "_")
+			sanitized = strings.ReplaceAll(sanitized, "*", "x")
 			for _, ext := range []string{".jpg", ".png", ".webp"} {
-				imgPath := filepath.Join(s.devicesDir, "img", dev.Model+ext)
+				imgPath := filepath.Join(s.devicesDir, "img", sanitized+ext)
 				if _, err := os.Stat(imgPath); err == nil {
-					url = "/devices/img/" + dev.Model + ext
+					url = "/devices/img/" + sanitized + ext
 					v.HasPhoto = true
 					v.PhotoURL = url
 					break
 				}
 			}
 			s.photoMu.Lock()
+			// Cap cache at 500 entries to prevent unbounded growth.
+			if len(s.photoCache) >= 500 {
+				clear(s.photoCache)
+			}
 			s.photoCache[dev.Model] = url
 			s.photoMu.Unlock()
 		}
@@ -344,6 +393,47 @@ func (s *Server) enrichDevice(dev *store.Device) DeviceView {
 					v.Contact = "open"
 				} else {
 					v.Contact = "closed"
+				}
+			}
+		}
+		if val, ok := dev.Properties["occupancy"]; ok {
+			if n, ok := toInt(val); ok {
+				if n != 0 {
+					v.Occupancy = "detected"
+				} else {
+					v.Occupancy = "clear"
+				}
+			}
+		}
+		if val, ok := dev.Properties["illuminance"]; ok {
+			if n, ok := toInt(val); ok {
+				v.Illuminance = n
+				v.HasIlluminance = true
+			}
+		}
+		if val, ok := dev.Properties["humidity"]; ok {
+			if n, ok := toInt(val); ok {
+				v.Humidity = n
+				v.HasHumidity = true
+			}
+		}
+	}
+
+	// Populate on/off state from stored properties.
+	if dev.Properties != nil {
+		if val, ok := dev.Properties["on_off"]; ok {
+			switch b := val.(type) {
+			case bool:
+				if b {
+					v.OnOffState = "on"
+				} else {
+					v.OnOffState = "off"
+				}
+			case float64:
+				if b != 0 {
+					v.OnOffState = "on"
+				} else {
+					v.OnOffState = "off"
 				}
 			}
 		}
@@ -589,9 +679,12 @@ func (s *Server) renderTemplate(w http.ResponseWriter, name string, data interfa
 		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 		return
 	}
-	// Inject version into template data if it's a map.
+	// Inject version and API key into template data if it's a map.
 	if m, ok := data.(map[string]interface{}); ok {
 		m["Version"] = s.version
+		if s.apiKey != "" {
+			m["APIKey"] = s.apiKey
+		}
 	}
 	var buf bytes.Buffer
 	if err := t.ExecuteTemplate(&buf, name, data); err != nil {
@@ -600,5 +693,7 @@ func (s *Server) renderTemplate(w http.ResponseWriter, name string, data interfa
 		return
 	}
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	w.Write(buf.Bytes())
+	if _, err := w.Write(buf.Bytes()); err != nil {
+		s.logger.Debug("write template response", "name", name, "err", err)
+	}
 }

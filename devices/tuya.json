@@ -1,4 +1,131 @@
 {
+  "devices": [
+    {
+      "manufacturer": "_TZE200_locansqp",
+      "model": "TS0601",
+      "friendly_name": "Tuya Temp & Humidity Sensor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 1, "name": "temperature", "transform": "divide_10"},
+          {"tag": 2, "name": "humidity"},
+          {"tag": 4, "name": "battery"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_bjawzodf",
+      "model": "TS0601",
+      "friendly_name": "Tuya Temp & Humidity Sensor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 1, "name": "temperature", "transform": "divide_10"},
+          {"tag": 2, "name": "humidity"},
+          {"tag": 4, "name": "battery"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_a8sdabtg",
+      "model": "TS0601",
+      "friendly_name": "Tuya Temp & Humidity Sensor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 18, "name": "temperature", "transform": "divide_10"},
+          {"tag": 19, "name": "humidity"},
+          {"tag": 4, "name": "battery"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_aoclfnxz",
+      "model": "TS0601",
+      "friendly_name": "Moes Radiator Thermostat",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 16, "name": "temperature_setpoint", "transform": "divide_10"},
+          {"tag": 24, "name": "temperature", "transform": "divide_10"},
+          {"tag": 27, "name": "child_lock"},
+          {"tag": 4, "name": "mode"},
+          {"tag": 2, "name": "preset"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_zion52ef",
+      "model": "TS0601",
+      "friendly_name": "Tuya Smart Plug with Energy Monitoring",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 1, "name": "on_off"},
+          {"tag": 17, "name": "current"},
+          {"tag": 18, "name": "power"},
+          {"tag": 19, "name": "voltage", "transform": "divide_10"},
+          {"tag": 20, "name": "energy", "transform": "divide_100"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE204_ztc6ggyl",
+      "model": "TS0601",
+      "friendly_name": "Tuya Human Presence Sensor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 1, "name": "occupancy"},
+          {"tag": 9, "name": "distance"},
+          {"tag": 104, "name": "illuminance"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_yvx5lh6k",
+      "model": "TS0601",
+      "friendly_name": "Tuya Air Quality Sensor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 2, "name": "co2"},
+          {"tag": 18, "name": "temperature", "transform": "divide_10"},
+          {"tag": 19, "name": "humidity"},
+          {"tag": 22, "name": "formaldehyde", "transform": "divide_100"}
+        ]
+      }]
+    },
+    {
+      "manufacturer": "_TZE200_dwcarsat",
+      "model": "TS0601",
+      "friendly_name": "Tuya Curtain Motor",
+      "bind": [],
+      "properties": [{
+        "cluster": 61184,
+        "decoder": "tuya_dp",
+        "values": [
+          {"tag": 1, "name": "state"},
+          {"tag": 2, "name": "position"},
+          {"tag": 3, "name": "arrived"}
+        ]
+      }]
+    }
+  ],
   "manufacturers": [
     {
       "name": "Tuya",

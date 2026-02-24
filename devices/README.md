@@ -150,16 +150,16 @@ Properties extract named values from proprietary attributes (e.g., Xiaomi's 0xFF
 
 | Field       | Description |
 |-------------|-------------|
-| `cluster`   | Cluster ID of the attribute report to match. |
-| `attribute` | Attribute ID to match (e.g., 65281 = 0xFF01). |
-| `decoder`   | Decoder name. Currently supported: `xiaomi_tlv`. |
+| `cluster`   | Cluster ID to match. For `xiaomi_tlv`: attribute report cluster. For `tuya_dp`: 61184 (0xEF00). |
+| `attribute` | Attribute ID to match (e.g., 65281 = 0xFF01). Only used by `xiaomi_tlv`. |
+| `decoder`   | Decoder name. Supported: `xiaomi_tlv`, `tuya_dp`. |
 | `values`    | Array of property definitions to extract from decoded data. |
 
 ### Property Value Fields
 
 | Field       | Required | Description |
 |-------------|----------|-------------|
-| `tag`       | yes      | Tag number in the TLV data. |
+| `tag`       | yes      | Tag number: TLV tag for `xiaomi_tlv`, DP ID for `tuya_dp`. |
 | `name`      | yes      | Property name emitted in `property_update` events. |
 | `transform` | no       | Optional transform applied to the raw value. |
 
@@ -173,6 +173,8 @@ The same tag can appear multiple times with different names/transforms (e.g., ta
 | `minus_one`     | Subtracts 1 from the value. |
 | `lumi_trigger`  | Lower 16 bits of the value, then subtracts 1. |
 | `bool_invert`   | Inverts a boolean. Also works on numeric types (0 becomes `true`). |
+| `divide_10`     | Divides by 10, returns float64. Useful for Tuya temperature (e.g., 250 -> 25.0). |
+| `divide_100`    | Divides by 100, returns float64. Useful for energy readings (e.g., 12345 -> 123.45). |
 
 ### Xiaomi TLV Format
 
@@ -195,6 +197,47 @@ Common tags for LUMI devices:
 | 100 | bool/uint16 | Primary sensor value (contact, occupancy, etc.) |
 | 101 | varies      | Secondary sensor value |
 | 102 | varies      | Tertiary sensor value |
+
+### Tuya DP Format
+
+The `tuya_dp` decoder parses the DataPoint protocol used by Tuya/TS0601 devices on ZCL cluster 0xEF00 (61184). These devices send cluster-specific commands instead of attribute reports.
+
+Wire format inside the ZCL payload:
+
+```
+[tuya_seq:2 BE] [dp_id:1][dp_type:1][data_len:2 BE][data:N] ...
+```
+
+| DP Type | Name   | Size     | Go Type  |
+|---------|--------|----------|----------|
+| 0       | raw    | variable | []byte   |
+| 1       | bool   | 1        | bool     |
+| 2       | number | 4 (BE)   | int64    |
+| 3       | string | variable | string   |
+| 4       | enum   | 1        | int64    |
+| 5       | bitmap | 1-4 (BE) | int64    |
+
+Example device definition for a Tuya temperature/humidity sensor:
+
+```json
+{
+  "manufacturer": "_TZE200_locansqp",
+  "model": "TS0601",
+  "friendly_name": "Tuya Temp & Humidity Sensor",
+  "bind": [],
+  "properties": [{
+    "cluster": 61184,
+    "decoder": "tuya_dp",
+    "values": [
+      {"tag": 1, "name": "temperature", "transform": "divide_10"},
+      {"tag": 2, "name": "humidity"},
+      {"tag": 4, "name": "battery"}
+    ]
+  }]
+}
+```
+
+Note: Tuya DP devices use per-variant manufacturer strings (`_TZE200_*`, `_TZE204_*`). Use the flat `"devices"` format (not `"manufacturers"` groups) since the same model `TS0601` appears across many unrelated manufacturers.
 
 ## How to Add a New Device Step by Step
 
@@ -269,7 +312,7 @@ Remove and re-pair the device so it goes through a fresh interview with the new 
 
 ## Current Files
 
-81 device definition files covering 3199 devices from major Zigbee manufacturers.
+81 device definition files covering 3207 devices from major Zigbee manufacturers.
 
 ### Major Vendors
 
@@ -283,7 +326,7 @@ Remove and re-pair the device so it goes through a fresh interview with the new 
 - **`schneider.json`** — Schneider Electric (75 models): switches, dimmers, outlets
 - **`namron.json`** — Namron (74 models): switches, dimmers, thermostats
 - **`sunricher.json`** — Sunricher (73 models): LED controllers, dimmers
-- **`tuya.json`** — Tuya (66 models): generic Tuya-protocol devices
+- **`tuya.json`** — Tuya (74 models): generic Tuya-protocol devices, TS0601 with Tuya DP decoding
 - **`gledopto.json`** — GLEDOPTO (57 models): LED controllers
 - **`nue.json`** — Nue / 3A (52 models): switches, dimmers
 - **`smartthings.json`** — SmartThings / CentraLite (48 models): sensors, plugs

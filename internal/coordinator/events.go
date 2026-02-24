@@ -10,8 +10,9 @@ const (
 	EventDeviceJoined    = "device_joined"
 	EventDeviceLeft      = "device_left"
 	EventDeviceAnnounce  = "device_announce"
-	EventAttributeReport = "attribute_report"
-	EventPropertyUpdate  = "property_update"
+	EventAttributeReport  = "attribute_report"
+	EventClusterCommand   = "cluster_command"
+	EventPropertyUpdate   = "property_update"
 	EventNetworkState    = "network_state"
 	EventPermitJoin      = "permit_join"
 )

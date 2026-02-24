@@ -31,6 +31,17 @@ func (m *memStore) GetDevice(ieee string) (*store.Device, error) {
 	}
 	return d, nil
 }
+func (m *memStore) UpdateDevice(ieee string, fn func(dev *store.Device) error) error {
+	d, ok := m.devices[ieee]
+	if !ok {
+		return store.ErrNotFound
+	}
+	if err := fn(d); err != nil {
+		return err
+	}
+	m.devices[ieee] = d
+	return nil
+}
 func (m *memStore) DeleteDevice(ieee string) error {
 	delete(m.devices, ieee)
 	return nil

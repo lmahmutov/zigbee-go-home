@@ -15,6 +15,13 @@ import (
 	"zigbee-go-home/internal/zcl"
 )
 
+const (
+	joinDebounceDuration = 3 * time.Second
+	lastJoinCacheCap     = 50
+	interviewRetryDelay  = 5 * time.Second
+	interviewTimeout     = 3 * time.Minute
+)
+
 type interviewEntry struct {
 	cancel context.CancelFunc
 	gen    uint64
@@ -132,7 +139,7 @@ func (dm *DeviceManager) HandleJoin(evt ncp.DeviceJoinedEvent) {
 		// Device exists: update address and LastSeen only, preserving interview data.
 		dev.ShortAddress = evt.ShortAddr
 		dev.LastSeen = time.Now()
-	} else {
+	} else if errors.Is(err, store.ErrNotFound) {
 		// New device.
 		dev = &store.Device{
 			IEEEAddress:  ieee,
@@ -140,6 +147,10 @@ func (dm *DeviceManager) HandleJoin(evt ncp.DeviceJoinedEvent) {
 			JoinedAt:     time.Now(),
 			LastSeen:     time.Now(),
 		}
+	} else {
+		// Real DB error — don't create a bogus device entry.
+		dm.logger.Error("get device on join", "err", err, "ieee", ieee)
+		return
 	}
 
 	dm.logger.Info("device joined", "ieee", ieee, "short", fmt.Sprintf("0x%04X", evt.ShortAddr), "name", deviceName(dev))
@@ -208,12 +219,11 @@ func (dm *DeviceManager) HandleLeave(evt ncp.DeviceLeftEvent) {
 // HandleAnnounce processes a device announce event.
 func (dm *DeviceManager) HandleAnnounce(evt ncp.DeviceAnnounceEvent) {
 	ieee := fmt.Sprintf("%016X", evt.IEEEAddr)
-	dev, _ := dm.coord.Store().GetDevice(ieee)
-	dm.logger.Info("device announce", "ieee", ieee, "short", fmt.Sprintf("0x%04X", evt.ShortAddr), "name", deviceName(dev))
 
 	dm.updateAddrIndex(ieee, evt.ShortAddr)
 
 	dev, err := dm.coord.Store().GetDevice(ieee)
+	dm.logger.Info("device announce", "ieee", ieee, "short", fmt.Sprintf("0x%04X", evt.ShortAddr), "name", deviceName(dev))
 	if err != nil {
 		if !errors.Is(err, store.ErrNotFound) {
 			// Real DB error — don't create a new device entry.
@@ -254,18 +264,23 @@ func (dm *DeviceManager) HandleAnnounce(evt ncp.DeviceAnnounceEvent) {
 
 	// Debounce: avoid duplicate interviews from rapid announce events.
 	dm.lastJoinMu.Lock()
-	if last, ok := dm.lastJoin[ieee]; ok && time.Since(last) < 3*time.Second {
+	if last, ok := dm.lastJoin[ieee]; ok && time.Since(last) < joinDebounceDuration {
 		dm.lastJoinMu.Unlock()
 		dm.logger.Debug("duplicate announce, interview already started", "ieee", ieee)
 		return
 	}
 	dm.lastJoin[ieee] = time.Now()
 	// Evict stale entries to prevent unbounded growth.
-	if len(dm.lastJoin) > 50 {
+	if len(dm.lastJoin) > lastJoinCacheCap {
 		for k, t := range dm.lastJoin {
 			if time.Since(t) > time.Minute {
 				delete(dm.lastJoin, k)
 			}
+		}
+		// Hard cap: if still over limit after soft eviction, clear and re-add current.
+		if len(dm.lastJoin) > lastJoinCacheCap {
+			clear(dm.lastJoin)
+			dm.lastJoin[ieee] = time.Now()
 		}
 	}
 	dm.lastJoinMu.Unlock()
@@ -335,36 +350,37 @@ func (dm *DeviceManager) HandleAttributeReport(evt ncp.AttributeReportEvent) {
 
 	var dev *store.Device
 	if ieee != "" {
+		// Atomically update LastSeen/LQI/RSSI and capture Basic cluster attributes.
+		updateErr := dm.coord.Store().UpdateDevice(ieee, func(d *store.Device) error {
+			d.LastSeen = time.Now()
+			if evt.LQI > 0 {
+				d.LQI = evt.LQI
+				d.RSSI = evt.RSSI
+			}
+			// Save ManufacturerName / ModelIdentifier from proactive Basic cluster reports.
+			// Sleepy devices (e.g., Xiaomi) may send these before the interview reads them.
+			if evt.ClusterID == 0x0000 {
+				if s, ok := decoded.(string); ok && s != "" {
+					switch evt.AttrID {
+					case 0x0004: // ManufacturerName
+						if d.Manufacturer == "" {
+							d.Manufacturer = s
+						}
+					case 0x0005: // ModelIdentifier
+						if d.Model == "" {
+							d.Model = s
+						}
+					}
+				}
+			}
+			return nil
+		})
+		if updateErr != nil {
+			dm.logger.Error("update device on attr report", "err", updateErr, "ieee", ieee)
+		}
+		// Read back for event emission and property processing.
 		if d, err := dm.coord.Store().GetDevice(ieee); err == nil {
 			dev = d
-			dev.LastSeen = time.Now()
-			if evt.LQI > 0 {
-				dev.LQI = evt.LQI
-				dev.RSSI = evt.RSSI
-			}
-			if saveErr := dm.coord.Store().SaveDevice(dev); saveErr != nil {
-				dm.logger.Error("save device last_seen", "err", saveErr, "ieee", ieee)
-			}
-		}
-	}
-
-	// Save ManufacturerName / ModelIdentifier from proactive Basic cluster reports.
-	// Sleepy devices (e.g., Xiaomi) may send these before the interview reads them,
-	// so we capture them here to avoid losing data if the ZCL Read times out.
-	if evt.ClusterID == 0x0000 && dev != nil {
-		if s, ok := decoded.(string); ok && s != "" {
-			switch evt.AttrID {
-			case 0x0004: // ManufacturerName
-				if dev.Manufacturer == "" {
-					dev.Manufacturer = s
-					_ = dm.coord.Store().SaveDevice(dev)
-				}
-			case 0x0005: // ModelIdentifier
-				if dev.Model == "" {
-					dev.Model = s
-					_ = dm.coord.Store().SaveDevice(dev)
-				}
-			}
 		}
 	}
 
@@ -432,14 +448,16 @@ func (dm *DeviceManager) emitStandardProperty(ieee string, dev *store.Device, ev
 		return
 	}
 
-	// Store the property value on the device.
+	// Store the property value on the device atomically.
 	if dev != nil {
-		if dev.Properties == nil {
-			dev.Properties = make(map[string]any)
-		}
-		dev.Properties[propName] = decoded
-		if saveErr := dm.coord.Store().SaveDevice(dev); saveErr != nil {
-			dm.logger.Error("save standard property", "err", saveErr, "ieee", ieee)
+		if updateErr := dm.coord.Store().UpdateDevice(ieee, func(d *store.Device) error {
+			if d.Properties == nil {
+				d.Properties = make(map[string]any)
+			}
+			d.Properties[propName] = decoded
+			return nil
+		}); updateErr != nil {
+			dm.logger.Error("save standard property", "err", updateErr, "ieee", ieee)
 		}
 	}
 
@@ -468,7 +486,7 @@ func (dm *DeviceManager) Interview(ieee string) {
 		dm.interviewWg.Done()
 	}()
 
-	ctx, cancel := context.WithTimeout(dm.coord.Context(), 3*time.Minute)
+	ctx, cancel := context.WithTimeout(dm.coord.Context(), interviewTimeout)
 	defer cancel()
 
 	dm.interviewMu.Lock()
@@ -500,7 +518,7 @@ func (dm *DeviceManager) Interview(ieee string) {
 			}
 			if attempt < maxRetries {
 				jitter := time.Duration(rand.IntN(3001)) * time.Millisecond
-				delay := 5*time.Second + jitter
+				delay := interviewRetryDelay + jitter
 				dm.logger.Info("interview: will retry", "ieee", ieee, "delay", delay)
 				select {
 				case <-time.After(delay):
@@ -664,10 +682,7 @@ func (dm *DeviceManager) configureDevice(ctx context.Context, dev *store.Device,
 			if !hasInCluster(ep, r.Cluster) {
 				continue
 			}
-			change := []byte{byte(r.Change)}
-			if r.Change > 255 {
-				change = []byte{byte(r.Change), byte(r.Change >> 8)}
-			}
+			change := encodeReportChange(r.Type, r.Change)
 			err := dm.coord.NCP().ConfigureReporting(ctx, ncp.ConfigureReportingRequest{
 				DstAddr:      dev.ShortAddress,
 				DstEP:        ep.ID,
@@ -693,6 +708,63 @@ func (dm *DeviceManager) configureDevice(ctx context.Context, dev *store.Device,
 	}
 }
 
+// encodeReportChange encodes the reportable change value based on ZCL data type size (little-endian).
+func encodeReportChange(dataType uint8, value int) []byte {
+	switch dataType {
+	case 0x08, 0x10, 0x18, 0x20, 0x28, 0x30: // data8, bool, bitmap8, uint8, int8, enum8
+		return []byte{byte(value)}
+	case 0x09, 0x19, 0x21, 0x29, 0x31: // data16, bitmap16, uint16, int16, enum16
+		b := make([]byte, 2)
+		b[0] = byte(value)
+		b[1] = byte(value >> 8)
+		return b
+	case 0x0B, 0x1B, 0x23, 0x2B, 0x39: // data32, bitmap32, uint32, int32, float32
+		b := make([]byte, 4)
+		b[0] = byte(value)
+		b[1] = byte(value >> 8)
+		b[2] = byte(value >> 16)
+		b[3] = byte(value >> 24)
+		return b
+	case 0x25, 0x2D: // uint48, int48
+		b := make([]byte, 6)
+		b[0] = byte(value)
+		b[1] = byte(value >> 8)
+		b[2] = byte(value >> 16)
+		b[3] = byte(value >> 24)
+		b[4] = byte(value >> 32)
+		b[5] = byte(value >> 40)
+		return b
+	case 0x27, 0x2F, 0x3A: // uint64, int64, float64
+		b := make([]byte, 8)
+		b[0] = byte(value)
+		b[1] = byte(value >> 8)
+		b[2] = byte(value >> 16)
+		b[3] = byte(value >> 24)
+		b[4] = byte(value >> 32)
+		b[5] = byte(value >> 40)
+		b[6] = byte(value >> 48)
+		b[7] = byte(value >> 56)
+		return b
+	default:
+		// Default to minimal encoding for unknown types.
+		if value <= 0xFF {
+			return []byte{byte(value)}
+		}
+		if value <= 0xFFFF {
+			b := make([]byte, 2)
+			b[0] = byte(value)
+			b[1] = byte(value >> 8)
+			return b
+		}
+		b := make([]byte, 4)
+		b[0] = byte(value)
+		b[1] = byte(value >> 8)
+		b[2] = byte(value >> 16)
+		b[3] = byte(value >> 24)
+		return b
+	}
+}
+
 func hasOutCluster(ep store.Endpoint, cluster uint16) bool {
 	for _, c := range ep.OutClusters {
 		if c == cluster {
@@ -713,7 +785,14 @@ func hasInCluster(ep store.Endpoint, cluster uint16) bool {
 
 // RemoveDevice sends a ZDO leave request, cancels any in-progress interview,
 // removes from addr index, and deletes from store.
+// Returns store.ErrNotFound if the device does not exist.
 func (dm *DeviceManager) RemoveDevice(ieee string) error {
+	// Check device exists before doing anything.
+	dev, err := dm.coord.Store().GetDevice(ieee)
+	if err != nil {
+		return err
+	}
+
 	// Cancel interview if running.
 	dm.interviewMu.Lock()
 	if entry, ok := dm.interviewCancels[ieee]; ok {
@@ -723,8 +802,7 @@ func (dm *DeviceManager) RemoveDevice(ieee string) error {
 	dm.interviewMu.Unlock()
 
 	// Send ZDO Mgmt Leave to remove the device from the network.
-	dev, err := dm.coord.Store().GetDevice(ieee)
-	if err == nil {
+	{
 		var ieeeBytes [8]byte
 		if parsed, parseErr := ParseIEEE(ieee); parseErr == nil {
 			ieeeBytes = parsed
@@ -748,7 +826,17 @@ func (dm *DeviceManager) RemoveDevice(ieee string) error {
 	}
 	dm.addrMu.Unlock()
 
-	return dm.coord.Store().DeleteDevice(ieee)
+	if err := dm.coord.Store().DeleteDevice(ieee); err != nil {
+		return err
+	}
+
+	// Always emit EventDeviceLeft so MQTT bridge cleans up discovery,
+	// even if MgmtLeave failed or the NCP leave indication was missed.
+	dm.coord.Events().Emit(Event{
+		Type: EventDeviceLeft,
+		Data: map[string]interface{}{"ieee": ieee},
+	})
+	return nil
 }
 
 // ListDevices returns all known devices.
@@ -759,6 +847,52 @@ func (dm *DeviceManager) ListDevices() ([]*store.Device, error) {
 // GetDevice returns a device by IEEE address.
 func (dm *DeviceManager) GetDevice(ieee string) (*store.Device, error) {
 	return dm.coord.Store().GetDevice(ieee)
+}
+
+// HandleClusterCommand processes an incoming cluster-specific command (e.g., Tuya DP).
+func (dm *DeviceManager) HandleClusterCommand(evt ncp.ClusterCommandEvent) {
+	ieee := dm.lookupOrRebuild(evt.SrcAddr)
+
+	var dev *store.Device
+	if ieee != "" {
+		// Atomically update LastSeen/LQI/RSSI.
+		if updateErr := dm.coord.Store().UpdateDevice(ieee, func(d *store.Device) error {
+			d.LastSeen = time.Now()
+			if evt.LQI > 0 {
+				d.LQI = evt.LQI
+				d.RSSI = evt.RSSI
+			}
+			return nil
+		}); updateErr != nil {
+			dm.logger.Error("update device on cluster cmd", "err", updateErr, "ieee", ieee)
+		}
+		// Read back for event emission and property processing.
+		if d, err := dm.coord.Store().GetDevice(ieee); err == nil {
+			dev = d
+		}
+	}
+
+	dm.logger.Info("cluster command",
+		"ieee", ieee,
+		"name", deviceName(dev),
+		"cluster", fmt.Sprintf("0x%04X", evt.ClusterID),
+		"cmd", fmt.Sprintf("0x%02X", evt.CommandID),
+		"payload_len", len(evt.Payload),
+	)
+
+	dm.coord.Events().Emit(Event{
+		Type: EventClusterCommand,
+		Data: map[string]interface{}{
+			"ieee":       ieee,
+			"short_addr": evt.SrcAddr,
+			"endpoint":   evt.SrcEP,
+			"cluster_id": evt.ClusterID,
+			"command_id": evt.CommandID,
+			"payload":    fmt.Sprintf("%X", evt.Payload),
+		},
+	})
+
+	dm.processClusterCommandProperties(ieee, dev, evt)
 }
 
 // SaveDevice persists a device to the store.

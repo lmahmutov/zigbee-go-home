@@ -63,6 +63,8 @@ func registerZigbeeModule(L *lua.LState, vm *scriptVM, e *Engine) {
 	L.SetGlobal("zigbee", mod)
 }
 
+const maxHandlersPerScript = 100
+
 // zigbee.on(type, filter, callback)
 func zigbeeOn(L *lua.LState, vm *scriptVM) int {
 	eventType := L.CheckString(1)
@@ -82,6 +84,11 @@ func zigbeeOn(L *lua.LState, vm *scriptVM) int {
 	}
 
 	vm.mu.Lock()
+	if len(vm.handlers) >= maxHandlersPerScript {
+		vm.mu.Unlock()
+		L.RaiseError("too many handlers (max %d)", maxHandlersPerScript)
+		return 0
+	}
 	vm.handlers = append(vm.handlers, h)
 	vm.mu.Unlock()
 
@@ -180,9 +187,26 @@ func zigbeeSetColor(L *lua.LState, e *Engine) int {
 // zigbee.send_command(ieee, ep, cluster, cmd, payload)
 func zigbeeSendCommand(L *lua.LState, e *Engine) int {
 	target := L.CheckString(1)
-	ep := uint8(L.CheckInt(2))
-	cluster := uint16(L.CheckInt(3))
-	cmd := uint8(L.CheckInt(4))
+	epVal := L.CheckInt(2)
+	clusterVal := L.CheckInt(3)
+	cmdVal := L.CheckInt(4)
+
+	if epVal < 0 || epVal > 255 {
+		L.ArgError(2, "endpoint must be 0-255")
+		return 0
+	}
+	if clusterVal < 0 || clusterVal > 65535 {
+		L.ArgError(3, "cluster must be 0-65535")
+		return 0
+	}
+	if cmdVal < 0 || cmdVal > 255 {
+		L.ArgError(4, "command must be 0-255")
+		return 0
+	}
+
+	ep := uint8(epVal)
+	cluster := uint16(clusterVal)
+	cmd := uint8(cmdVal)
 
 	var payload []byte
 	if L.GetTop() >= 5 {

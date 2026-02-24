@@ -1,5 +1,9 @@
 "use strict";
 
+// === API key (injected via meta tag) ===
+var _apiKeyMeta = document.querySelector('meta[name="api-key"]');
+var _apiKey = _apiKeyMeta ? _apiKeyMeta.getAttribute("content") : "";
+
 // === Device state cache ===
 const deviceStates = new Map(); // ieee -> {onOff, level, attributes, lastSeen}
 
@@ -126,9 +130,9 @@ function handlePropertyUpdate(data) {
     if (window.currentDeviceIEEE === ieee) {
         var tbody = document.getElementById("attr-table-body");
         if (tbody) {
-            var placeholder = tbody.querySelector(".muted");
+            var placeholder = document.getElementById("attr-placeholder");
             if (placeholder) {
-                placeholder.closest("tr").remove();
+                placeholder.remove();
             }
 
             var rowId = "prop-" + prop;
@@ -164,6 +168,9 @@ function handlePropertyUpdate(data) {
     // Toast for interesting properties
     if (prop === "contact") {
         showToast(t("toast.contact", value ? t("toast.contact_open") : t("toast.contact_closed")));
+    } else if (prop === "occupancy") {
+        var detected = !!value && value !== 0;
+        showToast(t("toast.occupancy", detected ? t("toast.occupancy_detected") : t("toast.occupancy_clear")));
     } else if (prop === "battery" && typeof value === "number" && value <= 10) {
         showToast(t("toast.low_battery", value), true);
     }
@@ -203,6 +210,34 @@ function updateDeviceStatus(prop, value) {
             if (el) el.textContent = value ? t("state.open") : t("state.closed");
             if (section) section.style.display = "";
             break;
+        case "occupancy":
+            var item = document.getElementById("status-occupancy");
+            if (item) item.style.display = "";
+            var el = document.getElementById("status-occupancy-val");
+            var detected = !!value && value !== 0;
+            if (el) el.textContent = detected ? t("state.motion") : t("state.clear");
+            // Update icon color
+            var icon = document.getElementById("status-occupancy-icon");
+            if (icon) {
+                var svg = icon.querySelector("svg");
+                if (svg) svg.setAttribute("stroke", detected ? "#ff9800" : "#4caf50");
+            }
+            if (section) section.style.display = "";
+            break;
+        case "illuminance":
+            var item = document.getElementById("status-illuminance");
+            if (item) item.style.display = "";
+            var el = document.getElementById("status-illuminance-val");
+            if (el) el.textContent = value + " lx";
+            if (section) section.style.display = "";
+            break;
+        case "humidity":
+            var item = document.getElementById("status-humidity");
+            if (item) item.style.display = "";
+            var el = document.getElementById("status-humidity-val");
+            if (el) el.textContent = value + "%";
+            if (section) section.style.display = "";
+            break;
     }
 }
 
@@ -222,6 +257,25 @@ function updateDeviceBadge(ieee, prop, value) {
                 el.classList.remove("low");
             }
         });
+    }
+
+    // Update sensor state on tiles
+    var stateEl = document.getElementById("state-" + ieee);
+    if (stateEl && stateEl.getAttribute("data-has-onoff") === "false") {
+        if (prop === "occupancy") {
+            var detected = !!value && value !== 0;
+            stateEl.textContent = detected ? t("state.motion") : t("state.clear");
+            stateEl.className = "device-tile-state" + (detected ? " on" : "");
+        } else if (prop === "temperature" || prop === "device_temperature") {
+            stateEl.textContent = value + "\u00B0C";
+        } else if (prop === "illuminance") {
+            stateEl.textContent = value + " lx";
+        } else if (prop === "humidity") {
+            stateEl.textContent = value + "%";
+        } else if (prop === "contact") {
+            stateEl.textContent = value ? t("state.open") : t("state.closed");
+            stateEl.className = "device-tile-state" + (value ? " on" : "");
+        }
     }
 }
 
@@ -294,9 +348,9 @@ function updateAttributeTable(ieee, data) {
     if (!tbody) return;
 
     // Remove placeholder if present
-    const placeholder = tbody.querySelector(".muted");
+    const placeholder = document.getElementById("attr-placeholder");
     if (placeholder) {
-        placeholder.closest("tr").remove();
+        placeholder.remove();
     }
 
     const rowId = "attr-" + data.endpoint + "-" + data.cluster_id + "-" + data.attr_id;
@@ -355,12 +409,23 @@ function appendEventLog(event) {
 // === API helpers ===
 async function apiCall(method, path, body) {
     const opts = { method: method, headers: {} };
+    if (_apiKey) {
+        opts.headers["X-API-Key"] = _apiKey;
+    }
     if (body !== undefined) {
         opts.headers["Content-Type"] = "application/json";
         opts.body = JSON.stringify(body);
     }
     const resp = await fetch(path, opts);
-    const data = await resp.json();
+    var data;
+    try {
+        data = await resp.json();
+    } catch(e) {
+        if (!resp.ok) {
+            throw new Error("request failed: " + resp.status);
+        }
+        throw new Error("invalid response");
+    }
     if (!resp.ok) {
         throw new Error(data.error || "request failed: " + resp.status);
     }

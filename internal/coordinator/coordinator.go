@@ -173,12 +173,16 @@ func (c *Coordinator) LocalIEEE() [8]byte {
 
 func (c *Coordinator) saveNetworkState() {
 	extPanStr := fmt.Sprintf("%X", c.config.ExtPanID)
-	if err := c.store.SaveNetworkState(&store.NetworkState{
+	ns := &store.NetworkState{
 		Channel:  c.config.Channel,
 		PanID:    c.config.PanID,
 		ExtPanID: extPanStr,
 		Formed:   true,
-	}); err != nil {
+	}
+	if info := c.ncp.GetNCPInfo(); info != nil && len(info.NetworkKey) == 16 {
+		ns.NetworkKey = fmt.Sprintf("%X", info.NetworkKey)
+	}
+	if err := c.store.SaveNetworkState(ns); err != nil {
 		c.logger.Error("save network state", "err", err)
 	}
 }
@@ -272,5 +276,12 @@ func (c *Coordinator) registerIndicationHandlers() {
 	})
 	c.ncp.OnAttributeReport(func(evt ncp.AttributeReportEvent) {
 		c.devices.HandleAttributeReport(evt)
+	})
+	c.ncp.OnClusterCommand(func(evt ncp.ClusterCommandEvent) {
+		c.devices.HandleClusterCommand(evt)
+	})
+	c.ncp.OnNwkAddrUpdate(func(newAddr uint16) {
+		c.logger.Info("NwkAddrUpdate: rebuilding address index", "new_short", fmt.Sprintf("0x%04X", newAddr))
+		c.devices.RebuildAddrIndex()
 	})
 }

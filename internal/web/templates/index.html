@@ -64,7 +64,7 @@
         </div>
         <div class="device-tile-body">
             <span class="device-tile-state" id="state-{{.IEEEAddress}}" data-has-onoff="{{.HasOnOff}}">
-                {{if .HasOnOff}}--{{else if eq .DeviceType "sensor"}}--{{else}}{{.DeviceType}}{{end}}
+                {{if .HasOnOff}}--{{else if ne .Occupancy ""}}{{if eq .Occupancy "detected"}}<span data-i18n="state.motion">Motion</span>{{else}}<span data-i18n="state.clear">Clear</span>{{end}}{{else if ne .Contact ""}}{{if eq .Contact "open"}}<span data-i18n="state.open">Open</span>{{else}}<span data-i18n="state.closed">Closed</span>{{end}}{{else if .HasTemperature}}{{.Temperature}}&deg;C{{else if .HasIlluminance}}{{.Illuminance}} lx{{else if .HasHumidity}}{{.Humidity}}%{{else if eq .DeviceType "sensor"}}--{{else}}{{.DeviceType}}{{end}}
             </span>
             <span class="device-tile-badges">
                 {{if ge .BatteryPercent 0}}

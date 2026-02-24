@@ -149,7 +149,7 @@ func TestHandleAPSDEDataInd(t *testing.T) {
 	n.handleAPSDEDataInd(payload, func(evt AttributeReportEvent) {
 		gotReport = evt
 		called = true
-	})
+	}, nil)
 
 	if !called {
 		t.Fatal("onReport not called")
@@ -238,7 +238,7 @@ func TestHandleAPSDEDataIndMfrSpecific(t *testing.T) {
 	n.handleAPSDEDataInd(payload, func(evt AttributeReportEvent) {
 		gotReport = evt
 		called = true
-	})
+	}, nil)
 
 	if !called {
 		t.Fatal("onReport not called for mfr-specific frame")
@@ -278,7 +278,7 @@ func TestHandleAPSDEDataIndReadResponse(t *testing.T) {
 	n := &NRF52840NCP{
 		zclPending: map[uint8]chan []byte{0x07: ch},
 	}
-	n.handleAPSDEDataInd(payload, nil)
+	n.handleAPSDEDataInd(payload, nil, nil)
 
 	select {
 	case data := <-ch:

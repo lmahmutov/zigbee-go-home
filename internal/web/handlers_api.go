@@ -2,8 +2,11 @@ package web
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
+
+	"zigbee-go-home/internal/store"
 )
 
 func (s *Server) handleAPIListDevices(w http.ResponseWriter, r *http.Request) {
@@ -20,7 +23,12 @@ func (s *Server) handleAPIGetDevice(w http.ResponseWriter, r *http.Request) {
 	ieee := r.PathValue("ieee")
 	dev, err := s.coord.Devices().GetDevice(ieee)
 	if err != nil {
-		s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
+		s.logger.Error("get device", "err", err, "ieee", ieee)
+		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
 	}
 	s.writeJSON(w, http.StatusOK, dev)
@@ -32,11 +40,6 @@ type renameDeviceRequest struct {
 
 func (s *Server) handleAPIRenameDevice(w http.ResponseWriter, r *http.Request) {
 	ieee := r.PathValue("ieee")
-	dev, err := s.coord.Devices().GetDevice(ieee)
-	if err != nil {
-		s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
-		return
-	}
 
 	var req renameDeviceRequest
 	r.Body = http.MaxBytesReader(w, r.Body, 1<<20)
@@ -45,19 +48,30 @@ func (s *Server) handleAPIRenameDevice(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	dev.FriendlyName = req.FriendlyName
-	if err := s.coord.Devices().SaveDevice(dev); err != nil {
+	err := s.coord.Store().UpdateDevice(ieee, func(dev *store.Device) error {
+		dev.FriendlyName = req.FriendlyName
+		return nil
+	})
+	if err != nil {
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
 		s.logger.Error("rename device", "err", err, "ieee", ieee)
 		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
 	}
 
-	s.writeJSON(w, http.StatusOK, map[string]string{"status": "ok", "friendly_name": dev.FriendlyName})
+	s.writeJSON(w, http.StatusOK, map[string]string{"status": "ok", "friendly_name": req.FriendlyName})
 }
 
 func (s *Server) handleAPIDeleteDevice(w http.ResponseWriter, r *http.Request) {
 	ieee := r.PathValue("ieee")
 	if err := s.coord.Devices().RemoveDevice(ieee); err != nil {
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
 		s.logger.Error("delete device", "err", err, "ieee", ieee)
 		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
@@ -75,7 +89,12 @@ func (s *Server) handleAPIReadAttributes(w http.ResponseWriter, r *http.Request)
 	ieee := r.PathValue("ieee")
 	dev, err := s.coord.Devices().GetDevice(ieee)
 	if err != nil {
-		s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
+		s.logger.Error("get device for read", "err", err, "ieee", ieee)
+		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
 	}
 
@@ -116,7 +135,12 @@ func (s *Server) handleAPIWriteAttribute(w http.ResponseWriter, r *http.Request)
 	ieee := r.PathValue("ieee")
 	dev, err := s.coord.Devices().GetDevice(ieee)
 	if err != nil {
-		s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
+		s.logger.Error("get device for write", "err", err, "ieee", ieee)
+		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
 	}
 
@@ -147,7 +171,12 @@ func (s *Server) handleAPISendCommand(w http.ResponseWriter, r *http.Request) {
 	ieee := r.PathValue("ieee")
 	dev, err := s.coord.Devices().GetDevice(ieee)
 	if err != nil {
-		s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+		if errors.Is(err, store.ErrNotFound) {
+			s.writeJSON(w, http.StatusNotFound, map[string]string{"error": "device not found"})
+			return
+		}
+		s.logger.Error("get device for command", "err", err, "ieee", ieee)
+		s.writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "internal server error"})
 		return
 	}
 

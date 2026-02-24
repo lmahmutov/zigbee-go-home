@@ -35,6 +35,8 @@ type NCP interface {
 	OnDeviceLeft(handler func(DeviceLeftEvent))
 	OnDeviceAnnounce(handler func(DeviceAnnounceEvent))
 	OnAttributeReport(handler func(AttributeReportEvent))
+	OnClusterCommand(handler func(ClusterCommandEvent))
+	OnNwkAddrUpdate(handler func(uint16))
 
 	// Info
 	GetNCPInfo() *NCPInfo
@@ -48,6 +50,7 @@ type NCPInfo struct {
 	FWVersion       uint32
 	StackVersion    string // e.g. "3.11.3.0"
 	ProtocolVersion uint32
+	NetworkKey      []byte // 16-byte network key, set during FormNetwork
 }
 
 // NetworkConfig holds parameters for network formation.
@@ -177,6 +180,17 @@ type AttributeReportEvent struct {
 	AttrID    uint16
 	DataType  uint8
 	Value     []byte
+	LQI       uint8
+	RSSI      int8
+}
+
+// ClusterCommandEvent is emitted for incoming cluster-specific commands (e.g., Tuya DP).
+type ClusterCommandEvent struct {
+	SrcAddr   uint16
+	SrcEP     uint8
+	ClusterID uint16
+	CommandID uint8
+	Payload   []byte
 	LQI       uint8
 	RSSI      int8
 }

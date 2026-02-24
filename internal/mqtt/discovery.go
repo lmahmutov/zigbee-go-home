@@ -25,22 +25,23 @@ type haDevice struct {
 
 // haDiscovery is a generic HA discovery payload.
 type haDiscovery struct {
-	Name              string   `json:"name"`
-	UniqueID          string   `json:"unique_id"`
-	StateTopic        string   `json:"state_topic"`
-	CommandTopic      string   `json:"command_topic,omitempty"`
-	AvailabilityTopic string   `json:"availability_topic"`
-	ValueTemplate     string   `json:"value_template,omitempty"`
-	UnitOfMeasurement string   `json:"unit_of_measurement,omitempty"`
-	DeviceClass       string   `json:"device_class,omitempty"`
-	StateClass        string   `json:"state_class,omitempty"`
-	PayloadOn         string   `json:"payload_on,omitempty"`
-	PayloadOff        string   `json:"payload_off,omitempty"`
-	BrightnessScale   int      `json:"brightness_scale,omitempty"`
+	Name                string   `json:"name"`
+	UniqueID            string   `json:"unique_id"`
+	StateTopic          string   `json:"state_topic"`
+	CommandTopic        string   `json:"command_topic,omitempty"`
+	AvailabilityTopic   string   `json:"availability_topic"`
+	ValueTemplate       string   `json:"value_template,omitempty"`
+	UnitOfMeasurement   string   `json:"unit_of_measurement,omitempty"`
+	DeviceClass         string   `json:"device_class,omitempty"`
+	StateClass          string   `json:"state_class,omitempty"`
+	PayloadOn           string   `json:"payload_on,omitempty"`
+	PayloadOff          string   `json:"payload_off,omitempty"`
+	BrightnessScale     int      `json:"brightness_scale,omitempty"`
 	BrightnessStateTopic   string `json:"brightness_state_topic,omitempty"`
 	BrightnessCommandTopic string `json:"brightness_command_topic,omitempty"`
-	Schema            string   `json:"schema,omitempty"`
-	Device            haDevice `json:"device"`
+	SupportedColorModes []string `json:"supported_color_modes,omitempty"`
+	Schema              string   `json:"schema,omitempty"`
+	Device              haDevice `json:"device"`
 }
 
 // deviceDisplayName returns a display name for the device.
@@ -65,11 +66,14 @@ func deviceIdentifier(dev *store.Device) string {
 // deviceTopicName returns the topic name for a device (friendly name or IEEE).
 func deviceTopicName(dev *store.Device) string {
 	if dev.FriendlyName != "" {
-		// Sanitize: replace spaces and MQTT special chars, lowercase
+		// Sanitize: lowercase and keep only safe chars for MQTT topics.
 		name := strings.ToLower(dev.FriendlyName)
-		for _, ch := range []string{" ", "/", "+", "#", "$"} {
-			name = strings.ReplaceAll(name, ch, "_")
-		}
+		name = strings.Map(func(r rune) rune {
+			if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') || r == '_' || r == '-' {
+				return r
+			}
+			return '_'
+		}, name)
 		return name
 	}
 	return dev.IEEEAddress
@@ -146,14 +150,14 @@ func buildDiscovery(dev *store.Device, prefix string) []discoveryMsg {
 	if hasCluster[0x0406] {
 		msgs = append(msgs, buildBinarySensor(nodeID, displayName, stateTopic, avail, haDev,
 			"occupancy", "Occupancy", "occupancy",
-			"{{ value_json.occupancy }}"))
+			"{{ 'ON' if value_json.occupancy else 'OFF' }}"))
 	}
 
 	// IAS Zone (0x0500)
 	if hasCluster[0x0500] {
 		msgs = append(msgs, buildBinarySensor(nodeID, displayName, stateTopic, avail, haDev,
 			"zone", "Zone", "safety",
-			"{{ value_json.zone }}"))
+			"{{ 'ON' if value_json.zone_status else 'OFF' }}"))
 	}
 
 	// Power Configuration (0x0001) → battery sensor
@@ -180,8 +184,9 @@ func buildDiscovery(dev *store.Device, prefix string) []discoveryMsg {
 	}
 
 	// Link quality sensor for all devices.
+	// No device_class — "signal_strength" requires dB/dBm units, but LQI is unitless.
 	msgs = append(msgs, buildSensor(nodeID, displayName, stateTopic, avail, haDev,
-		"linkquality", "Link Quality", "signal_strength", "lqi", "measurement",
+		"linkquality", "Link Quality", "", "lqi", "measurement",
 		"{{ value_json.linkquality }}"))
 
 	return msgs
@@ -216,8 +221,8 @@ func buildBinarySensor(nodeID, displayName, stateTopic, avail string, haDev haDe
 		AvailabilityTopic: avail,
 		ValueTemplate:     valueTmpl,
 		DeviceClass:       deviceClass,
-		PayloadOn:         "true",
-		PayloadOff:        "false",
+		PayloadOn:         "ON",
+		PayloadOff:        "OFF",
 		Device:            haDev,
 	}
 	return discoveryMsg{Topic: topic, Payload: mustJSON(payload)}
@@ -227,13 +232,15 @@ func buildLight(nodeID, displayName, stateTopic, avail string, haDev haDevice, p
 	topic := fmt.Sprintf("homeassistant/light/%s/light/config", nodeID)
 	cmdTopic := prefix + "/" + deviceTopicName(dev) + "/set"
 	payload := haDiscovery{
-		Name:              displayName,
-		UniqueID:          nodeID + "_light",
-		StateTopic:        stateTopic,
-		CommandTopic:      cmdTopic,
-		AvailabilityTopic: avail,
-		Schema:            "json",
-		Device:            haDev,
+		Name:                displayName,
+		UniqueID:            nodeID + "_light",
+		StateTopic:          stateTopic,
+		CommandTopic:        cmdTopic,
+		AvailabilityTopic:   avail,
+		SupportedColorModes: []string{"brightness"},
+		BrightnessScale:     254,
+		Schema:              "json",
+		Device:              haDev,
 	}
 	return discoveryMsg{Topic: topic, Payload: mustJSON(payload)}
 }

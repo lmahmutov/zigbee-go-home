@@ -43,21 +43,27 @@ type NRF52840NCP struct {
 	zclMu      sync.Mutex
 
 	// Indication callbacks.
-	handlerMu  sync.RWMutex
-	onJoined   func(DeviceJoinedEvent)
-	onLeft     func(DeviceLeftEvent)
-	onAnnounce func(DeviceAnnounceEvent)
-	onReport   func(AttributeReportEvent)
-	onReset    func()
+	handlerMu    sync.RWMutex
+	onJoined     func(DeviceJoinedEvent)
+	onLeft       func(DeviceLeftEvent)
+	onAnnounce   func(DeviceAnnounceEvent)
+	onReport     func(AttributeReportEvent)
+	onClusterCmd    func(ClusterCommandEvent)
+	onNwkAddrUpdate func(uint16)
+	onReset         func()
 
 	// Signaled when NCPResetInd is received (used by resetAndReconnect).
 	resetIndCh chan struct{}
 
 	ncpInfo NCPInfo
 
-	done      chan struct{}
-	closeOnce sync.Once
-	wg        sync.WaitGroup
+	// lifecycleMu protects concurrent resetState/Close access to port, done,
+	// llAckCh, closeOnce. Must be held when transitioning between states.
+	lifecycleMu sync.Mutex
+	done        chan struct{}
+	closeOnce   sync.Once
+	closed      bool // set after final Close, prevents resetState on closed NCP
+	wg          sync.WaitGroup
 }
 
 // NewNRF52840NCP creates a new nRF52840 NCP backend.
@@ -175,27 +181,29 @@ func (n *NRF52840NCP) writeWithACK(ctx context.Context, frame []byte, pktSeq uin
 		}
 		n.logger.Debug("nrf52840 frame sent", "len", len(frame))
 
-		// Wait for matching ACK.
-		timer := time.NewTimer(llACKTimeout)
-		select {
-		case ackSeq := <-n.llAckCh:
-			timer.Stop()
-			if ackSeq == pktSeq {
-				return nil
+		// Wait for matching ACK, draining stale ACKs within the timeout window.
+		deadline := time.NewTimer(llACKTimeout)
+	waitACK:
+		for {
+			select {
+			case ackSeq := <-n.llAckCh:
+				if ackSeq == pktSeq {
+					deadline.Stop()
+					return nil
+				}
+				// Wrong ACK seq (stale from previous frame), drain and keep waiting.
+				n.logger.Debug("zboss LL stale ACK drained", "got", ackSeq, "want", pktSeq)
+			case <-deadline.C:
+				n.logger.Warn("zboss LL ACK timeout", "attempt", attempt+1, "pktSeq", pktSeq)
+				break waitACK
+			case <-ctx.Done():
+				deadline.Stop()
+				return ctx.Err()
+			case <-n.done:
+				deadline.Stop()
+				return fmt.Errorf("ncp closed")
 			}
-			// Wrong ack seq, keep waiting or retry.
-		case <-timer.C:
-			// Timer already fired, no need to stop.
-			n.logger.Warn("zboss LL ACK timeout", "attempt", attempt+1, "pktSeq", pktSeq)
-		case <-ctx.Done():
-			timer.Stop()
-			return ctx.Err()
-		case <-n.done:
-			timer.Stop()
-			return fmt.Errorf("ncp closed")
 		}
-		// Ensure timer is stopped if we got a wrong ack seq (first case above).
-		timer.Stop()
 	}
 	return fmt.Errorf("zboss LL ACK timeout after %d retries", llMaxRetries+1)
 }
@@ -312,6 +320,8 @@ func (n *NRF52840NCP) handleIndication(f *zbossFrame) {
 	onLeft := n.onLeft
 	onAnnounce := n.onAnnounce
 	onReport := n.onReport
+	onClusterCmd := n.onClusterCmd
+	onNwkAddrUpdate := n.onNwkAddrUpdate
 	onReset := n.onReset
 	n.handlerMu.RUnlock()
 
@@ -379,7 +389,7 @@ func (n *NRF52840NCP) handleIndication(f *zbossFrame) {
 		}
 
 	case zbossCmdAPSDEDataInd:
-		n.handleAPSDEDataInd(f.Payload, onReport)
+		n.handleAPSDEDataInd(f.Payload, onReport, onClusterCmd)
 
 	case zbossCmdNCPResetInd:
 		n.logger.Warn("NCPResetInd received")
@@ -424,6 +434,9 @@ func (n *NRF52840NCP) handleIndication(f *zbossFrame) {
 		if len(f.Payload) >= 2 {
 			newAddr := binary.LittleEndian.Uint16(f.Payload[0:2])
 			n.logger.Warn("NwkAddrUpdateInd: device changed short address", "new_short", fmt.Sprintf("0x%04X", newAddr))
+			if onNwkAddrUpdate != nil {
+				onNwkAddrUpdate(newAddr)
+			}
 		}
 
 	default:
@@ -433,8 +446,8 @@ func (n *NRF52840NCP) handleIndication(f *zbossFrame) {
 	}
 }
 
-// handleAPSDEDataInd parses APSDE_DATA_IND and dispatches ZCL responses and reports.
-func (n *NRF52840NCP) handleAPSDEDataInd(payload []byte, onReport func(AttributeReportEvent)) {
+// handleAPSDEDataInd parses APSDE_DATA_IND and dispatches ZCL responses, reports, and cluster commands.
+func (n *NRF52840NCP) handleAPSDEDataInd(payload []byte, onReport func(AttributeReportEvent), onClusterCmd func(ClusterCommandEvent)) {
 	if len(payload) < 25 {
 		return
 	}
@@ -472,13 +485,23 @@ func (n *NRF52840NCP) handleAPSDEDataInd(payload []byte, onReport func(Attribute
 
 	frameType := frameCtrl & 0x03
 
-	// Handle cluster-specific commands (e.g., OTA QueryNextImageRequest).
+	// Handle cluster-specific commands (e.g., OTA QueryNextImageRequest, Tuya DP).
 	if frameType == zclFrameTypeCluster {
 		if clusterID == 0x0019 && cmdID == 0x01 {
 			// OTA QueryNextImageRequest — respond with NO_IMAGE_AVAILABLE (0x98).
 			n.logger.Info("OTA query from device, responding NO_IMAGE_AVAILABLE",
 				"short", fmt.Sprintf("0x%04X", srcAddr), "ep", srcEP)
 			n.sendOTANoImageAvailable(srcAddr, srcEP, zclSeq)
+		} else if onClusterCmd != nil {
+			onClusterCmd(ClusterCommandEvent{
+				SrcAddr:   srcAddr,
+				SrcEP:     srcEP,
+				ClusterID: clusterID,
+				CommandID: cmdID,
+				Payload:   zclData[hdrLen:],
+				LQI:       lqi,
+				RSSI:      rssi,
+			})
 		}
 		return
 	}
@@ -569,8 +592,10 @@ func (n *NRF52840NCP) resetAndReconnect(ctx context.Context, option uint8) error
 
 	// Stop the read loop and close the port — NCP will disconnect from USB.
 	// Close port first to unblock readLoop's blocking serial read, then wait.
+	n.lifecycleMu.Lock()
 	n.closeOnce.Do(func() { close(n.done) })
 	n.port.Close()
+	n.lifecycleMu.Unlock()
 	n.wg.Wait()
 
 	// nRF52840 USB re-enumerates after reset (may do 2 cycles on factory reset).
@@ -614,8 +639,10 @@ func (n *NRF52840NCP) resetAndReconnect(ctx context.Context, option uint8) error
 
 		// NCP opened but not responding (probably mid reboot cycle).
 		n.logger.Debug("NCP not ready yet, retrying", "attempt", attempt, "err", err)
+		n.lifecycleMu.Lock()
 		n.closeOnce.Do(func() { close(n.done) })
 		port.Close()
+		n.lifecycleMu.Unlock()
 		n.wg.Wait()
 	}
 
@@ -631,12 +658,16 @@ func (n *NRF52840NCP) FactoryReset(ctx context.Context) error {
 }
 
 // resetState reinitializes internal state with a new serial port.
+// Caller must ensure the previous readLoop has exited (wg.Wait) before calling.
 func (n *NRF52840NCP) resetState(port serial.Port) {
+	n.lifecycleMu.Lock()
 	n.port = port
 	n.reader = bufio.NewReader(port)
 	n.done = make(chan struct{})
 	n.llAckCh = make(chan uint8, 4)
 	n.resetIndCh = make(chan struct{}, 1)
+	n.closeOnce = sync.Once{}
+	n.lifecycleMu.Unlock()
 
 	// Drain and close old pending channels to unblock any waiting goroutines.
 	n.hlMu.Lock()
@@ -660,7 +691,6 @@ func (n *NRF52840NCP) resetState(port serial.Port) {
 	n.llSeqMu.Unlock()
 	n.hlTSN.Store(0)
 	n.zclSeq.Store(0)
-	n.closeOnce = sync.Once{}
 
 	n.wg.Add(1)
 	go n.readLoop()
@@ -749,6 +779,8 @@ func (n *NRF52840NCP) FormNetwork(ctx context.Context, cfg NetworkConfig) error 
 	if _, err := n.request(ctx, zbossCmdSetNwkKey, nwkKey); err != nil {
 		return fmt.Errorf("set nwk key: %w", err)
 	}
+	n.ncpInfo.NetworkKey = make([]byte, 16)
+	copy(n.ncpInfo.NetworkKey, nwkKey[:16])
 	n.logger.Info("network key set")
 
 	// 5. Form network: channelList(1+5) + scanDuration(1) + distNetFlag(1) + distNetAddr(2) + extPanId(8)
@@ -1121,6 +1153,17 @@ func (n *NRF52840NCP) OnAttributeReport(handler func(AttributeReportEvent)) {
 	defer n.handlerMu.Unlock()
 	n.onReport = handler
 }
+func (n *NRF52840NCP) OnClusterCommand(handler func(ClusterCommandEvent)) {
+	n.handlerMu.Lock()
+	defer n.handlerMu.Unlock()
+	n.onClusterCmd = handler
+}
+
+func (n *NRF52840NCP) OnNwkAddrUpdate(handler func(uint16)) {
+	n.handlerMu.Lock()
+	defer n.handlerMu.Unlock()
+	n.onNwkAddrUpdate = handler
+}
 
 // OnNCPReset registers a callback for spontaneous NCP reset events.
 func (n *NRF52840NCP) OnNCPReset(handler func()) {
@@ -1136,26 +1179,32 @@ func (n *NRF52840NCP) GetNCPInfo() *NCPInfo {
 
 // Close stops the NCP and waits for readLoop to exit.
 func (n *NRF52840NCP) Close() error {
-	var err error
-	n.closeOnce.Do(func() {
-		close(n.done)
-		err = n.port.Close()
-		n.wg.Wait()
+	n.lifecycleMu.Lock()
+	if n.closed {
+		n.lifecycleMu.Unlock()
+		return nil
+	}
+	n.closed = true
+	n.closeOnce.Do(func() { close(n.done) })
+	err := n.port.Close()
+	n.lifecycleMu.Unlock()
 
-		n.hlMu.Lock()
-		for tsn, ch := range n.hlPending {
-			close(ch)
-			delete(n.hlPending, tsn)
-		}
-		n.hlMu.Unlock()
+	n.wg.Wait()
 
-		n.zclMu.Lock()
-		for seq, ch := range n.zclPending {
-			close(ch)
-			delete(n.zclPending, seq)
-		}
-		n.zclMu.Unlock()
-	})
+	n.hlMu.Lock()
+	for tsn, ch := range n.hlPending {
+		close(ch)
+		delete(n.hlPending, tsn)
+	}
+	n.hlMu.Unlock()
+
+	n.zclMu.Lock()
+	for seq, ch := range n.zclPending {
+		close(ch)
+		delete(n.zclPending, seq)
+	}
+	n.zclMu.Unlock()
+
 	return err
 }
 

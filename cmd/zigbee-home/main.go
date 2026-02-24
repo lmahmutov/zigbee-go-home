@@ -210,12 +210,12 @@ func main() {
 
 	shutdownCtx, shutdownCancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer shutdownCancel()
-	auto.Stop()
-	mqtt.Stop()
 	if err := httpServer.Shutdown(shutdownCtx); err != nil {
 		logger.Error("http server shutdown", "err", err)
 	}
 	webServer.Stop()
+	auto.Stop()
+	mqtt.Stop()
 	coord.Stop()
 
 	logger.Info("goodbye")
